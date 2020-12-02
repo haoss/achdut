@@ -19,11 +19,12 @@ html, body {
 body {
   // background-color: alpha(var(--color-primary), 1);
   background: $color-white;
-  font-size: rem(16px);
-  font-family: $primary-font;
+  font-size: rem(17px);
+  font-family: $font-ubuntu;
   color: $primary-color;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
+  line-height: 1.78;
 }
 
 //  Typography
@@ -65,8 +66,8 @@ small, .small {
 }
 
 p {
-  line-height: 22px;
-  margin: 0 0 20px 0;
+  margin: 0 0 35px 0;
+  padding-left: 42px;
 }
 
 em, i, .em, .i {
@@ -115,7 +116,6 @@ img, .img {
   // width: 1280px;
   width: 100%;
   min-width: 320px;
-  padding: 0 15px;
 }
 
 /* text align */
@@ -195,11 +195,45 @@ img, .img {
   }
 }
 
-ul li {
-  list-style-type: disc;
+ul, ol {
+  padding-left: 65px;
+  margin-bottom: 35px;
+  li {
+    list-style: none;
+    position: relative;
+    &::before, &>span.span {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 0;
+      margin-left: -25px;
+      font-size: 12px;
+      font-weight: bold;
+      color: $color-orange;
+      line-height: 1;
+    }
+  }
 }
-ol li {
-  list-style-type: decimal;
+ul {
+  li {
+    &::before {
+      width: 10px;
+      height: 10px;
+      background: linear-gradient(180deg, #FFB950 0%, #FF9550 100%);
+      box-shadow: 5px 15px 30px rgba(255, 149, 80, 0.5);
+      border-radius: 50%;
+    }
+  }
+}
+ol {
+  li {
+    &::before {
+      display: none;
+    }
+    &>span.span {
+      
+    }
+  }
 }
 
 /* bg */

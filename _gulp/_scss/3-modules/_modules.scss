@@ -1,1 +1,30 @@
 /* modules */
+.nav {
+  $this: &;
+  border: 0;
+  &-tabs {
+    #{$this} {
+      &-item {
+        &:before {
+          display: none;
+        }
+      }
+      &-link {
+        border: 0;
+        background: transparent;
+        border-radius: 50px;
+        text-decoration: none;
+        color: $primary-color;
+        font-weight: 500;
+        &:hover {
+          color: $color-red;
+        }
+        &.active {
+          box-shadow: 0px 4px 30px rgba(65, 131, 231, 0.5);
+          background: $color-blue;
+          color: $color-white;
+        }
+      }
+    }
+  }
+}

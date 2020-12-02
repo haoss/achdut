@@ -1,29 +1,24 @@
 // @import "node_modules/normalize-scss/sass/_normalize.scss";
 
 $root-font-size: 16px;
-$grid-columns: 12;
-$grid-gutter-width: 30px;
+$grid-columns: 10;
+$grid-gutter-width: 40px;
 
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px
+  xl: 1200px,
+  xxL: 1650px
 );
 
 $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px
-);
-
-$theme-colors: (
-  "primary": green,
-  "danger": pink,
-  "custom-color": yellow,
-  "custom-color2": lightblue
+  xl: 1140px,
+  xxl: 1640px
 );
 
 @import "node_modules/bootstrap/scss/functions";
@@ -43,7 +38,7 @@ $theme-colors: (
 // @import "node_modules/bootstrap/scss/button-group";
 // @import "node_modules/bootstrap/scss/input-group";
 // @import "node_modules/bootstrap/scss/custom-forms";
-// @import "node_modules/bootstrap/scss/nav";
+@import "node_modules/bootstrap/scss/nav";
 // @import "node_modules/bootstrap/scss/navbar";
 // @import "node_modules/bootstrap/scss/card";
 // @import "node_modules/bootstrap/scss/breadcrumb";
@@ -76,6 +71,8 @@ $theme-colors: (
 @import "2-layout/_footer.scss";
 
 @import "../dist/js/libs/magnific-popup/magnific-popup.scss";
+@import "../dist/js/libs/swiper/swiper.scss";
+
 @import "3-modules/_modules.scss";
 
 @import "4-utils/_clear.scss";
