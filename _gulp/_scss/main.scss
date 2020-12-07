@@ -2,23 +2,21 @@
 
 $root-font-size: 16px;
 $grid-columns: 10;
-$grid-gutter-width: 40px;
+$grid-gutter-width: 15px;
 
 $grid-breakpoints: (
   xs: 0,
-  sm: 576px,
+  sm: 640px,
   md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxL: 1650px
+  lg: 960px,
+  xl: 1300px,
+  xxl: 1650px
 );
 
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1640px
+  lg: 912px,
+  xl: 1230px,
+  xxl: 1630px
 );
 
 @import "node_modules/bootstrap/scss/functions";

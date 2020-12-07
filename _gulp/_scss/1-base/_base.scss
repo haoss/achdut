@@ -19,12 +19,15 @@ html, body {
 body {
   // background-color: alpha(var(--color-primary), 1);
   background: $color-white;
-  font-size: rem(17px);
+  font-size: rem(14px);
   font-family: $font-ubuntu;
   color: $primary-color;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   line-height: 1.78;
+  @include media-breakpoint-up(xl) {
+    font-size: rem(17px);
+  }
 }
 
 //  Typography
@@ -35,29 +38,42 @@ body {
   margin: 0 0 15px 0;
 }
 .h1, h1 {
-  font-size: rem(21px);
+  font-size: rem(40px);
   line-height: 1.05;
   letter-spacing: -1px;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
+  color: $color-orange;
+  @include media-breakpoint-up(sm) {
+    font-size: 50px;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 40px;
+  }
 }
 .h2, h2 {
-  font-size: rem(18px);
+  font-size: rem(36px);
   line-height: 1.14;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
+  color: $color-red;
 }
 .h3, h3 {
-  font-size: rem(16px);
-  line-height: 1.38;
+  font-size: rem(32px);
+  line-height: 1.3;
+  @include media-breakpoint-up(md) {
+    font-size: rem(28px);
+  }
 }
 .h4, h4 {
-  font-size: rem(14px);
+  font-size: rem(28px);
   line-height: 1.38;
 }
 .h5, h5 {
-  font-size: rem(13px);
+  font-size: rem(24px);
+  line-height: 1.38;
 }
 .h6, h6 {
-  font-size: rem(12px);
+  font-size: rem(20px);
+  line-height: 1.38;
 }
 
 small, .small {
@@ -116,6 +132,15 @@ img, .img {
   // width: 1280px;
   width: 100%;
   min-width: 320px;
+  padding: 0 15px;
+  @include media-breakpoint-up(sm) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 /* text align */
@@ -204,13 +229,18 @@ ul, ol {
     &::before, &>span.span {
       content: '';
       position: absolute;
-      top: 10px;
+      top: 6px;
       left: 0;
       margin-left: -25px;
       font-size: 12px;
       font-weight: bold;
       color: $color-orange;
       line-height: 1;
+    }
+    @include media-breakpoint-up(xl) {
+      &::before, &>span.span {
+        top: 10px;
+      }
     }
   }
 }
@@ -229,9 +259,6 @@ ol {
   li {
     &::before {
       display: none;
-    }
-    &>span.span {
-      
     }
   }
 }
