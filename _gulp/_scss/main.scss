@@ -14,7 +14,7 @@ $grid-breakpoints: (
 );
 
 $container-max-widths: (
-  lg: 912px,
+  lg: 910px,
   xl: 1230px,
   xxl: 1630px
 );
@@ -59,14 +59,16 @@ $container-max-widths: (
 
 @import "1-base/_mixin.scss";
 @import "1-base/_variables.scss";
+@import "1-base/_family.scss";
 @import "1-base/_font.scss";
 @import "1-base/_base.scss";
 
+@import "2-layout/_breadcrumbs.scss";
 @import "2-layout/_buttons.scss";
 @import "2-layout/_forms.scss";
-@import "2-layout/_menu.scss";
 @import "2-layout/_header.scss";
 @import "2-layout/_footer.scss";
+@import "2-layout/_menu.scss";
 
 @import "../dist/js/libs/magnific-popup/magnific-popup.scss";
 @import "../dist/js/libs/swiper/swiper.scss";

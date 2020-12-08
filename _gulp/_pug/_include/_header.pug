@@ -2,14 +2,60 @@
 header.header
   .container
     
-    -var navigation = { 'Главная': '#', 'О нас': '#', 'Продукция': '#', 'Сотрудничество': '#', 'Наши магазины': '#', 'Контакты': '#'};
-    
-    nav.navigation(role="navigation")
-      ul
-        each val, key in navigation
-          if active === key
-            li.active
-              a(href=val, title=key)= key
-          else
-            li
-              a(href=val, title=key)= key
+    .header__wrapper
+      .logo
+        a(href="#!")
+          img(src="./images/logo.svg", alt="", width="188", height="90")
+      
+      .header__nav
+        nav.navigation.header__navigation(role="navigation")
+          ul
+            each val, key in navigation
+              if active === key
+                li.active
+                  a(href=val, title=key)= key
+              else
+                li
+                  a(href=val, title=key)= key
+            li.last
+              span
+                i.icon-dots
+              ul
+                each val, key in navigation
+                  if active === key
+                    li.active
+                      a(href=val, title=key)= key
+                  else
+                    li
+                      a(href=val, title=key)= key
+        button.btn-mobile(type="button") МЕНЮ
+
+      .header__btn
+        a(href="#!") Для детей
+          i.icon-arrow-right
+
+.mobile-nav
+  .mobile-nav__wrapper
+    button.btn-mobile.mobile-nav__btn-mobile(type="button") МЕНЮ
+    .mobile-nav__nav
+      nav.navigation.mobile-nav__navigation(role="navigation")
+        ul
+          each val, key in navigation
+            if active === key
+              li.active
+                a(href=val, title=key)= key
+            else
+              li
+                a(href=val, title=key)= key
+    .mobile-nav__btn
+      a(href="#!") Для детей
+        i.icon-arrow-right
+    .social.mobile-nav__social
+      p Следите за нами в сети
+      .social__wrapper
+        a(href="#!" target="_blank")
+          i.icon-social-fb
+        a(href="#!" target="_blank")
+          i.icon-social-vk
+        a(href="#!" target="_blank")
+          i.icon-social-insta

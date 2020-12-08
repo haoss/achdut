@@ -1,0 +1,45 @@
+/* breadcrumb */
+.breadcrumbs {
+  $this: &;
+  margin: 0;
+  padding: 0;
+  font-size: rem(12px);
+  display: none;
+  flex-wrap: wrap;
+  color: rgba($color-white,.7);
+  &__item {
+    list-style: none;
+    margin: 0 0 5px 0;
+    .span {
+      display: none;
+    }
+    &+#{$this}__item {
+      margin-left: 15px;
+      &::before {
+        content: '/';
+        margin-right: 15px;
+        display: inline-block;
+        position: relative;
+        left: auto;
+        top: auto;
+        margin-left: 0;
+        color: rgba($color-white,.7);
+        font-weight: 400;
+      }
+    }
+    &>a,&>span {
+      display: inline-block;
+      line-height: 14px;
+      text-decoration: none;
+    }
+    &>a {
+      color: rgba($color-white,.7);
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    display: flex;
+  }
+}

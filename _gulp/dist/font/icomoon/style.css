@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?1mixwl');
-  src:  url('fonts/icomoon.eot?1mixwl#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.woff2?1mixwl') format('woff2'),
-    url('fonts/icomoon.ttf?1mixwl') format('truetype'),
-    url('fonts/icomoon.woff?1mixwl') format('woff'),
-    url('fonts/icomoon.svg?1mixwl#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?vexhhz');
+  src:  url('fonts/icomoon.eot?vexhhz#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.woff2?vexhhz') format('woff2'),
+    url('fonts/icomoon.ttf?vexhhz') format('truetype'),
+    url('fonts/icomoon.woff?vexhhz') format('woff'),
+    url('fonts/icomoon.svg?vexhhz#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,6 +26,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-dots:before {
+  content: "\e912";
+}
 .icon-arrow-right:before {
   content: "\e900";
 }
