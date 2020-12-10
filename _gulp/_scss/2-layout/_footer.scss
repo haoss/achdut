@@ -10,12 +10,13 @@
     position: relative;
     overflow: hidden;
     padding-bottom: 10px;
+    color: rgba($primary-color,.7);
     p {
       margin-bottom: 9px;
       line-height: 1.6;
       a {
         text-decoration: none;
-        color: $primary-color;
+        color: rgba($primary-color,.7);;
         &:hover {
           color: $color-red;
         }
@@ -39,12 +40,17 @@
   &__top {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    max-width: 580px;
+    margin: 0 auto;
   }
   &__navigation {
     order: 3;
   }
   &__last {
     order: 2;
+    max-width: 290px;
+    width: 100%;
   }
   &__address {
     padding: 0 45px;
@@ -58,7 +64,7 @@
       line-height: 1;
     }
     p {
-      margin-bottom: 13px;
+      margin-bottom: 15px;
       line-height: 1.4;
     }
     &-time {
@@ -76,6 +82,42 @@
       }
     }
   }
+  @include media-breakpoint-up(sm) {
+    &__top {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+    &__last {
+      width: calc(100% - 300px);
+      padding-top: 20px;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    &__top {
+      max-width: inherit;
+      flex-wrap: nowrap;
+      margin-bottom: 20px;
+    }
+    &__bottom {
+      flex-direction: row;
+      justify-content: space-between;
+      .first {
+        padding-left: 25px;
+      }
+      .last {
+        padding-right: 25px;
+        max-width: inherit;
+      }
+    }
+    &__navigation {
+      order: 2;
+      flex-grow: 1;
+    }
+    &__last {
+      order: 3;
+    }
+  }
 }
 .logo-footer {
   order: 1;
@@ -86,11 +128,29 @@
   text-align: center;
   text-transform: uppercase;
   padding: 17px 0 39px 0;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
+  max-width: 290px;
+  width: 100%;
   p {
     font-weight: bold;
     font-size: 12px;
     line-height: 26px;
     margin-bottom: 22px;
+  }
+  @include media-breakpoint-up(sm) {
+    max-width: inherit;
+    width: 300px;
+    flex-shrink: 0;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 241px;
+    padding-bottom: 33px;
+    margin-bottom: 0;
+    img {
+      width: 133px;
+    }
+    p {
+      margin-bottom: 16px;
+    }
   }
 }

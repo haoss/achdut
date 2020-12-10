@@ -189,6 +189,10 @@
         border-color: $color-white;
       }
     }
+    &-center {
+      max-width: 372px;
+      margin: 0 auto;
+    }
   }
   &__untitle {
     font-weight: bold;
@@ -295,6 +299,7 @@
       &-center {
         flex-grow: 1;
         padding-left: 15px;
+        max-width: inherit;
       }
     }
     &__untitle {
