@@ -158,8 +158,6 @@
     &__btn {
       a {
         width: 200px;
-        height: 50px;
-        line-height: 46px;
         &:hover {
           background: $color-white;
           color: $primary-color;
@@ -171,7 +169,7 @@
         &>li {
           display: block;
           &+li {
-            margin-left: 5px;
+            margin-left: 0;
           }
           &.last {
             display: none;
@@ -192,6 +190,12 @@
   @include media-breakpoint-up(xxl) {
     padding-top: 10px;
     margin-bottom: 65px;
+    &__btn {
+      a {
+        height: 50px;
+        line-height: 46px;
+      }
+    }
     &__navigation {
       &>ul {
         font-size: 17px;

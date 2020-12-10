@@ -13,7 +13,7 @@
         <meta content="notranslate" name="google">
         <link rel="stylesheet" href="./css/style.min.css">
     </head>
-    <body>
+    <body class="--bg">
         <!-- Preloader-->
         <!-- Header-->
         <header class="header">
@@ -91,10 +91,93 @@
                 </div>
             </div>
         </div>
+        <section class="section-form">
+            <div class="container">
+                <div class="section-form__img">
+                    <picture class="--first">
+                        <source srcset="./images/subscription-img-1.webp" type="image/webp">
+                        <source srcset="./images/subscription-img-1.png" type="image/png"><img src="./images/subscription-img-1.png" alt="">
+                    </picture>
+                    <picture class="--last">
+                        <source srcset="./images/subscription-img-2.webp" type="image/webp">
+                        <source srcset="./images/subscription-img-2.png" type="image/png"><img src="./images/subscription-img-2.png" alt="">
+                    </picture>
+                </div>
+                <div class="section-form__form">
+                    <div class="section-form__form-left">
+                        <div class="section-form__untitle">Хочешь больше хороших друзей и знакомств?</div>
+                        <div class="section-form__title">Узнай о клубе в своем городе</div>
+                    </div>
+                    <div class="section-form__form-center">
+                        <form action="" autocomplete="off">
+                            <div class="section-form__row-1">
+                                <div>
+                                    <div class="form-group">
+                                            <label class="field-text"><span class="field-text__input-wrap">
+                                                    <input class="field-text__input" type="text" value="" name="text" placeholder="Как тебя зовут?"></span>
+                                            </label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="form-group">
+                                            <label class="field-text"><span class="field-text__input-wrap">
+                                                    <input class="field-text__input" type="text" value="" name="phone" placeholder="+7 (___)  ___-__-__"></span>
+                                            </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-form__row-2">
+                                <div>
+                                    <button class="section-form__btn" type="submit"><span class="d-sm-none d-lg-inline-block d-xl-none">найти  друзей</span><span class="d-none d-sm-inline-block d-lg-none d-xl-inline-block">хочу найти хороших друзей</span><i class="icon-arrow-right"></i></button>
+                                </div>
+                                <div>
+                                        <label class="field-checkbox">
+                                            <input class="field-checkbox__input" type="checkbox" name="checkbox" checked><span class="field-checkbox__span-input"></span><span class="field-checkbox__label">Согласен с политикой обработки личной информации</span>
+                                        </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Footer-->
         <footer class="footer">
             <div class="container">
-                <div>&copy; 2018</div>
+                <div class="footer__top">
+                    <div class="logo-footer">
+                        <p>При поддержке</p>
+                        <picture>
+                            <source srcset="./images/logo-footer.webp" type="image/webp">
+                            <source srcset="./images/logo-footer.png" type="image/png"><img src="./images/logo-footer.png" alt="">
+                        </picture>
+                    </div>
+                    <div class="footer__navigation">
+                        <div class="row">
+                            <div class="col-12 col-xs-6">1</div>
+                            <div class="d-none d-xl-block col-12 col-xs-6">2</div>
+                        </div>
+                    </div>
+                    <div class="footer__last">
+                        <div class="footer__address">
+                            <div class="footer__address-title">Время зажигания свечей</div>
+                            <p class="--fs13"> <span class="d-block">Вы находитесь в:</span><a class="--dashed --fs15" href="#!">Andorra la Vella, Andorra</a></p>
+                            <p class="--fs16">Шаббат, глава Торы: Вайецей</p>
+                            <p class="--fs14">Пятница, 27. Ноябрь, 2020</p>
+                            <div class="footer__address-time">
+                                <div>Зажигание свечей в</div><strong>17:05</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="first">
+                        <p>Еврейская общепознавательная платформа Achdut 2020</p>
+                    </div>
+                    <div class="last">
+                        <p>Создание и разработка сайта в студии <a href="#!" target="_blank">Piarme</a></p>
+                    </div>
+                </div>
             </div>
         </footer>
         <div style="height: 1000px; background-color: #000"></div>
