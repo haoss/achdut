@@ -39,6 +39,8 @@ $(document).on('ready', function(){
   });
 
   mobileNav();
+  footerNav();
+  animationBg();
 
   // Chrome Smooth Scroll
   try {
@@ -63,6 +65,7 @@ $(window).on('resize', function() {
     btn.removeClass('is-active');
     body.removeClass('is-fixed');
     nav.removeClass('is-active');
+    $('.j-footer-nav').removeClass('is-active');
   }
 });
 
@@ -94,4 +97,53 @@ function mobileNav() {
   navWrapper.on('click', function(e){
     e.stopPropagation();
   })
+}
+
+function footerNav() {
+  var link = $('.j-footer-nav');
+  
+  link.each(function(){
+    var _this = $(this);
+    
+    _this.on('click', function(){
+      var width = $(window).width();
+      if (_this.hasClass('is-active') && width <= 959) {
+        _this.removeClass('is-active');
+        _this.next('.footer__nav').slideUp();
+      } else if (!_this.hasClass('is-active') && width <= 959) {
+        _this.addClass('is-active');
+        _this.next('.footer__nav').slideDown();
+      } else if (width >= 960) {
+        return false
+      }
+    });
+  })
+}
+
+function animationBg() {
+  var controller = new ScrollMagic.Controller();
+  var width = $(window).width();
+
+  // build scenes
+  new ScrollMagic.Scene({
+      triggerElement: ".footer",
+      triggerHook: "onEnter", 
+      duration: "100%"
+    })
+    .setTween(".footer__rounds .last", {y: "-400px", ease: Linear.easeNone})
+    // .addIndicators()
+    .addTo(controller);
+
+  new ScrollMagic.Scene({
+      triggerElement: ".section-form__img",
+      triggerHook: "onEnter", 
+      duration: "100%"
+    })
+    .setTween(".footer__rounds .first", {y: "-750px", ease: Linear.easeNone})
+    // .addIndicators()
+    .addTo(controller);
+    
+    if (width < 1300) {
+      controller.destroy(true);
+    }
 }

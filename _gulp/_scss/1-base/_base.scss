@@ -10,6 +10,11 @@ html {
   -webkit-tap-highlight-color: #bdf3f133;
 }
 
+.base {
+  overflow: hidden;
+  position: relative;
+}
+
 html, body {
   height: 100%;
   padding: 0;
@@ -58,7 +63,7 @@ body {
   }
   @include media-breakpoint-up(xxl) {
     &[class*="--bg"] {
-      background-position: calc(50% - 0px) -51px;
+      background-position: calc(50% - 0px) -11px;
     }
   }
 }
