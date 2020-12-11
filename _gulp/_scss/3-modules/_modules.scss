@@ -433,3 +433,44 @@
     }
   }
 }
+
+.top-rounds {
+  height: 0;
+  position: relative;
+  display: none;
+  pointer-events: none;
+  z-index: -1;
+  div {
+    position: absolute;
+    border-radius: 50%;
+    &.first {
+      width: 191px;
+      height: 191px;
+      background: linear-gradient(266.54deg, #0092F8 11.29%, #417EF8 85.22%);
+      box-shadow: 5px 15px 30px rgba(1, 145, 248, 0.3);
+      left: -140px;
+      // top: 0px;
+      top: 550px;
+    }
+    &.center {
+      width: 89px;
+      height: 89px;
+      background: linear-gradient(180deg, #FFB950 0%, #FF9550 100%);
+      box-shadow: 5px 15px 30px rgba(255, 149, 80, 0.5);
+      right: 116px;
+      top: 1191px;
+      // top: 0px;
+    }
+    &.last {
+      width: 266px;
+      border-radius: 0;
+      height: 658px;
+      right: 0;
+      top: 700px;
+      background: url('../images/img-round.svg') 0 0 no-repeat;
+    }
+  }
+  @include media-breakpoint-up(xxl) {
+    display: block;
+  }
+}

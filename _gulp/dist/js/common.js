@@ -136,10 +136,37 @@ function animationBg() {
 
   new ScrollMagic.Scene({
       triggerElement: ".section-form__img",
-      triggerHook: "onEnter", 
+      triggerHook: 1, 
       duration: "100%"
     })
     .setTween(".footer__rounds .first", {y: "-750px", ease: Linear.easeNone})
+    // .addIndicators()
+    .addTo(controller);
+
+  new ScrollMagic.Scene({
+      triggerElement: ".content",
+      triggerHook: "onEnter",  
+      duration: "200%"
+    })
+    .setTween(".top-rounds .first", {y: "500px", ease: Linear.easeNone})
+    // .addIndicators()
+    .addTo(controller);
+
+  new ScrollMagic.Scene({
+      triggerElement: ".content",
+      triggerHook: "onEnter", 
+      duration: "200%"
+    })
+    .setTween(".top-rounds .center", {y: "-400px", ease: Linear.easeNone})
+    // .addIndicators()
+    .addTo(controller);
+
+  new ScrollMagic.Scene({
+      triggerElement: ".content",
+      triggerHook: "onEnter", 
+      duration: "200%"
+    })
+    .setTween(".top-rounds .last", {y: "500px", ease: Linear.easeNone})
     // .addIndicators()
     .addTo(controller);
     
