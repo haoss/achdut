@@ -204,7 +204,7 @@
       &.first {
         background: linear-gradient(205.15deg, #FF4642 16.41%, #FF7F57 84.03%);
         box-shadow: 5px 15px 30px rgba(255, 91, 87, 0.3);
-        // top: -637px;
+        top: -637px;
         left: -141px;
         width: 191px;
         height: 191px;
@@ -212,7 +212,7 @@
       &.last {
         background: linear-gradient(192.49deg, #1CA1FF 45.55%, #417EF8 92.88%);
         box-shadow: 5px 15px 30px rgba(29, 159, 254, 0.5);
-        // top: -174px;
+        top: -174px;
         right: -222px;
         width: 236px;
         height: 236px;
@@ -392,11 +392,11 @@
     &__rounds {
       div {
         &.first {
-          // top: -730px;
+          top: -730px;
           left: -95px;
         }
         &.last {
-          // top: -127px;
+          top: -127px;
           right: -172px;
         }
       }

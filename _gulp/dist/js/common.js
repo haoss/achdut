@@ -40,7 +40,6 @@ $(document).on('ready', function(){
 
   mobileNav();
   footerNav();
-  animationBg();
 
   // Chrome Smooth Scroll
   try {
@@ -118,59 +117,4 @@ function footerNav() {
       }
     });
   })
-}
-
-function animationBg() {
-  var controller = new ScrollMagic.Controller();
-  var width = $(window).width();
-
-  // build scenes
-  new ScrollMagic.Scene({
-      triggerElement: ".footer",
-      triggerHook: "onEnter", 
-      duration: "100%"
-    })
-    .setTween(".footer__rounds .last", {y: "-400px", ease: Linear.easeNone})
-    // .addIndicators()
-    .addTo(controller);
-
-  new ScrollMagic.Scene({
-      triggerElement: ".section-form__img",
-      triggerHook: 1, 
-      duration: "100%"
-    })
-    .setTween(".footer__rounds .first", {y: "-750px", ease: Linear.easeNone})
-    // .addIndicators()
-    .addTo(controller);
-
-  new ScrollMagic.Scene({
-      triggerElement: ".content",
-      triggerHook: "onEnter",  
-      duration: "200%"
-    })
-    .setTween(".top-rounds .first", {y: "500px", ease: Linear.easeNone})
-    // .addIndicators()
-    .addTo(controller);
-
-  new ScrollMagic.Scene({
-      triggerElement: ".content",
-      triggerHook: "onEnter", 
-      duration: "200%"
-    })
-    .setTween(".top-rounds .center", {y: "-400px", ease: Linear.easeNone})
-    // .addIndicators()
-    .addTo(controller);
-
-  new ScrollMagic.Scene({
-      triggerElement: ".content",
-      triggerHook: "onEnter", 
-      duration: "200%"
-    })
-    .setTween(".top-rounds .last", {y: "500px", ease: Linear.easeNone})
-    // .addIndicators()
-    .addTo(controller);
-    
-    if (width < 1300) {
-      controller.destroy(true);
-    }
 }

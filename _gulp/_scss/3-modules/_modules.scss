@@ -62,6 +62,23 @@
         margin-bottom: 0;
       }
     }
+    &-icon {
+      border-radius: 50%;
+      background: linear-gradient(180deg, #FFB950 0%, #FF9550 100%);
+      box-shadow: 5px 15px 30px rgba(255, 174, 80, 0.5);
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      color: $color-white;
+      text-align: center;
+      font-size: 31px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, -50%);
+    }
   }
   &__document {
     img {
@@ -77,6 +94,14 @@
     &__top {
       padding: 50px 48px;
       border-radius: 25px;
+      &-icon {
+        width: 100px;
+        height: 100px;
+        right: 0;
+        left: auto;
+        transform: translateY(-50%);
+        font-size: 45px;
+      }
     }
   }
   @include media-breakpoint-up(lg) {
@@ -95,6 +120,12 @@
       p {
         padding-left: 22px;
       }
+      &-icon {
+        transform: translate(50%,-50%);
+      }
+      &.--icon {
+        max-width: 90%;
+      }
     }
   }
   @include media-breakpoint-up(xl) {
@@ -106,7 +137,6 @@
       }
     }
     &__top {
-      border-radius: 50px;
       padding: 80px 50px 55px 93px;
       font-size: 15px;
       h1, .h1 {
@@ -115,9 +145,14 @@
       p {
         padding-left: 42px;
       }
+      &-icon {
+        width: 168px;
+        height: 168px;
+        font-size: 74px;
+      }
     }
   }
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(xxl) {
     &__head {
       &.--top {
         .h1, h1 {
@@ -127,8 +162,8 @@
       }
     }
     &__top {
-      padding: 80px 288px 80px 124px;
-      font-size: 24px;
+      padding: 80px 124px 80px 124px;
+      font-size: 17px;
     }
     &__document {
       max-width: 1352px;
@@ -450,7 +485,7 @@
       box-shadow: 5px 15px 30px rgba(1, 145, 248, 0.3);
       left: -140px;
       // top: 0px;
-      top: 550px;
+      top: 850px;
     }
     &.center {
       width: 89px;
@@ -458,15 +493,14 @@
       background: linear-gradient(180deg, #FFB950 0%, #FF9550 100%);
       box-shadow: 5px 15px 30px rgba(255, 149, 80, 0.5);
       right: 116px;
-      top: 1191px;
-      // top: 0px;
+      top: 851px;
     }
     &.last {
       width: 266px;
       border-radius: 0;
       height: 658px;
       right: 0;
-      top: 700px;
+      top: 1300px;
       background: url('../images/img-round.svg') 0 0 no-repeat;
     }
   }
