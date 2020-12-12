@@ -2,8 +2,8 @@ doctype
 
 html(lang="ru")
 
-  -var active = 'Игры' //активный пункт меню, список в header.jade
-  -var pageTitle = 'Игры' + ' - Achdut' //title страницы для генерации верстки
+  -var active = 'Новости' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Новости' + ' - Achdut' //title страницы для генерации верстки
 
   include ./_include/_head
 
@@ -14,6 +14,11 @@ html(lang="ru")
 
       include ./_include/_header
 
+      .top-rounds
+        div.first
+        div.center
+        div.last
+
       .content
         .container
 
@@ -22,25 +27,25 @@ html(lang="ru")
             +breadcrumbs-item('Название страницы')
 
           .content__head.--top
-            .h1 Игры
+            .h1 Новости
 
           .content__top.--icon
             .content__top-icon
-              i.icon-games
             p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные  предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. 
 
-          // Games
-          .row.games
+          // News
+          .row.news
             - for (var i=1; i<5; i++) {
-            .col-10.col-lg-5
-              .games__block
-                .games__block-thumb
-                  img(src="./tmp/img-games-"+i+".png", alt="")
-                  a(href="#!").games__block-btn Скачать
-                .games__block-content
-                  .games__block-category Интересная игра
-                  .games__block-title Арбаат аминим
-                  p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
+            .col-10
+              .news__block
+                .news__block-thumb
+                  a(href="#!")
+                    img(src="./tmp/img-news-"+i+".png", alt="")
+                .news__block-content
+                  a(href="#!").news__block-title Страхи у детей школьного и дошкольного возраста
+                  p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. 
+                  a(href="#!").news__block-btn Подробнее 
+                    i.icon-arrow-right
             - }
 
           +pagination()
