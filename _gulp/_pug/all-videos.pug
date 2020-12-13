@@ -1,0 +1,206 @@
+doctype
+
+html(lang="ru")
+
+  -var active = 'Видео' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Видео' + ' - Achdut' //title страницы для генерации верстки
+
+  include ./_include/_head
+
+  body.--bg-3
+    .base
+      // Preloader
+      include ./_include/_preloader
+
+      include ./_include/_header
+
+      .top-rounds
+        div.first
+        div.center.--right
+
+      .content
+        .container
+
+          +breadcrumbs()
+            +breadcrumbs-item('Главная страница', '#!')
+            +breadcrumbs-item('Название страницы')
+
+          .content__head.--top
+            .h1 Видео
+
+          .content__top.--icon
+            .content__top-icon
+              i.icon-videos
+            p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные  предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. 
+          
+          mixin allVideo
+            .all-video__wrapper
+              .swiper-container
+                .swiper-wrapper
+                  .swiper-slide
+                    .all-video__block
+                      .all-video__block-thumb
+                        img(src="./tmp/img-videos-1.png", alt="")
+                        a(data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk").all-video__block-play 
+                          i.icon-play
+                  .swiper-slide
+                    .all-video__block
+                      .all-video__block-thumb
+                        img(src="./tmp/img-videos-1.png", alt="")
+                        a(data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk").all-video__block-play 
+                          i.icon-play
+                  .swiper-slide
+                    .all-video__block
+                      .all-video__block-thumb
+                        img(src="./tmp/img-videos-1.png", alt="")
+                        a(data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk").all-video__block-play 
+                          i.icon-play
+              .swiper-button-next
+              .swiper-button-prev
+            .swiper-pagination
+
+          // All video
+          .all-video.-all--video1
+            .all-video__head
+              h1 Название альбома
+              a(href="#!").all-video__head-link смотреть все видео
+                i.icon-arrow-right
+            +allVideo
+
+          // All video
+          .all-video.-all--video2
+            .all-video__head
+              h1 Длинное название альбома
+              a(href="#!").all-video__head-link смотреть все видео
+                i.icon-arrow-right
+            +allVideo
+            
+          // All video
+          .all-video.-all--video3
+            .all-video__head
+              h1 Очень-очень длинное название альбома
+              a(href="#!").all-video__head-link смотреть все видео
+                i.icon-arrow-right
+            +allVideo
+
+      include ./_include/_footer
+      //- div(style="height: 1000px; background-color: #000")
+
+    // Load Scripts
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+
+    script().
+      $(document).ready(function(){
+        var swiper1 = new Swiper('.-all--video1 .swiper-container', {
+          navigation: {
+            nextEl: '.-all--video1 .swiper-button-next',
+            prevEl: '.-all--video1 .swiper-button-prev',
+          },
+          pagination: {
+            el: '.-all--video1 .swiper-pagination',
+            clickable: true
+          },
+          loop: true,
+          breakpoints: {
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 15
+            },
+            640: {
+              slidesPerView: 'auto',
+              loopedSlides: 4,
+              spaceBetween: 30
+            },
+            960: {
+              slidesPerView: 'auto',
+              loopedSlides: 4,
+              spaceBetween: 30
+            },
+            1300: {
+              slidesPerView: 'auto',
+              loopedSlides: 4,
+              spaceBetween: 30
+            },
+            1650: {
+              slidesPerView: 'auto',
+              loopedSlides: 4,
+              spaceBetween: 30
+            }
+          }
+        });
+        var swiper2 = new Swiper('.-all--video2 .swiper-container', {
+          navigation: {
+            nextEl: '.-all--video2 .swiper-button-next',
+            prevEl: '.-all--video2 .swiper-button-prev',
+          },
+          pagination: {
+            el: '.-all--video2 .swiper-pagination',
+            clickable: true
+          },
+          loop: true,
+          breakpoints: {
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 15
+            },
+            640: {
+              slidesPerView: 'auto',
+              loopedSlides: 4,
+              spaceBetween: 30
+            },
+            960: {
+              slidesPerView: 'auto',
+              loopedSlides: 4,
+              spaceBetween: 30
+            },
+            1300: {
+              slidesPerView: 'auto',
+              loopedSlides: 4,
+              spaceBetween: 30
+            },
+            1650: {
+              slidesPerView: 'auto',
+              loopedSlides: 4,
+              spaceBetween: 30
+            }
+          }
+        });
+        var swiper3 = new Swiper('.-all--video3 .swiper-container', {
+          navigation: {
+            nextEl: '.-all--video3 .swiper-button-next',
+            prevEl: '.-all--video3 .swiper-button-prev',
+          },
+          pagination: {
+            el: '.-all--video3 .swiper-pagination',
+            clickable: true
+          },
+          loop: true,
+          breakpoints: {
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 15
+            },
+            640: {
+              slidesPerView: 'auto',
+              loopedSlides: 4,
+              spaceBetween: 30
+            },
+            960: {
+              slidesPerView: 'auto',
+              loopedSlides: 4,
+              spaceBetween: 30
+            },
+            1300: {
+              slidesPerView: 'auto',
+              loopedSlides: 4,
+              spaceBetween: 30
+            },
+            1650: {
+              slidesPerView: 'auto',
+              loopedSlides: 4,
+              spaceBetween: 30
+            }
+          }
+        });
+      })

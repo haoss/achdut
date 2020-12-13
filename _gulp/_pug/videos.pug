@@ -2,17 +2,21 @@ doctype
 
 html(lang="ru")
 
-  -var active = 'Рассказы' //активный пункт меню, список в header.jade
-  -var pageTitle = 'Рассказы' + ' - Achdut' //title страницы для генерации верстки
+  -var active = 'Видео' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Видео' + ' - Achdut' //title страницы для генерации верстки
 
   include ./_include/_head
 
-  body.--bg-0
+  body.--bg-3
     .base
       // Preloader
       include ./_include/_preloader
 
       include ./_include/_header
+
+      .top-rounds
+        div.first
+        div.center
 
       .content
         .container
@@ -22,29 +26,28 @@ html(lang="ru")
             +breadcrumbs-item('Название страницы')
 
           .content__head.--top
-            .h1 Рассказы
+            .h1 Видео
 
           .content__top.--icon
-            .content__top-icon.--bg-0
-              i.icon-tales
+            .content__top-icon
+              i.icon-videos
             p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные  предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. 
 
-          // Stories
-          .row.stories
-            - for (var i=1; i<5; i++) {
-            .col-10.col-lg-5
-              .stories__block
-                .stories__block-thumb
-                  img(src="./tmp/img-stories-1.png", alt="")
-                  a(href="#!").stories__block-btn Скачать
-                .stories__block-content
-                  .stories__block-category Почему мы постимся? 
-                  .stories__block-title Притча к 9 Ава
-                  p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
-            - }
-
-          .d-none.d-xl-block
-            .clear50
+          // Videos
+          .videos
+            h1 Название альбома
+            .row
+              - for (var i=1; i<5; i++) {
+              .col-10.col-lg-5
+                .videos__block
+                  .videos__block-thumb
+                    img(src="./tmp/img-videos-1.png", alt="")
+                    a(data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk").videos__block-play 
+                      i.icon-play
+                    a(href="#!").videos__block-btn Скачать
+                  .videos__block-content
+                    p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. 
+              - }
 
           +pagination()
             +pagination-item('1', '#!')
