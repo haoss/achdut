@@ -1591,7 +1591,7 @@
     &-slide {
       align-items: flex-end;
       padding-top: 0px;
-      width: 216px !important;
+      width: 216px;
       opacity: 0.3;
       transition: opacity 0.35s;
       &-active {
@@ -1599,15 +1599,15 @@
       }
     }
     &-button-next, &-button-prev {
-      width: 42px;
-      height: 42px;
+      width: 38px;
+      height: 38px;
       background: $color-white;
       box-shadow: 0px 4px 10px rgba($color-blue,.1);
       border-radius: 50px;
       color: $color-red;
       font-size: 0;
       transition: all 0.35s;
-      margin-top: calc(-21px - 35px);
+      margin-top: calc(-19px - 35px);
       &::after {
         font-size: 13px;
         font-family: $font-icomoon;
@@ -1658,29 +1658,120 @@
         }
       }
     }
+    &-pagination {
+      display: none;
+    }
   }
   @include media-breakpoint-up(sm) {
-    margin-bottom: 70px;
     &__head {
       margin-bottom: 40px;
       h1, .h1 {
         font-size: 50px;
-        margin-bottom: 15px;
+        margin-bottom: 0px;
+        display: inline-block;
+        margin-right: 44px;
+      }
+      &-untitle {
+        font-size: 14px;
+      }
+    }
+    &__wrapper {
+      margin-right: -30px;
+    }
+    .swiper {
+      &-slide {
+        &-next {
+          opacity: 1;
+        }
       }
     }
   }
   @include media-breakpoint-up(lg) {
-    margin-bottom: 50px;
     &__head {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       h1, .h1 {
         font-size: 40px;
-        margin-bottom: 0px;
-        display: inline-block;
-        margin-right: 27px;
+        margin-right: 25px;
       }
       &-link {
         font-size: 13px;
+      }
+    }
+    &__wrapper {
+      margin-right: 0;
+    }
+    &__block {
+      padding: 15px 10px 20px 10px;
+      font-size: 12px;
+      &-thumb {
+        height: 186px;
+      }
+      &-btn {
+        width: 130px;
+      }
+    }
+    .swiper {
+      &-container {
+        overflow: inherit;
+      }
+      &-slide {
+        opacity: 1;
+      }
+      &-button-next, &-button-prev {
+        display: none;
+      }
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    &__head {
+      margin-bottom: 30px;
+      h1, .h1 {
+        font-size: 50px;
+        margin-right: 40px;
+      }
+      &-link {
+        font-size: 15px;
+      }
+    }
+    &__block {
+      font-size: 16px;
+      transform: translateY(0);
+      transition: all 0.35s;
+      &-thumb {
+        height: 254px;
+      }
+      p {
+        padding-left: 0;
+      }
+      &:hover {
+        transform: translateY(-30px);
+      }
+      &-btn {
+        width: 160px;
+        &:hover {
+          background: $color-white;
+          color: $color-blue;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-up(xxl) {
+    &__head {
+      margin-bottom: 30px;
+      h1, .h1 {
+        font-size: 50px;
+        margin-right: 40px;
+      }
+      &-link {
+        font-size: 15px;
+      }
+    }
+    &__block {
+      font-size: 18px;
+      border-radius: 50px;
+      padding: 25px 25px 35px 25px;
+      &-thumb {
+        height: 339px;
       }
     }
   }

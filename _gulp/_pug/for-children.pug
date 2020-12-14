@@ -47,74 +47,125 @@ html(lang="ru")
                       .category__block
                         .category__block-thumb
                           img(src="./tmp/img-for-children-1-1.png", alt="")
-                        p Раскраска для Хануки
+                        p Раскраска для Хануки 1
                         a(href="#!").category__block-btn Скачать
                     .swiper-slide
                       .category__block
                         .category__block-thumb
                           img(src="./tmp/img-for-children-1-2.png", alt="")
-                        p Раскраска для Хануки
+                        p Раскраска для Хануки 2
                         a(href="#!").category__block-btn Скачать
                     .swiper-slide
                       .category__block
                         .category__block-thumb
                           img(src="./tmp/img-for-children-1-3.png", alt="")
-                        p Раскраска для Хануки
+                        p Раскраска для Хануки 3
                         a(href="#!").category__block-btn Скачать
                     .swiper-slide
                       .category__block
                         .category__block-thumb
                           img(src="./tmp/img-for-children-1-4.png", alt="")
-                        p Раскраска для Хануки
+                        p Раскраска для Хануки 4
                         a(href="#!").category__block-btn Скачать
                     .swiper-slide
                       .category__block
                         .category__block-thumb
                           img(src="./tmp/img-for-children-1-5.png", alt="")
-                        p Раскраска для Хануки
+                        p Раскраска для Хануки 5
                         a(href="#!").category__block-btn Скачать
                 .swiper-button-next
                 .swiper-button-prev
+              .swiper-pagination
           
           // Category
-          .category
+          .category.--category2
             .category__head
               .category__head-untitle Просвещение для маленьких
               h1 Сказки
               a(href="#!").category__head-link Перейти в раздел
                 i.icon-arrow-right
             .category__wrapper
-              .swiper-container
-                .swiper-wrapper
-                  .swiper-slide
-                    .category__block
-                      p Перейти в раздел
-                  .swiper-slide
-                    .category__block
-                      p Перейти в раздел
-                  .swiper-slide
-                    .category__block
-                      p Перейти в раздел
+              .category__wrapper-inside
+                .swiper-container
+                  .swiper-wrapper
+                    .swiper-slide
+                      .category__block
+                        .category__block-thumb
+                          a(href="#!")
+                            img(src="./tmp/img-stories-1.png", alt="")
+                        p Притча к 9 Ава
+                    .swiper-slide
+                      .category__block
+                        .category__block-thumb
+                          a(href="#!")
+                            img(src="./tmp/img-stories-1.png", alt="")
+                        p Отец и мать лучше всех
+                    .swiper-slide
+                      .category__block
+                        .category__block-thumb
+                          a(href="#!")
+                            img(src="./tmp/img-stories-1.png", alt="")
+                        p Разговор с фараоном
+                    .swiper-slide
+                      .category__block
+                        .category__block-thumb
+                          a(href="#!")
+                            img(src="./tmp/img-stories-1.png", alt="")
+                        p Раввин и работник
+                    .swiper-slide
+                      .category__block
+                        .category__block-thumb
+                          a(href="#!")
+                            img(src="./tmp/img-stories-1.png", alt="")
+                        p Он все видит
+                .swiper-button-next
+                .swiper-button-prev
+              .swiper-pagination
           
           // Category
-          .category
+          .category.--category2
             .category__head
               .category__head-untitle Занятный досуг
               h1 Игры
               a(href="#!").category__head-link Перейти в раздел
                 i.icon-arrow-right
             .category__wrapper
-              .swiper-container
-                .swiper-wrapper
-                  .swiper-slide
-                    .category__block
-                      p Перейти в раздел
-                  .swiper-slide
-                    .category__block
-                      p Перейти в раздел
-                  .swiper-slide
-                    .category__block
-                      p Перейти в раздел
+              .category__wrapper-inside
+                .swiper-container
+                  .swiper-wrapper
+                    .swiper-slide
+                      .category__block
+                        .category__block-thumb
+                          a(href="#!")
+                            img(src="./tmp/img-games-1.png", alt="")
+                        p Название игры
+                    .swiper-slide
+                      .category__block
+                        .category__block-thumb
+                          a(href="#!")
+                            img(src="./tmp/img-games-1.png", alt="")
+                        p Название игры
+                    .swiper-slide
+                      .category__block
+                        .category__block-thumb
+                          a(href="#!")
+                            img(src="./tmp/img-games-1.png", alt="")
+                        p Название игры
+                    .swiper-slide
+                      .category__block
+                        .category__block-thumb
+                          a(href="#!")
+                            img(src="./tmp/img-games-1.png", alt="")
+                        p Название игры
+                    .swiper-slide
+                      .category__block
+                        .category__block-thumb
+                          a(href="#!")
+                            img(src="./tmp/img-games-1.png", alt="")
+                        p Название игры
+                .swiper-button-next
+                .swiper-button-prev
+              .swiper-pagination
 
           // All video
           .all-video.-all--video1
@@ -214,19 +265,75 @@ html(lang="ru")
               spaceBetween: 30
             },
             960: {
+              slidesPerView: 5,
+              loopedSlides: 0,
+              spaceBetween: 30,
+              loop: false,
+              noSwiping: true,
+              simulateTouch: false,
+              allowTouchMove: false
+            }
+          }
+        });
+        var swiperStories = new Swiper('.--category2 .swiper-container', {
+          navigation: {
+            nextEl: '.--category2 .swiper-button-next',
+            prevEl: '.--category2 .swiper-button-prev',
+          },
+          pagination: {
+            el: '.--category2 .swiper-pagination',
+            clickable: true
+          },
+          loop: true,
+          breakpoints: {
+            320: {
+              slidesPerView: 'auto',
+              spaceBetween: 30
+            },
+            640: {
               slidesPerView: 'auto',
               loopedSlides: 4,
               spaceBetween: 30
             },
-            1300: {
+            960: {
+              slidesPerView: 5,
+              loopedSlides: 0,
+              spaceBetween: 30,
+              loop: false,
+              noSwiping: true,
+              simulateTouch: false,
+              allowTouchMove: false
+            }
+          }
+        });
+        var swiperGames = new Swiper('.--category3 .swiper-container', {
+          navigation: {
+            nextEl: '.--category3 .swiper-button-next',
+            prevEl: '.--category3 .swiper-button-prev',
+          },
+          pagination: {
+            el: '.--category3 .swiper-pagination',
+            clickable: true
+          },
+          loop: true,
+          breakpoints: {
+            320: {
+              slidesPerView: 'auto',
+              spaceBetween: 30
+            },
+            640: {
               slidesPerView: 'auto',
               loopedSlides: 4,
               spaceBetween: 30
             },
-            1650: {
-              slidesPerView: 'auto',
-              loopedSlides: 4,
-              spaceBetween: 30
+            960: {
+              slidesPerView: 5,
+              loopedSlides: 0,
+              spaceBetween: 30,
+              loop: false,
+              noSwiping: true,
+              simulateTouch: false,
+              allowTouchMove: false
             }
           }
         });
