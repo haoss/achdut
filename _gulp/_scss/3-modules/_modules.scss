@@ -515,6 +515,9 @@
       right: 0;
       top: 1300px;
       background: url('../images/img-round.svg') 0 0 no-repeat;
+      &.--top {
+        top: 785px;
+      }
     }
   }
   @include media-breakpoint-up(xxl) {
@@ -1222,32 +1225,6 @@
 
 .all-video {
   margin-bottom: 50px;
-  &__head {
-    margin-bottom: 30px;
-    h1, .h1 {
-      font-size: 30px;
-      margin-bottom: 10px;
-    }
-    &-link {
-      display: inline-block;
-      text-transform: uppercase;
-      color: $primary-color;
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: bold;
-      i {
-        margin-left: 15px;
-        transform: translateX(0);
-        transition: all 0.35s;
-      }
-      &:hover {
-        color: $color-red;
-        i {
-          transform: translateX(-10px);
-        }
-      }
-    }
-  }
   &__block {
     &-thumb {
       position: relative;
@@ -1324,6 +1301,8 @@
     }
     &-button-prev {
       left: 0;
+      opacity: 0;
+      visibility: hidden;
       &::after {
         content: '\e901';
       }
@@ -1359,13 +1338,6 @@
   }
   @include media-breakpoint-up(sm) {
     margin-bottom: 70px;
-    &__head {
-      margin-bottom: 40px;
-      h1, .h1 {
-        font-size: 50px;
-        margin-bottom: 15px;
-      }
-    }
     &__block {
       &-play {
         width: 80px;
@@ -1415,18 +1387,6 @@
   }
   @include media-breakpoint-up(lg) {
     margin-bottom: 50px;
-    &__head {
-      margin-bottom: 30px;
-      h1, .h1 {
-        font-size: 40px;
-        margin-bottom: 0px;
-        display: inline-block;
-        margin-right: 27px;
-      }
-      &-link {
-        font-size: 13px;
-      }
-    }
     &__block {
       &-play {
         width: 66px;
@@ -1458,7 +1418,6 @@
           left: -25px
         }
       }
-      
     }
   }
   @include media-breakpoint-up(xl) {
@@ -1479,6 +1438,9 @@
         height: 80px;
         box-shadow: 0px 4px 15px rgba($color-black, 0.1), 0 0 0 12px rgba($color-white,.5);
         font-size: 36px;
+        &:hover {
+          box-shadow: 0px 4px 15px rgba($color-blue, 0.1), 0 0 0 21px rgba($color-white,.2);
+        }
       }
     }
     .swiper {
@@ -1509,6 +1471,216 @@
     .swiper {
       &-slide {
         width: 616px !important;
+      }
+    }
+  }
+}
+
+.category {
+  $this: &;
+  &__head {
+    margin-bottom: 23px;
+    h1, .h1 {
+      font-size: 40px;
+      margin-bottom: 0px;
+    }
+    &-link {
+      display: inline-block;
+      text-transform: uppercase;
+      color: $primary-color;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: bold;
+      i {
+        margin-left: 15px;
+        transform: translateX(0);
+        transition: all 0.35s;
+      }
+      &:hover {
+        color: $color-red;
+        i {
+          transform: translateX(-10px);
+        }
+      }
+    }
+    &-untitle {
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.05em;
+    }
+  }
+  &__block {
+    background: $color-white;
+    box-shadow: 0px 15px 15px rgba($color-black,.02);
+    border-radius: 25px;
+    padding: 20px 18px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    transform: translateY(0);
+    transition: all 0.35s;
+    margin-bottom: 70px;
+    &-thumb {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 254px;
+      margin-bottom: 10px;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        object-fit: contain;
+      }
+    }
+    p {
+      margin-bottom: 0;
+      transition: all 0.35s;
+    }
+    &-btn {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%,50%);
+      background: $color-blue;
+      box-shadow: 0px 6px 15px rgba(65, 131, 231, 0.5);
+      border-radius: 50px;
+      text-decoration: none;
+      width: 160px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 15px;
+      color: $color-white;
+      text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: all 0.35s;
+      opacity: 0;
+      visibility: hidden;
+      &:hover {
+        color: $color-white;
+      }
+    }
+    &:hover {
+      transform: translateY(0px);
+      #{$this} {
+        &__block {
+          &-btn {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+      p {
+        margin-bottom: 0px;
+      }
+    }
+  }
+  &__wrapper {
+    margin-right: -15px;
+    &-inside {
+      position: relative;
+    }
+  }
+  .swiper {
+    &-container {
+      margin-top: 0px;
+    }
+    &-slide {
+      align-items: flex-end;
+      padding-top: 0px;
+      width: 216px !important;
+      opacity: 0.3;
+      transition: opacity 0.35s;
+      &-active {
+        opacity: 1;
+      }
+    }
+    &-button-next, &-button-prev {
+      width: 42px;
+      height: 42px;
+      background: $color-white;
+      box-shadow: 0px 4px 10px rgba($color-blue,.1);
+      border-radius: 50px;
+      color: $color-red;
+      font-size: 0;
+      transition: all 0.35s;
+      margin-top: calc(-21px - 35px);
+      &::after {
+        font-size: 13px;
+        font-family: $font-icomoon;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    &-button-next {
+      right: 15px;
+      &::after {
+        content: '\e900';
+      }
+    }
+    &-button-prev {
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      &::after {
+        content: '\e901';
+      }
+    }
+    &-button-disabled {
+      opacity: 0;
+    }
+    &-pagination {
+      bottom: 0px;
+      height: 4px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &-bullet {
+        vertical-align: middle;
+        width: 4px;
+        height: 4px;
+        background: $primary-color;
+        opacity: 0.2;
+        border-radius: 50px;
+        margin: 0 4px;
+        transition: all 0.35s;
+        box-shadow: 0px 4px 10px rgba(255, 148, 92,0);
+        &-active {
+          background: $color-orange;
+          width: 56px;
+          opacity: 1;
+          box-shadow: 0px 4px 10px rgba(255, 148, 92, 0.5);
+        }
+      }
+    }
+  }
+  @include media-breakpoint-up(sm) {
+    margin-bottom: 70px;
+    &__head {
+      margin-bottom: 40px;
+      h1, .h1 {
+        font-size: 50px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 50px;
+    &__head {
+      margin-bottom: 30px;
+      h1, .h1 {
+        font-size: 40px;
+        margin-bottom: 0px;
+        display: inline-block;
+        margin-right: 27px;
+      }
+      &-link {
+        font-size: 13px;
       }
     }
   }

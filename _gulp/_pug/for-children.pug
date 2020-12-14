@@ -2,8 +2,8 @@ doctype
 
 html(lang="ru")
 
-  -var active = 'Видео' //активный пункт меню, список в header.jade
-  -var pageTitle = 'Видео' + ' - Achdut' //title страницы для генерации верстки
+  -var active = 'Для детей' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Для детей' + ' - Achdut' //title страницы для генерации верстки
 
   include ./_include/_head
 
@@ -16,7 +16,7 @@ html(lang="ru")
 
       .top-rounds
         div.first
-        div.center.--right
+        div.last.--top
 
       .content
         .container
@@ -26,14 +26,103 @@ html(lang="ru")
             +breadcrumbs-item('Название страницы')
 
           .content__head.--top
-            .h1 Видео
+            .h1 Для детей
 
           .content__top.--icon
             .content__top-icon
-              i.icon-videos
             p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные  предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. 
           
-          mixin allVideo
+          // Category
+          .category.--category1
+            .category__head
+              .category__head-untitle Вдохновленные и просвещенные
+              h1 Раскраски
+              a(href="#!").category__head-link Перейти в раздел
+                i.icon-arrow-right
+            .category__wrapper
+              .category__wrapper-inside
+                .swiper-container
+                  .swiper-wrapper
+                    .swiper-slide
+                      .category__block
+                        .category__block-thumb
+                          img(src="./tmp/img-for-children-1-1.png", alt="")
+                        p Раскраска для Хануки
+                        a(href="#!").category__block-btn Скачать
+                    .swiper-slide
+                      .category__block
+                        .category__block-thumb
+                          img(src="./tmp/img-for-children-1-2.png", alt="")
+                        p Раскраска для Хануки
+                        a(href="#!").category__block-btn Скачать
+                    .swiper-slide
+                      .category__block
+                        .category__block-thumb
+                          img(src="./tmp/img-for-children-1-3.png", alt="")
+                        p Раскраска для Хануки
+                        a(href="#!").category__block-btn Скачать
+                    .swiper-slide
+                      .category__block
+                        .category__block-thumb
+                          img(src="./tmp/img-for-children-1-4.png", alt="")
+                        p Раскраска для Хануки
+                        a(href="#!").category__block-btn Скачать
+                    .swiper-slide
+                      .category__block
+                        .category__block-thumb
+                          img(src="./tmp/img-for-children-1-5.png", alt="")
+                        p Раскраска для Хануки
+                        a(href="#!").category__block-btn Скачать
+                .swiper-button-next
+                .swiper-button-prev
+          
+          // Category
+          .category
+            .category__head
+              .category__head-untitle Просвещение для маленьких
+              h1 Сказки
+              a(href="#!").category__head-link Перейти в раздел
+                i.icon-arrow-right
+            .category__wrapper
+              .swiper-container
+                .swiper-wrapper
+                  .swiper-slide
+                    .category__block
+                      p Перейти в раздел
+                  .swiper-slide
+                    .category__block
+                      p Перейти в раздел
+                  .swiper-slide
+                    .category__block
+                      p Перейти в раздел
+          
+          // Category
+          .category
+            .category__head
+              .category__head-untitle Занятный досуг
+              h1 Игры
+              a(href="#!").category__head-link Перейти в раздел
+                i.icon-arrow-right
+            .category__wrapper
+              .swiper-container
+                .swiper-wrapper
+                  .swiper-slide
+                    .category__block
+                      p Перейти в раздел
+                  .swiper-slide
+                    .category__block
+                      p Перейти в раздел
+                  .swiper-slide
+                    .category__block
+                      p Перейти в раздел
+
+          // All video
+          .all-video.-all--video1
+            .category__head
+              .category__head-untitle Увлекательно и познавательно
+              h1 Видео
+              a(href="#!").category__head-link Перейти в раздел
+                i.icon-arrow-right
             .all-video__wrapper
               .swiper-container
                 .swiper-wrapper
@@ -57,31 +146,6 @@ html(lang="ru")
                           i.icon-play
               .swiper-button-next
               .swiper-button-prev
-            .swiper-pagination
-
-          // All video
-          .all-video.-all--video1
-            .category__head
-              h1 Название альбома
-              a(href="#!").category__head-link смотреть все видео
-                i.icon-arrow-right
-            +allVideo
-
-          // All video
-          .all-video.-all--video2
-            .category__head
-              h1 Длинное название альбома
-              a(href="#!").category__head-link смотреть все видео
-                i.icon-arrow-right
-            +allVideo
-            
-          // All video
-          .all-video.-all--video3
-            .category__head
-              h1 Очень-очень длинное название альбома
-              a(href="#!").category__head-link смотреть все видео
-                i.icon-arrow-right
-            +allVideo
 
       include ./_include/_footer
       //- div(style="height: 1000px; background-color: #000")
@@ -129,20 +193,20 @@ html(lang="ru")
             }
           }
         });
-        var swiper2 = new Swiper('.-all--video2 .swiper-container', {
+        var swiperChildren1 = new Swiper('.--category1 .swiper-container', {
           navigation: {
-            nextEl: '.-all--video2 .swiper-button-next',
-            prevEl: '.-all--video2 .swiper-button-prev',
+            nextEl: '.--category1 .swiper-button-next',
+            prevEl: '.--category1 .swiper-button-prev',
           },
           pagination: {
-            el: '.-all--video2 .swiper-pagination',
+            el: '.--category1 .swiper-pagination',
             clickable: true
           },
           loop: true,
           breakpoints: {
             320: {
-              slidesPerView: 1,
-              spaceBetween: 15
+              slidesPerView: 'auto',
+              spaceBetween: 30
             },
             640: {
               slidesPerView: 'auto',
@@ -166,41 +230,4 @@ html(lang="ru")
             }
           }
         });
-        var swiper3 = new Swiper('.-all--video3 .swiper-container', {
-          navigation: {
-            nextEl: '.-all--video3 .swiper-button-next',
-            prevEl: '.-all--video3 .swiper-button-prev',
-          },
-          pagination: {
-            el: '.-all--video3 .swiper-pagination',
-            clickable: true
-          },
-          loop: true,
-          breakpoints: {
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 15
-            },
-            640: {
-              slidesPerView: 'auto',
-              loopedSlides: 4,
-              spaceBetween: 30
-            },
-            960: {
-              slidesPerView: 'auto',
-              loopedSlides: 4,
-              spaceBetween: 30
-            },
-            1300: {
-              slidesPerView: 'auto',
-              loopedSlides: 4,
-              spaceBetween: 30
-            },
-            1650: {
-              slidesPerView: 'auto',
-              loopedSlides: 4,
-              spaceBetween: 30
-            }
-          }
-        });
-      })
+      });
