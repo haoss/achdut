@@ -82,6 +82,16 @@
         background: linear-gradient(268.04deg, #FF3A64 6.18%, #FF6784 82.32%);
       }
     }
+    &-about {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      max-width: 266px;
+    }
+    &.--about {
+      padding-bottom: 210px;
+      border-bottom-left-radius: 25px;
+    }
   }
   &__document {
     img {
@@ -104,6 +114,12 @@
         left: auto;
         transform: translateY(-50%);
         font-size: 45px;
+      }
+      &-about {
+        max-width: 422px;
+      }
+      &.--about {
+        padding-bottom: 355px;
       }
     }
   }
@@ -129,6 +145,19 @@
       &.--icon {
         max-width: 90%;
       }
+      &-about {
+        max-width: 241px;
+      }
+      &.--about {
+        padding-bottom: 45px;
+        p {
+          padding-left: 215px;
+          margin-bottom: 0;
+          &+p {
+            margin-top: 35px;
+          }
+        }
+      }
     }
   }
   @include media-breakpoint-up(xl) {
@@ -153,6 +182,14 @@
         height: 168px;
         font-size: 74px;
       }
+      &-about {
+        max-width: 323px;
+      }
+      &.--about {
+        p {
+          padding-left: 265px;
+        }
+      }
     }
   }
   @include media-breakpoint-up(xxl) {
@@ -167,6 +204,15 @@
     &__top {
       padding: 80px 124px 80px 124px;
       font-size: 17px;
+      &-about {
+        max-width: 430px;
+      }
+      &.--about {
+        padding-bottom: 80px;
+        p {
+          padding-left: 345px;
+        }
+      }
     }
     &__document {
       max-width: 1352px;

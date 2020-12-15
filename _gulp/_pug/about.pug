@@ -1,0 +1,42 @@
+doctype
+
+html(lang="ru")
+
+  -var active = 'О нас' //активный пункт меню, список в header.jade
+  -var pageTitle = 'О нас' + ' - Achdut' //title страницы для генерации верстки
+
+  include ./_include/_head
+
+  body.--bg-0
+    .base
+      // Preloader
+      include ./_include/_preloader
+
+      include ./_include/_header
+
+      .content
+        .container
+
+          +breadcrumbs()
+            +breadcrumbs-item('Главная страница', '#!')
+            +breadcrumbs-item('Название страницы')
+
+          .content__head.--top
+            .h1 О нас
+
+          .content__top.--icon.--about
+            .content__top-icon.--bg-0.d-none.d-sm-block
+            h1 Что такое еврейские клубы "Ахдут"?
+            p Это платформа для духовного просвещения, с помощью интерактивных материалов, в сфере национальной самоидентификации. 
+            p В которой трудятся волонтеры на благо детей, имеющих еврейские корни, создавая эксклюзивные наглядные пособия для развития и поддержки этнического колорита. 
+            p Наши клубы успешно существуют более десяти лет, и за это время наша география разрослась от Калининграда до Владивостока. Все материалы на сайте разработаны нашей инициативной группой или имеют источник.
+            img(src="./tmp/img-about.png", alt="").content__top-about
+
+
+      include ./_include/_footer
+      //- div(style="height: 1000px; background-color: #000")
+
+    // Load Scripts
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+
