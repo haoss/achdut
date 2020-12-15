@@ -1,0 +1,65 @@
+doctype
+
+html(lang="ru")
+
+  -var active = 'О нас' //активный пункт меню, список в header.jade
+  -var pageTitle = 'О нас' + ' - Achdut' //title страницы для генерации верстки
+
+  include ./_include/_head
+
+  body.--bg-0
+    .base
+      // Preloader
+      include ./_include/_preloader
+
+      include ./_include/_header
+
+      .top-rounds
+        div.first
+        div.center.--right
+
+      .content
+        .container
+
+          +breadcrumbs()
+            +breadcrumbs-item('Главная страница', '#!')
+            +breadcrumbs-item('Название страницы')
+
+          .content__head.--top
+            .h1 Мадрихам
+
+          .content__top.--icon.--video
+            .content__top-icon.--bg-0.d-none.d-lg-block
+            img(src="./tmp/img-madriham-video.jpg", alt="")
+            a.content__top-play(data-fancybox href='https://www.youtube.com/watch?v=_sI_Ps7JSEk')
+              i.icon-play
+
+          // Madriham
+          .row.madriham
+            - for (var i=1; i<7; i++) {
+              .col-10.col-lg-5
+                .madriham__block
+                  .madriham__block-thumb
+                    img(src="./tmp/img-madriham-1.png")
+                  .madriham__block-content
+                    .madriham__block-untitle История , традиции и обычаи
+                    .madriham__block-title Ханука
+                    p Ханука - это праздник, который отмечает победу света над тьмой, чистоты и искренности. Праздник Ханука начинается 25 кислева и продолжается восемь дней.
+            - }
+
+          +pagination()
+            +pagination-item('1', '#!')
+            +pagination-item('2', '#!', true)
+            +pagination-item('4', '#!')
+            +pagination-item('5', '#!')
+            +pagination-item('6', '#!')
+            +pagination-item('...')
+            +pagination-item('999', '/999')
+
+      include ./_include/_footer
+      //- div(style="height: 1000px; background-color: #000")
+
+    // Load Scripts
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+
