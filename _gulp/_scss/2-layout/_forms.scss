@@ -176,6 +176,17 @@ legend {
     &--code {
       max-width: 160px;
     }
+    &.error {
+      border-color: #fb7f7f;
+      &+label {
+        color: #fb7f7f;
+        font-size: 13px;
+        margin: 0;
+        padding-left: 20px;
+        font-weight: 500;
+        position: absolute;
+      }
+    }
   }
   &__input-wrap {
     position: relative;
@@ -325,6 +336,7 @@ textarea.field-text__input {
   resize: vertical;
   padding: 9px 10px;
   background-position: calc(100% - 10px) 12px;
+  border-radius: 25px
 }
 
 .field-checkbox, .field-radio {

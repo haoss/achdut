@@ -32,6 +32,129 @@ html(lang="ru")
             p Наши клубы успешно существуют более десяти лет, и за это время наша география разрослась от Калининграда до Владивостока. Все материалы на сайте разработаны нашей инициативной группой или имеют источник.
             img(src="./tmp/img-about.png", alt="").content__top-about
 
+          // Contacts
+          .contacts
+            .contacts__head.--top
+              div Контакты
+            .contacts__content
+              .contacts__content-wrapper
+                .contacts__content-left 
+                  .contacts__block
+                    b Адрес центра:
+                    p.--fs22 Российская Федерация 
+                      br
+                      span.--fs18 г. Москва, ул. Первая деловая, д. 2, оф. 3
+                .contacts__content-center 
+                  .row
+                    .col-10.col-sm-5
+                      .contacts__block
+                        b Руководитель:
+                        p Блох Ривка Сара
+                    .col-10.col-sm-5
+                      .contacts__block
+                        b менеджер:
+                        p Гилядова Эллина
+                    .col-10.col-sm-5
+                      .contacts__block
+                        b Телефон:
+                        p 
+                          a(href="tel:") +7 (495) 730-27-96
+                    .col-10.col-sm-5
+                      .contacts__block
+                        b Email:
+                        p 
+                          a(href="mailto:") achdut@feor.ru
+
+            .social.about-social.d-none.d-lg-flex
+              p Следите за нами в сети
+              .social__wrapper
+                a(href="#!" target="_blank")
+                  i.icon-social-fb
+                a(href="#!" target="_blank")
+                  i.icon-social-vk
+                a(href="#!" target="_blank")
+                  img(src="./images/social-insta.svg", alt="")
+
+            .contacts__head
+              div Обратная связь
+            .contacts__content
+              p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+            .contacts__form
+              form(action="#!" autocomplete="off")
+                .contacts__form-wrapper
+                  .contacts__form-left
+                    .form-group
+                      +field-text({
+                        title: '',
+                        hasJs: false,
+                        isTextarea: false,
+                        hasError: false,
+                        helpText: '',
+                        mods: '',
+                        val: '',
+                        attrs: {
+                          name: 'text',
+                          placeholder: 'Как тебя зовут?',
+                          required: true
+                        }
+                      })
+                    .form-group
+                      +field-text({
+                        title: '',
+                        hasJs: false,
+                        isTextarea: false,
+                        hasError: false,
+                        helpText: '',
+                        mods: '',
+                        val: '',
+                        attrs: {
+                          name: 'phone',
+                          placeholder: '+7 (___)  ___-__-__',
+                          class: 'j-phone-mask',
+                          required: true
+                        }
+                      })
+                  .contacts__form-center
+                    .form-group
+                      +field-text({
+                        title: '',
+                        hasJs: false,
+                        isTextarea: true,
+                        hasError: false,
+                        helpText: '',
+                        mods: '',
+                        val: '',
+                        attrs: {
+                          name: 'message',
+                          placeholder: 'Сообщение',
+                          rows: 5
+                        }
+                      })
+                .contacts__form-wrapper.--bottom
+                  .contacts__form-left
+                    button(type="submit").contacts__form-btn
+                      span отправить
+                      i.icon-arrow-right
+                  .contacts__form-center
+                    +field-checkbox({
+                      title: 'Согласен с политикой обработки личной информации',
+                      isLink: false,
+                      mods: '',
+                      attrs: {
+                        name: 'checkbox',
+                        checked: true,
+                      }
+                    })
+
+          .social.about-social.d-lg-none
+            p Следите за нами в сети
+            .social__wrapper
+              a(href="#!" target="_blank")
+                i.icon-social-fb
+              a(href="#!" target="_blank")
+                i.icon-social-vk
+              a(href="#!" target="_blank")
+                img(src="./images/social-insta.svg", alt="")
 
       include ./_include/_footer
       //- div(style="height: 1000px; background-color: #000")

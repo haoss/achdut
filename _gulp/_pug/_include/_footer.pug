@@ -30,7 +30,8 @@ section.section-form
                   val: '',
                   attrs: {
                     name: 'text',
-                    placeholder: 'Как тебя зовут?'
+                    placeholder: 'Как тебя зовут?',
+                    required: true
                   }
                 })
             div
@@ -45,7 +46,9 @@ section.section-form
                   val: '',
                   attrs: {
                     name: 'phone',
-                    placeholder: '+7 (___)  ___-__-__'
+                    placeholder: '+7 (___)  ___-__-__',
+                    class: 'j-phone-mask',
+                    required: true
                   }
                 })
           .section-form__row-2
