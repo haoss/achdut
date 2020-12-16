@@ -1,0 +1,73 @@
+doctype
+
+html(lang="ru")
+
+  -var active = 'Наши журналы' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Наши журналы' + ' - Achdut' //title страницы для генерации верстки
+
+  include ./_include/_head
+
+  body.--bg-3
+    .base
+      // Preloader
+      include ./_include/_preloader
+
+      include ./_include/_header
+
+      .top-rounds
+        div.first
+        div.center
+        div.last
+
+      .content
+        .container
+
+          +breadcrumbs()
+            +breadcrumbs-item('Главная страница', '#!')
+            +breadcrumbs-item('Название страницы')
+
+          .content__head.--top
+            .h1 Наши журналы
+
+          .content__top.--icon.--journal
+            .content__top-icon.d-none.d-lg-block
+
+          .journal
+            .journal__wrapper
+              .journal__wrapper-left
+                .journal__thumb
+                  .journal__thumb-thumb
+                    img(src="./tmp/img-stories-1.png", alt="")
+                  .journal__thumb-content
+                    .journal__thumb-category Адар Нисан Ияр 5780
+                    .journal__thumb-title Ахдут Вэяхад 77 
+              .journal__document
+                h1 Актуальный выпуск
+                p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. 
+                p Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные предложения залетают прямо в рот. 
+                p Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. 
+                .clear
+                a(href="#!").journal__document-btn Скачать
+
+            .category__head.--journal
+              .category__head-untitle Все наши старые выпуски собраны здесь
+              .h1 Прошлые выпуски
+            .row.journal__row
+              - for (var i=1; i<11; i++) {
+              .col-10.col-sm-5.col-lg-2
+                .journal__block
+                  .journal__block-thumb
+                    a(href="#!")
+                      img(src="./tmp/img-stories-1.png", alt="")
+                  .journal__block-content
+                    .journal__block-category Адар Нисан Ияр 5780
+                    .journal__block-title Ахдут Вэяхад 77 
+              - }
+
+      include ./_include/_footer
+      //- div(style="height: 1000px; background-color: #000")
+
+    // Load Scripts
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+

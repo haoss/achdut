@@ -125,7 +125,10 @@ small, .small {
 }
 
 p {
-  margin: 0 0 35px 0;
+  margin: 0 0 20px 0;
+  @include media-breakpoint-up(sm) {
+    margin-bottom: 35px;
+  }
   @include media-breakpoint-up(xl) {
     padding-left: 42px;
   }
