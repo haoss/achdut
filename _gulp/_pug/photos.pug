@@ -1,0 +1,52 @@
+doctype
+
+html(lang="ru")
+
+  -var active = 'Фотогалерея' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Фотогалерея' + ' - Achdut' //title страницы для генерации верстки
+
+  include ./_include/_head
+
+  body.--bg-2
+    .base
+      // Preloader
+      include ./_include/_preloader
+
+      include ./_include/_header
+
+      .top-rounds
+        div.first
+        div.center.--right
+
+      .content
+        .container
+
+          +breadcrumbs()
+            +breadcrumbs-item('Главная страница', '#!')
+            +breadcrumbs-item('Название страницы')
+
+          .content__head.--top
+            .h1 Фотогалерея
+
+          .content__top.--icon.--photos
+            .content__top-icon.--bg-2.d-none.d-lg-block
+
+          // Photos
+          .photos
+            - for (var i=1; i<9; i++) {
+            .photos__block
+              .photos__block-thumb
+                a(href="./tmp/img-photos-"+i+".png" data-fancybox="images")
+                  img(src="./tmp/img-photos-"+i+".png", alt="")
+              .photos__block-content
+                p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. 
+            - }
+            
+
+      include ./_include/_footer
+      //- div(style="height: 1000px; background-color: #000")
+
+    // Load Scripts
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+
