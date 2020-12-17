@@ -146,6 +146,134 @@ html(lang="ru")
                       span Кипа
                       i.icon-arrow-right
 
+          // Quiz
+          .quiz
+            .quiz__top.--result
+              .first Результат
+              .last ответили на 10 из 99
+            .quiz__head 
+              .quiz__head-title Поздравляем!
+              .quiz__head-content
+                p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+            .quiz__number
+              strong 99
+              span Ваш счет 
+            .quiz__social
+              .social.quiz-social
+                p Следите за нами в сети
+                .social__wrapper
+                  a(href="#!" target="_blank")
+                    i.icon-social-fb
+                  a(href="#!" target="_blank")
+                    i.icon-social-vk
+                  a(href="#!" target="_blank")
+                    img(src="./images/social-insta.svg", alt="")
+            form(action="#!" autocomplete="off").quiz__form
+              div
+                .form-group
+                  +field-text({
+                    title: '',
+                    hasJs: false,
+                    isTextarea: false,
+                    hasError: false,
+                    helpText: '',
+                    mods: '',
+                    val: '',
+                    attrs: {
+                      name: 'text',
+                      placeholder: 'Как тебя зовут?',
+                      required: true
+                    }
+                  })
+              div
+                .form-group
+                  +field-text({
+                    title: '',
+                    hasJs: false,
+                    isTextarea: false,
+                    hasError: false,
+                    helpText: '',
+                    mods: '',
+                    val: '',
+                    attrs: {
+                      name: 'email',
+                      placeholder: 'Твой email',
+                      required: true
+                    }
+                  })
+              div
+                .form-group
+                  +field-text({
+                    title: '',
+                    hasJs: false,
+                    isTextarea: false,
+                    hasError: false,
+                    helpText: '',
+                    mods: '',
+                    val: '',
+                    attrs: {
+                      name: 'phone',
+                      placeholder: '+7 (___)  ___-__-__',
+                      class: 'j-phone-mask',
+                      required: true
+                    }
+                  })
+              div
+                button(type="submit").quiz__form-btn
+                  span отправить
+                  i.icon-arrow-right
+
+          // Quiz
+          .quiz
+            .quiz__top
+              .first №26
+              .last ответили на 10 из 99
+            .quiz__head 
+              .quiz__head-title Как называется этот головной убор?
+            .quiz__head-img.--some
+              div
+                img(src="./tmp/quiz-img.png", alt="")
+                .number №05
+              div
+                img(src="./tmp/quiz-img.png", alt="")
+                .number №12
+              div
+                img(src="./tmp/quiz-img.png", alt="")
+                .number №17
+
+            form(action="#!" autocomplete="off").quiz__count
+              .quiz__count-row
+                .first Лучшая стилистика
+                .last
+                  .quiz-count.j-cart-count
+                    button(type="button").quiz-count__minus
+                    button(type="button").quiz-count__plus
+                    input.quiz-count__input(type='text' value='23')
+              .quiz__count-row
+                .first Лучшая компоновка
+                .last
+                  .quiz-count.j-cart-count
+                    button(type="button").quiz-count__minus
+                    button(type="button").quiz-count__plus
+                    input.quiz-count__input(type='text' value='55')
+              .quiz__count-row
+                .first Лучшие отображение
+                .last
+                  .quiz-count.j-cart-count
+                    button(type="button").quiz-count__minus
+                    button(type="button").quiz-count__plus
+                    input.quiz-count__input(type='text' value='48')
+              .quiz__count-row
+                .first Лучшая цветовая гамма
+                .last
+                  .quiz-count.j-cart-count
+                    button(type="button").quiz-count__minus
+                    button(type="button").quiz-count__plus
+                    input.quiz-count__input(type='text' value='17')
+              button(type="submit").quiz__count-btn
+                span отправить
+                i.icon-arrow-right
+
       include ./_include/_footer
       //- div(style="height: 1000px; background-color: #000")
 

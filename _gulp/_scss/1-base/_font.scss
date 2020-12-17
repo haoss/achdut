@@ -72,6 +72,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-plus:before {
+  content: "\e913";
+}
+.icon-minus:before {
+  content: "\e914";
+}
 .icon-dots:before {
   content: "\e912";
 }

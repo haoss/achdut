@@ -45,6 +45,7 @@ $(document).on('ready', function(){
   mobileNav();
   footerNav();
   phoneMask();
+  cartCountTest();
 
   // Chrome Smooth Scroll
   try {
@@ -151,3 +152,26 @@ jQuery.extend(jQuery.validator.messages, {
   max: jQuery.validator.format("Please enter a value less than or equal to {0}."),
   min: jQuery.validator.format("Please enter a value greater than or equal to {0}.")
 });
+
+function cartCountTest() {
+  var block = $('.j-cart-count');
+
+  block.each(function(){
+    var _this = $(this);
+    var plus = _this.find('.quiz-count__plus');
+    var minus = _this.find('.quiz-count__minus');
+    var input = _this.find('.quiz-count__input');
+    var value = input.val();
+
+    plus.on('click', function(){
+      value = parseFloat(value) + 1;
+      input.val(value);
+    });
+  
+    minus.on('click', function(){
+      if (value <= 0) return;
+      value = parseFloat(value) - 1;
+      input.val(value);
+    });
+  })
+}
