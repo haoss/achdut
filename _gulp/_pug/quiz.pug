@@ -1,0 +1,155 @@
+doctype
+
+html(lang="ru") 
+
+  -var active = 'Викторины' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Викторины' + ' - Achdut' //title страницы для генерации верстки
+
+  include ./_include/_head
+
+  body.--bg-0
+    .base
+      // Preloader
+      include ./_include/_preloader
+
+      include ./_include/_header
+
+      .content
+        .container
+
+          +breadcrumbs()
+            +breadcrumbs-item('Главная страница', '#!')
+            +breadcrumbs-item('Название страницы')
+
+          .content__head.--top
+            .h1 Викторины
+
+          .content__top.--icon
+            .content__top-icon.--bg-2
+              i.icon-quiz
+            h1 Насколько хорошо вы знаете историю?
+            p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
+
+          // Quiz
+          .quiz
+            .quiz__top
+              .first №1
+              .last ответили на 10 из 99
+            .quiz__head 
+              .quiz__head-title Что такое «Мишна»?
+              //.quiz__head-img
+                div
+                  img 
+              .quiz__answer
+                .quiz__answer-block
+                  div
+                    button(type="button").quiz__answer-btn 
+                      span Тора
+                      i.icon-arrow-right
+                  div
+                    button(type="button").quiz__answer-btn
+                      span Собрание Устного Закона
+                      i.icon-arrow-right
+                  div
+                    button(type="button").quiz__answer-btn
+                      span Тания
+                      i.icon-arrow-right
+                  div
+                    button(type="button").quiz__answer-btn
+                      span Танах
+                      i.icon-arrow-right
+
+          // Quiz
+          .quiz
+            .quiz__top
+              .first №18
+              .last ответили на 10 из 99
+            .quiz__head 
+              .quiz__head-title Как называются кисти, которые каждый еврейский мужчина должен прикреплять к углам любой своей одежды, имеющей четыре угла?
+              //.quiz__head-img
+                div
+                  img 
+              .quiz__answer
+                .quiz__answer-block
+                  div
+                    button(type="button").quiz__answer-btn
+                      span Цицит
+                      i.icon-arrow-right
+                  div
+                    button(type="button").quiz__answer-btn
+                      span Лулав
+                      i.icon-arrow-right
+                  div
+                    button(type="button").quiz__answer-btn
+                      span Тфилин
+                      i.icon-arrow-right
+                  div
+                    button(type="button").quiz__answer-btn
+                      span Агада
+                      i.icon-arrow-right
+
+          // Quiz
+          .quiz
+            .quiz__top
+              .first №26
+              .last ответили на 10 из 99
+            .quiz__head 
+              .quiz__head-title Как называется этот головной убор?
+              .quiz__head-img
+                div
+                  img(src="./tmp/quiz-img.png", alt="")
+              .quiz__answer
+                .quiz__answer-block
+                  div
+                    button(type="button").quiz__answer-btn
+                      span Балаклава
+                      i.icon-arrow-right
+                  div
+                    button(type="button").quiz__answer-btn
+                      span Башлык
+                      i.icon-arrow-right
+                  div
+                    button(type="button").quiz__answer-btn
+                      span Штраймл
+                      i.icon-arrow-right
+                  div
+                    button(type="button").quiz__answer-btn
+                      span Кипа
+                      i.icon-arrow-right
+
+          // Quiz
+          .quiz
+            .quiz__top
+              .first №34
+              .last ответили на 10 из 99
+            .quiz__head 
+              .quiz__head-title Где находится главный офис Сети воскресных клубов «Ахдут»?
+              //.quiz__head-img
+                div
+                  img 
+              .quiz__answer
+                .quiz__answer-block
+                  div
+                    button(type="button").quiz__answer-btn
+                      span Балаклава
+                      i.icon-arrow-right
+                  div
+                    button(type="button").quiz__answer-btn
+                      span Башлык
+                      i.icon-arrow-right
+                  div
+                    button(type="button").quiz__answer-btn
+                      span Штраймл
+                      i.icon-arrow-right
+                  div
+                    button(type="button").quiz__answer-btn
+                      span Кипа
+                      i.icon-arrow-right
+
+      include ./_include/_footer
+      //- div(style="height: 1000px; background-color: #000")
+
+    // Load Scripts
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+
