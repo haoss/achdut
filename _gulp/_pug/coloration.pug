@@ -1,0 +1,173 @@
+doctype
+
+html(lang="ru")
+
+  -var active = 'Раскраски' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Раскраски' + ' - Achdut' //title страницы для генерации верстки
+
+  include ./_include/_head
+
+  body.--bg-3
+    .base
+      // Preloader
+      include ./_include/_preloader
+
+      include ./_include/_header
+
+      .top-rounds
+        div.first
+        div.last.--top
+
+      .content
+        .container
+
+          +breadcrumbs()
+            +breadcrumbs-item('Главная страница', '#!')
+            +breadcrumbs-item('Название страницы')
+
+          .content__head.--top
+            .h1 Раскраски
+
+          .content__top.--icon
+            .content__top-icon
+              i.icon-paints
+            p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные  предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. 
+
+          .nav-tabs-shadow
+          ul.nav.nav-tabs#myTab(role='tablist').--line
+            li.nav-item(role='presentation')
+              a.nav-link.active#tab-tab1(data-toggle='tab' href='#tab1' role='tab' aria-controls='tab1' aria-selected='true') Шавуот
+            li.nav-item(role='presentation')
+              a.nav-link#tab-tab2(data-toggle='tab' href='#tab2' role='tab' aria-controls='tab2' aria-selected='false') Ханука
+            li.nav-item(role='presentation')
+              a.nav-link#tab-tab3(data-toggle='tab' href='#tab3' role='tab' aria-controls='tab3' aria-selected='false') Лаг баОмер Шавуот
+            li.nav-item(role='presentation')
+              a.nav-link#tab-tab4(data-toggle='tab' href='#tab4' role='tab' aria-controls='rab4' aria-selected='false') Рош a шaна
+            li.nav-item(role='presentation')
+              a.nav-link#tab-tab5(data-toggle='tab' href='#tab5' role='tab' aria-controls='rab5' aria-selected='false') Суккот
+            li.nav-item(role='presentation')
+              a.nav-link#tab-tab6(data-toggle='tab' href='#tab6' role='tab' aria-controls='rab6' aria-selected='false') Пирум
+            li.nav-item(role='presentation')
+              a.nav-link#tab-tab7(data-toggle='tab' href='#tab7' role='tab' aria-controls='rab7' aria-selected='false') Ту БиШват
+            li.nav-item(role='presentation')
+              a.nav-link#tab-tab8(data-toggle='tab' href='#tab8' role='tab' aria-controls='rab8' aria-selected='false') Песах
+          .tab-content
+            .tab-pane.active#tab1(role='tabpanel' aria-labelledby='tab-tab1')          
+              // Coloration
+              .coloration
+                .row
+                  .col-10.col-sm-5.col-lg-2
+                    .coloration__block
+                      .coloration__block-thumb
+                        img(src="./tmp/img-for-children-1-1.png", alt="")
+                      p Раскраска для Хануки
+                      a(href="#!").coloration__block-btn Скачать
+                  .col-10.col-sm-5.col-lg-2
+                    .coloration__block
+                      .coloration__block-thumb
+                        img(src="./tmp/img-for-children-1-2.png", alt="")
+                      p Раскраска для Хануки
+                      a(href="#!").coloration__block-btn Скачать
+                  .col-10.col-sm-5.col-lg-2
+                    .coloration__block
+                      .coloration__block-thumb
+                        img(src="./tmp/img-for-children-1-3.png", alt="")
+                      p Раскраска для Хануки
+                      a(href="#!").coloration__block-btn Скачать
+                  .col-10.col-sm-5.col-lg-2
+                    .coloration__block
+                      .coloration__block-thumb
+                        img(src="./tmp/img-for-children-1-4.png", alt="")
+                      p Раскраска для Хануки
+                      a(href="#!").coloration__block-btn Скачать
+                  .col-10.col-sm-5.col-lg-2
+                    .coloration__block
+                      .coloration__block-thumb
+                        img(src="./tmp/img-for-children-1-5.png", alt="")
+                      p Раскраска для Хануки
+                      a(href="#!").coloration__block-btn Скачать
+                  .col-10.col-sm-5.col-lg-2
+                    .coloration__block
+                      .coloration__block-thumb
+                        img(src="./tmp/img-for-children-1-1.png", alt="")
+                      p Раскраска для Хануки
+                      a(href="#!").coloration__block-btn Скачать
+                  .col-10.col-sm-5.col-lg-2
+                    .coloration__block
+                      .coloration__block-thumb
+                        img(src="./tmp/img-for-children-1-2.png", alt="")
+                      p Раскраска для Хануки
+                      a(href="#!").coloration__block-btn Скачать
+                  .col-10.col-sm-5.col-lg-2
+                    .coloration__block
+                      .coloration__block-thumb
+                        img(src="./tmp/img-for-children-1-3.png", alt="")
+                      p Раскраска для Хануки
+                      a(href="#!").coloration__block-btn Скачать
+                  .col-10.col-sm-5.col-lg-2
+                    .coloration__block
+                      .coloration__block-thumb
+                        img(src="./tmp/img-for-children-1-4.png", alt="")
+                      p Раскраска для Хануки
+                      a(href="#!").coloration__block-btn Скачать
+                  .col-10.col-sm-5.col-lg-2
+                    .coloration__block
+                      .coloration__block-thumb
+                        img(src="./tmp/img-for-children-1-5.png", alt="")
+                      p Раскраска для Хануки
+                      a(href="#!").coloration__block-btn Скачать
+            .tab-pane#tab2(role='tabpanel' aria-labelledby='tab-tab2') 2
+            .tab-pane#tab3(role='tabpanel' aria-labelledby='tab-tab3') 3
+            .tab-pane#tab4(role='tabpanel' aria-labelledby='tab-tab4') 4
+            .tab-pane#tab5(role='tabpanel' aria-labelledby='tab-tab5') 5
+            .tab-pane#tab6(role='tabpanel' aria-labelledby='tab-tab6') 6
+            .tab-pane#tab7(role='tabpanel' aria-labelledby='tab-tab7') 7
+            .tab-pane#tab8(role='tabpanel' aria-labelledby='tab-tab8') 8
+
+      include ./_include/_footer
+      //- div(style="height: 1000px; background-color: #000")
+
+    // Load Scripts
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+
+    script.
+      $(document).ready(function(){
+        var swiper = new Swiper('.-all--video1 .swiper-container', {
+          navigation: {
+            nextEl: '.-all--video1 .swiper-button-next',
+            prevEl: '.-all--video1 .swiper-button-prev',
+          },
+          pagination: {
+            el: '.-all--video1 .swiper-pagination',
+            clickable: true
+          },
+          loop: true,
+          breakpoints: {
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 15
+            },
+            640: {
+              slidesPerView: 'auto',
+              loopedSlides: 4,
+              spaceBetween: 30
+            },
+            960: {
+              slidesPerView: 'auto',
+              loopedSlides: 4,
+              spaceBetween: 30
+            },
+            1300: {
+              slidesPerView: 'auto',
+              loopedSlides: 4,
+              spaceBetween: 30
+            },
+            1650: {
+              slidesPerView: 'auto',
+              loopedSlides: 4,
+              spaceBetween: 30
+            }
+          }
+        });
+      });
