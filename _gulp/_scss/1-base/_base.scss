@@ -57,22 +57,31 @@ body {
   }
   @include media-breakpoint-up(sm) {
     &.--bg-main {
-      background-position: calc(50% - -71px) -613px;;
+      background-position: calc(50% - -2px) -472px;
     }
   }
   @include media-breakpoint-up(lg) {
     &[class*="--bg"] {
       background-position: calc(50% - -2px) -129px;
     }
+    &.--bg-main {
+      background-position: calc(50% - -2px) -582px;
+    }
   }
   @include media-breakpoint-up(xl) {
     &[class*="--bg"] {
       background-position: calc(50% - 0px) -69px;
     }
+    &.--bg-main {
+      background-position: calc(50% - 0px) -499px;
+    }
   }
   @include media-breakpoint-up(xxl) {
     &[class*="--bg"] {
       background-position: calc(50% - 0px) -11px;
+    }
+    &.--bg-main {
+      background-position: calc(50% - 0px) -309px;
     }
   }
 }

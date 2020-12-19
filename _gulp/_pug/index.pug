@@ -66,6 +66,37 @@ html(lang="ru")
               .right
                 img(src="./tmp/img-about.svg", alt="").about__img
 
+          // News main
+          .main-news
+            .main-news__head
+              .main-news__head-untitle Вдохновленные и просвещенные
+              h1 Последние новости
+              a.main-news__head-link(href='#!')
+                | все новости
+                i.icon-arrow-right
+            .main-news__wrapper
+              .left
+                .main-news__video
+                  .main-news__video-thumb
+                    img(src='./tmp/img-videos-1.png' alt)
+                    a.main-news__video-play(data-fancybox href='https://www.youtube.com/watch?v=_sI_Ps7JSEk')
+                      i.icon-play
+              .right
+                .main-news__block
+                  .main-news__block-thumb
+                    a(href='#!')
+                      img(src='./tmp/img-news-2.png' alt)
+                  .main-news__block-content
+                    a.main-news__block-title(href='#!') Как научить ребенка выражать свои эмоции и избавляться от злости
+                    p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                .main-news__block
+                  .main-news__block-thumb
+                    a(href='#!')
+                      img(src='./tmp/img-news-2.png' alt)
+                  .main-news__block-content
+                    a.main-news__block-title(href='#!') Как научить ребенка выражать свои эмоции и избавляться от злости
+                    p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+
       include ./_include/_footer
       div(style="height: 1000px; background-color: #000")
 
