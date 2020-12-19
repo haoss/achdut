@@ -42,6 +42,10 @@ body {
     background-repeat: no-repeat;
     background-image: url('../images/bg-3.svg');
   }
+  &.--bg-main {
+    background-image: url('../images/bg-main.svg');
+    background-position: center -633px;
+  }
   &.--bg-0 {
     background-image: url('../images/bg-0.svg');
   }
@@ -50,6 +54,11 @@ body {
   }
   &.--bg-3 {
     background-image: url('../images/bg-3.svg');
+  }
+  @include media-breakpoint-up(sm) {
+    &.--bg-main {
+      background-position: calc(50% - -71px) -613px;;
+    }
   }
   @include media-breakpoint-up(lg) {
     &[class*="--bg"] {

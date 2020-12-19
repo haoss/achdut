@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="./js/libs/fancybox/jquery.fancybox.css">
         <link rel="stylesheet" href="./css/style.min.css">
     </head>
-    <body class="--bg">
+    <body class="--bg-main">
         <div class="base">
             <!-- Preloader-->
             <!-- Header-->
@@ -76,19 +76,53 @@
             </div>
             <div class="content">
                 <div class="container">
-                    <h1>Главная 22</h1>
-                    <div class="row">
-                        <div class="col-md-4">4 collumns</div>
-                        <div class="col-md-6">6 collumns</div>
-                        <div class="col-md-12">12 collumns</div>
-                        <div class="col-md-12">12 collumns</div>
+                    <!-- Main slider-->
+                    <div class="main-slider">
+                        <div class="main-slider__wrapper">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="main-slider__block"><img src="./tmp/main-slider.png" alt=""></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="main-slider__block"><img src="./tmp/main-slider.png" alt=""></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="main-slider__block"><img src="./tmp/main-slider.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <button class="btn btn-primary" type="button">Button</button>
-                            <button class="btn btn-danger" type="button">Button</button>
-                            <button class="btn btn-custom-color" type="button">Button</button>
-                            <button class="btn btn-custom-color2" type="button">Button</button>
+                    <!-- Quote-->
+                    <div class="quote">
+                        <div class="quote__thumb"><img src="./tmp/quote-main.png" alt=""></div>
+                        <div class="quote__content">
+                            <div class="quote__content-icon"><i class="icon-comments"></i></div>
+                            <p>Пока есть хотя бы один еврейский ребенок, не получающий настоящего еврейского воспитания, считается, что община не исполнила своего долга.</p>
+                            <div class="quote__content-name">Любавический Ребе</div>
+                        </div>
+                    </div>
+                    <!-- About-->
+                    <div class="about">
+                        <div class="about__wrapper">
+                            <div class="left">
+                                <div class="about__head">
+                                    <div class="about__head-category">Еврейский клуб “Ахдут”</div>
+                                    <h1>О нашем клубе</h1>
+                                </div>
+                                <div class="about__content">
+                                    <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные предложения залетают прямо в рот. </p>
+                                    <p>Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. </p>
+                                </div>
+                                <div class="about__btns"><a class="about__content-btn" href="#!"><span>Подробнее</span><i class="icon-arrow-right"></i></a>
+                                    <div><a class="about__content-link" href="#!"><span>Родителям</span><i class="icon-arrow-right"></i></a></div>
+                                </div>
+                            </div>
+                            <div class="right"><img class="about__img" src="./tmp/img-about.svg" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -251,5 +285,22 @@
         <script src="./js/libs/jquery.validate.min.js"></script>
         <script src="./js/libs/bootstrap/bootstrap.min.js"></script>
         <script src="./js/common.js"></script>
+        <script>
+            $(document).ready(function(){
+              var mainSlider = new Swiper('.main-slider .swiper-container', {
+                navigation: {
+                  nextEl: '.main-slider .swiper-button-next',
+                  prevEl: '.main-slider .swiper-button-prev',
+                },
+                pagination: {
+                  el: '.main-slider .swiper-pagination',
+                  clickable: true
+                },
+                loop: true,
+                slidesPerView: 1,
+                effect: 'fade',
+              });
+            });
+        </script>
     </body>
 </html>

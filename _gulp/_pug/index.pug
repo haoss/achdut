@@ -7,7 +7,7 @@ html(lang="ru")
 
   include ./_include/_head
 
-  body.--bg
+  body.--bg-main
     .base
       // Preloader
       include ./_include/_preloader
@@ -17,22 +17,54 @@ html(lang="ru")
       .content
         .container
 
-          h1 Главная 22
+          // Main slider
+          .main-slider
+            .main-slider__wrapper
+              .swiper-container
+                .swiper-wrapper
+                  .swiper-slide
+                    .main-slider__block
+                      img(src="./tmp/main-slider.png", alt="")
+                  .swiper-slide
+                    .main-slider__block
+                      img(src="./tmp/main-slider.png", alt="")
+                  .swiper-slide
+                    .main-slider__block
+                      img(src="./tmp/main-slider.png", alt="")
+              .swiper-button-next
+              .swiper-button-prev
+            .swiper-pagination
 
-          .row
-            .col-md-4 4 collumns
-            .col-md-6 6 collumns
-            .col-md-12 12 collumns
-            .col-md-12 12 collumns
+          // Quote
+          .quote
+            .quote__thumb
+              img(src="./tmp/quote-main.png", alt="")
+            .quote__content
+              .quote__content-icon
+                i.icon-comments
+              p Пока есть хотя бы один еврейский ребенок, не получающий настоящего еврейского воспитания, считается, что община не исполнила своего долга.
+              .quote__content-name Любавический Ребе
 
-          .row
-            .col-md-12
-
-              button.btn.btn-primary(type="button") Button
-              button.btn.btn-danger(type="button") Button
-              button.btn.btn-custom-color(type="button") Button
-              button.btn.btn-custom-color2(type="button") Button
-
+          // About
+          .about
+            .about__wrapper
+              .left
+                .about__head
+                  .about__head-category Еврейский клуб “Ахдут”
+                  h1 О нашем клубе
+                .about__content
+                  p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные предложения залетают прямо в рот. 
+                  p Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. 
+                .about__btns
+                  a(href="#!").about__content-btn
+                    span Подробнее
+                    i.icon-arrow-right
+                  div
+                    a(href="#!").about__content-link
+                      span Родителям
+                      i.icon-arrow-right
+              .right
+                img(src="./tmp/img-about.svg", alt="").about__img
 
       include ./_include/_footer
       div(style="height: 1000px; background-color: #000")
@@ -41,3 +73,19 @@ html(lang="ru")
     include ./_include/_footer-js
     script(src="./js/common.js")
 
+    script.
+      $(document).ready(function(){
+        var mainSlider = new Swiper('.main-slider .swiper-container', {
+          navigation: {
+            nextEl: '.main-slider .swiper-button-next',
+            prevEl: '.main-slider .swiper-button-prev',
+          },
+          pagination: {
+            el: '.main-slider .swiper-pagination',
+            clickable: true
+          },
+          loop: true,
+          slidesPerView: 1,
+          effect: 'fade',
+        });
+      });
