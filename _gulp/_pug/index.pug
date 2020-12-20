@@ -97,11 +97,138 @@ html(lang="ru")
                     a.main-news__block-title(href='#!') Как научить ребенка выражать свои эмоции и избавляться от злости
                     p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
 
-          // Main journal
-          .main-journal
+        // Main journal
+        .main-journal
+          .container
+            .main-journal__round
             .main-journal__head
               .main-journal__head-untitle Еженедельный выпуск фирменного журнала
               h1 Наши журналы
+            .main-journal__wrapper
+              .main-journal__wrapper-inside
+                .swiper-container
+                  .swiper-wrapper
+                    .swiper-slide
+                      .main-journal__block
+                        .main-journal__block-thumb
+                          img(src="./tmp/img-stories-1.png", alt="")
+                        .main-journal__block-content
+                          .main-journal__block-category Адар Нисан Ияр 5780
+                          .main-journal__block-title Ахдут Вэяхад 77 
+                          a(href="#!").main-journal__block-btn Скачать
+                    .swiper-slide
+                      .main-journal__block
+                        .main-journal__block-thumb
+                          img(src="./tmp/img-stories-1.png", alt="")
+                        .main-journal__block-content
+                          .main-journal__block-category Адар Нисан Ияр 5780
+                          .main-journal__block-title Ахдут Вэяхад 77 
+                          a(href="#!").main-journal__block-btn Скачать
+                    .swiper-slide
+                      .main-journal__block
+                        .main-journal__block-thumb
+                          img(src="./tmp/img-stories-1.png", alt="")
+                        .main-journal__block-content
+                          .main-journal__block-category Адар Нисан Ияр 5780
+                          .main-journal__block-title Ахдут Вэяхад 77 
+                          a(href="#!").main-journal__block-btn Скачать
+                    .swiper-slide
+                      .main-journal__block
+                        .main-journal__block-thumb
+                          img(src="./tmp/img-stories-1.png", alt="")
+                        .main-journal__block-content
+                          .main-journal__block-category Адар Нисан Ияр 5780
+                          .main-journal__block-title Ахдут Вэяхад 77 
+                          a(href="#!").main-journal__block-btn Скачать
+                    .swiper-slide
+                      .main-journal__block
+                        .main-journal__block-thumb
+                          img(src="./tmp/img-stories-1.png", alt="")
+                        .main-journal__block-content
+                          .main-journal__block-category Адар Нисан Ияр 5780
+                          .main-journal__block-title Ахдут Вэяхад 77 
+                          a(href="#!").main-journal__block-btn Скачать
+                    .swiper-slide
+                      .main-journal__block
+                        .main-journal__block-thumb
+                          img(src="./tmp/img-stories-1.png", alt="")
+                        .main-journal__block-content
+                          .main-journal__block-category Адар Нисан Ияр 5780
+                          .main-journal__block-title Ахдут Вэяхад 77 
+                          a(href="#!").main-journal__block-btn Скачать
+                .swiper-button-next
+                .swiper-button-prev
+              .swiper-pagination
+
+            a.main-journal__more(href='#!')
+              | все новости
+              i.icon-arrow-right
+
+        // Main gallery
+        .main-gallery
+          .container
+            .main-gallery__round
+            .main-gallery__round.--small
+            .main-gallery__head
+              .main-gallery__head-untitle Вдохновленные и просвещенные
+              h1 Наши ребята
+              a.main-gallery__head-link(href='#!')
+                | Все фотографии
+                i.icon-arrow-right
+            .main-gallery__wrapper
+              .main-gallery__wrapper-inside
+                .swiper-container
+                  .swiper-wrapper
+                    .swiper-slide.--one
+                      .main-gallery__block.--half.--top
+                        a(href="#!")
+                          img(src="./tmp/img-gallery-1.png", alt="")
+                      .main-gallery__block.--half.--bottom
+                        a(href="#!")
+                          img(src="./tmp/img-gallery-2.png", alt="")
+                    .swiper-slide.--two
+                      .main-gallery__block
+                        a(href="#!")
+                          img(src="./tmp/img-gallery-3.png", alt="")
+                    .swiper-slide.--three
+                      .main-gallery__block.--half.--top
+                        a(href="#!")
+                          img(src="./tmp/img-gallery-4.png", alt="")
+                      .main-gallery__block.--half.--bottom
+                        a(href="#!")
+                          img(src="./tmp/img-gallery-5.png", alt="")
+                    .swiper-slide.--one
+                      .main-gallery__block.--half.--top
+                        a(href="#!")
+                          img(src="./tmp/img-gallery-1.png", alt="")
+                      .main-gallery__block.--half.--bottom
+                        a(href="#!")
+                          img(src="./tmp/img-gallery-2.png", alt="")
+                    .swiper-slide.--two
+                      .main-gallery__block
+                        a(href="#!")
+                          img(src="./tmp/img-gallery-3.png", alt="")
+                    .swiper-slide.--three
+                      .main-gallery__block.--half.--top
+                        a(href="#!")
+                          img(src="./tmp/img-gallery-4.png", alt="")
+                      .main-gallery__block.--half.--bottom
+                        a(href="#!")
+                          img(src="./tmp/img-gallery-5.png", alt="")
+              .swiper-pagination
+
+        // Main children
+        .main-children
+          .container
+            .main-children__round
+            .main-children__head
+              .main-children__head-untitle Для самых маленьких и не только
+              h1 Лучшее детям
+            .main-children__wrapper
+              .main-children__wrapper-inside
+                .swiper-container
+                  .swiper-wrapper
+                    .swiper-slide
 
       include ./_include/_footer
       div(style="height: 1000px; background-color: #000")
@@ -124,5 +251,84 @@ html(lang="ru")
           loop: true,
           slidesPerView: 1,
           effect: 'fade',
+        });
+        var mainJournal = new Swiper('.main-journal .swiper-container', {
+          navigation: {
+            nextEl: '.main-journal .swiper-button-next',
+            prevEl: '.main-journal .swiper-button-prev',
+          },
+          pagination: {
+            el: '.main-journal .swiper-pagination',
+            clickable: true
+          },
+          loop: true,
+          breakpoints: {
+            320: {
+              slidesPerView: 'auto',
+              spaceBetween: 30
+            },
+            640: {
+              slidesPerView: 'auto',
+              loopedSlides: 4,
+              spaceBetween: 30
+            },
+            960: {
+              slidesPerView: 5,
+              loopedSlides: 5,
+              spaceBetween: 30
+            }
+          }
+        });
+        var mainChildren1 = new Swiper('.--main-children-1 .swiper-container', {
+          navigation: {
+            nextEl: '.--main-children-1 .swiper-button-next',
+            prevEl: '.--main-children-1 .swiper-button-prev',
+          },
+          pagination: {
+            el: '.--main-children-1 .swiper-pagination',
+            clickable: true
+          },
+          loop: true,
+          breakpoints: {
+            320: {
+              slidesPerView: 'auto',
+              spaceBetween: 30
+            },
+            640: {
+              slidesPerView: 'auto',
+              loopedSlides: 4,
+              spaceBetween: 30
+            },
+            960: {
+              slidesPerView: 5,
+              loopedSlides: 5,
+              spaceBetween: 30
+            }
+          }
+        });
+        var mainGgllery = new Swiper('.main-gallery .swiper-container', {
+          navigation: {
+            nextEl: '.main-gallery .swiper-button-next',
+            prevEl: '.main-gallery .swiper-button-prev',
+          },
+          pagination: {
+            el: '.main-gallery .swiper-pagination',
+            clickable: true
+          },
+          loop: false,
+          breakpoints: {
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 30
+            },
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 30
+            },
+            960: {
+              slidesPerView: 'auto',
+              spaceBetween: 30
+            }
+          }
         });
       });
