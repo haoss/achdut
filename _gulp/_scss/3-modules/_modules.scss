@@ -3655,8 +3655,9 @@
   margin-bottom: 75px;
   &__block {
     border-radius: 0px 35px 35px 35px;
+    width: 100%;
     img {
-      max-width: 100%;
+      width: 100%;
       display: block;
       height: auto;
       border-radius: 0px 25px 25px 25px;
