@@ -167,7 +167,7 @@ html(lang="ru")
         // Main gallery
         .main-gallery
           .container
-            .main-gallery__round
+            .main-gallery__round.--big
             .main-gallery__round.--small
             .main-gallery__head
               .main-gallery__head-untitle Вдохновленные и просвещенные
@@ -181,57 +181,214 @@ html(lang="ru")
                   .swiper-wrapper
                     .swiper-slide.--one
                       .main-gallery__block.--half.--top
-                        a(href="#!")
+                        a(href="./tmp/img-gallery-1.png" data-fancybox="images")
                           img(src="./tmp/img-gallery-1.png", alt="")
                       .main-gallery__block.--half.--bottom
-                        a(href="#!")
+                        a(href="./tmp/img-gallery-2.png" data-fancybox="images")
                           img(src="./tmp/img-gallery-2.png", alt="")
                     .swiper-slide.--two
                       .main-gallery__block
-                        a(href="#!")
+                        a(href="./tmp/img-gallery-3.png" data-fancybox="images")
                           img(src="./tmp/img-gallery-3.png", alt="")
                     .swiper-slide.--three
                       .main-gallery__block.--half.--top
-                        a(href="#!")
+                        a(href="./tmp/img-gallery-4.png" data-fancybox="images")
                           img(src="./tmp/img-gallery-4.png", alt="")
                       .main-gallery__block.--half.--bottom
-                        a(href="#!")
+                        a(href="./tmp/img-gallery-5.png" data-fancybox="images")
                           img(src="./tmp/img-gallery-5.png", alt="")
                     .swiper-slide.--one
                       .main-gallery__block.--half.--top
-                        a(href="#!")
+                        a(href="./tmp/img-gallery-1.png" data-fancybox="images")
                           img(src="./tmp/img-gallery-1.png", alt="")
                       .main-gallery__block.--half.--bottom
-                        a(href="#!")
+                        a(href="./tmp/img-gallery-2.png" data-fancybox="images")
                           img(src="./tmp/img-gallery-2.png", alt="")
                     .swiper-slide.--two
                       .main-gallery__block
-                        a(href="#!")
+                        a(href="./tmp/img-gallery-3.png" data-fancybox="images")
                           img(src="./tmp/img-gallery-3.png", alt="")
                     .swiper-slide.--three
                       .main-gallery__block.--half.--top
-                        a(href="#!")
+                        a(href="./tmp/img-gallery-4.png" data-fancybox="images")
                           img(src="./tmp/img-gallery-4.png", alt="")
                       .main-gallery__block.--half.--bottom
-                        a(href="#!")
+                        a(href="./tmp/img-gallery-5.png" data-fancybox="images")
                           img(src="./tmp/img-gallery-5.png", alt="")
               .swiper-pagination
 
         // Main children
         .main-children
           .container
-            .main-children__round
             .main-children__head
               .main-children__head-untitle Для самых маленьких и не только
               h1 Лучшее детям
-            .main-children__wrapper
-              .main-children__wrapper-inside
-                .swiper-container
-                  .swiper-wrapper
-                    .swiper-slide
+            .nav-tabs-shadow
+            ul.nav.nav-tabs#myTab(role='tablist').--line
+              li.nav-item(role='presentation')
+                a.nav-link.active#tab-tab1(data-toggle='tab' href='#tab1' role='tab' aria-controls='tab1' aria-selected='true') Сказки
+              li.nav-item(role='presentation')
+                a.nav-link#tab-tab2(data-toggle='tab' href='#tab2' role='tab' aria-controls='tab2' aria-selected='false') Раскраски
+              li.nav-item(role='presentation')
+                a.nav-link#tab-tab3(data-toggle='tab' href='#tab3' role='tab' aria-controls='tab3' aria-selected='false') Игры
+              li.nav-item(role='presentation')
+                a.nav-link#tab-tab4(data-toggle='tab' href='#tab4' role='tab' aria-controls='rab4' aria-selected='false') Уроки торы
+            .tab-content
+              .tab-pane.active#tab1(role='tabpanel' aria-labelledby='tab-tab1')
+                .main-children__wrapper.--main-children-1
+                  .main-children__wrapper-inside
+                    .swiper-container
+                      .swiper-wrapper
+                        .swiper-slide
+                          .coloration__block
+                            .coloration__block-thumb
+                              img(src='./tmp/img-for-children-1-1.png' alt)
+                            p Раскраска для Хануки
+                            a.coloration__block-btn(href='#!') Скачать
+                        .swiper-slide
+                          .coloration__block
+                            .coloration__block-thumb
+                              img(src='./tmp/img-for-children-1-1.png' alt)
+                            p Раскраска для Хануки
+                            a.coloration__block-btn(href='#!') Скачать
+                        .swiper-slide
+                          .coloration__block
+                            .coloration__block-thumb
+                              img(src='./tmp/img-for-children-1-1.png' alt)
+                            p Раскраска для Хануки
+                            a.coloration__block-btn(href='#!') Скачать
+                        .swiper-slide
+                          .coloration__block
+                            .coloration__block-thumb
+                              img(src='./tmp/img-for-children-1-1.png' alt)
+                            p Раскраска для Хануки
+                            a.coloration__block-btn(href='#!') Скачать
+                        .swiper-slide
+                          .coloration__block
+                            .coloration__block-thumb
+                              img(src='./tmp/img-for-children-1-1.png' alt)
+                            p Раскраска для Хануки
+                            a.coloration__block-btn(href='#!') Скачать
+                        .swiper-slide
+                          .coloration__block
+                            .coloration__block-thumb
+                              img(src='./tmp/img-for-children-1-1.png' alt)
+                            p Раскраска для Хануки
+                            a.coloration__block-btn(href='#!') Скачать
+                    .swiper-button-next
+                    .swiper-button-prev
+                  .swiper-pagination
+              .tab-pane#tab2(role='tabpanel' aria-labelledby='tab-tab2')
+                .main-children__wrapper.--main-children-2
+                  .main-children__wrapper-inside
+                    .swiper-container
+                      .swiper-wrapper
+                        .swiper-slide
+                          .coloration__block
+                            .coloration__block-thumb
+                              img(src='./tmp/img-for-children-1-1.png' alt)
+                            p Раскраска для Хануки
+                            a.coloration__block-btn(href='#!') Скачать
+                        .swiper-slide
+                          .coloration__block
+                            .coloration__block-thumb
+                              img(src='./tmp/img-for-children-1-1.png' alt)
+                            p Раскраска для Хануки
+                            a.coloration__block-btn(href='#!') Скачать
+                    .swiper-button-next
+                    .swiper-button-prev
+                  .swiper-pagination
+              .tab-pane#tab3(role='tabpanel' aria-labelledby='tab-tab3')
+                .main-children__wrapper.--main-children-3
+                  .main-children__wrapper-inside
+                    .swiper-container
+                      .swiper-wrapper
+                        .swiper-slide
+                          .coloration__block
+                            .coloration__block-thumb
+                              img(src='./tmp/img-for-children-1-1.png' alt)
+                            p Раскраска для Хануки
+                            a.coloration__block-btn(href='#!') Скачать
+                        .swiper-slide
+                          .coloration__block
+                            .coloration__block-thumb
+                              img(src='./tmp/img-for-children-1-1.png' alt)
+                            p Раскраска для Хануки
+                            a.coloration__block-btn(href='#!') Скачать
+                        .swiper-slide
+                          .coloration__block
+                            .coloration__block-thumb
+                              img(src='./tmp/img-for-children-1-1.png' alt)
+                            p Раскраска для Хануки
+                            a.coloration__block-btn(href='#!') Скачать
+                        .swiper-slide
+                          .coloration__block
+                            .coloration__block-thumb
+                              img(src='./tmp/img-for-children-1-1.png' alt)
+                            p Раскраска для Хануки
+                            a.coloration__block-btn(href='#!') Скачать
+                        .swiper-slide
+                          .coloration__block
+                            .coloration__block-thumb
+                              img(src='./tmp/img-for-children-1-1.png' alt)
+                            p Раскраска для Хануки
+                            a.coloration__block-btn(href='#!') Скачать
+                        .swiper-slide
+                          .coloration__block
+                            .coloration__block-thumb
+                              img(src='./tmp/img-for-children-1-1.png' alt)
+                            p Раскраска для Хануки
+                            a.coloration__block-btn(href='#!') Скачать
+                    .swiper-button-next
+                    .swiper-button-prev
+                  .swiper-pagination
+              .tab-pane#tab4(role='tabpanel' aria-labelledby='tab-tab4')
+                .main-children__wrapper.--main-children-4
+                  .main-children__wrapper-inside
+                    .swiper-container
+                      .swiper-wrapper
+                        .swiper-slide
+                          .coloration__block
+                            .coloration__block-thumb
+                              img(src='./tmp/img-for-children-1-1.png' alt)
+                            p Раскраска для Хануки
+                            a.coloration__block-btn(href='#!') Скачать
+                        .swiper-slide
+                          .coloration__block
+                            .coloration__block-thumb
+                              img(src='./tmp/img-for-children-1-1.png' alt)
+                            p Раскраска для Хануки
+                            a.coloration__block-btn(href='#!') Скачать
+                        .swiper-slide
+                          .coloration__block
+                            .coloration__block-thumb
+                              img(src='./tmp/img-for-children-1-1.png' alt)
+                            p Раскраска для Хануки
+                            a.coloration__block-btn(href='#!') Скачать
+                        .swiper-slide
+                          .coloration__block
+                            .coloration__block-thumb
+                              img(src='./tmp/img-for-children-1-1.png' alt)
+                            p Раскраска для Хануки
+                            a.coloration__block-btn(href='#!') Скачать
+                        .swiper-slide
+                          .coloration__block
+                            .coloration__block-thumb
+                              img(src='./tmp/img-for-children-1-1.png' alt)
+                            p Раскраска для Хануки
+                            a.coloration__block-btn(href='#!') Скачать
+                        .swiper-slide
+                          .coloration__block
+                            .coloration__block-thumb
+                              img(src='./tmp/img-for-children-1-1.png' alt)
+                            p Раскраска для Хануки
+                            a.coloration__block-btn(href='#!') Скачать
+                    .swiper-button-next
+                    .swiper-button-prev
+                  .swiper-pagination
 
       include ./_include/_footer
-      div(style="height: 1000px; background-color: #000")
+      //- div(style="height: 1000px; background-color: #000")
 
     // Load Scripts
     include ./_include/_footer-js
@@ -261,34 +418,7 @@ html(lang="ru")
             el: '.main-journal .swiper-pagination',
             clickable: true
           },
-          loop: true,
-          breakpoints: {
-            320: {
-              slidesPerView: 'auto',
-              spaceBetween: 30
-            },
-            640: {
-              slidesPerView: 'auto',
-              loopedSlides: 4,
-              spaceBetween: 30
-            },
-            960: {
-              slidesPerView: 5,
-              loopedSlides: 5,
-              spaceBetween: 30
-            }
-          }
-        });
-        var mainChildren1 = new Swiper('.--main-children-1 .swiper-container', {
-          navigation: {
-            nextEl: '.--main-children-1 .swiper-button-next',
-            prevEl: '.--main-children-1 .swiper-button-prev',
-          },
-          pagination: {
-            el: '.--main-children-1 .swiper-pagination',
-            clickable: true
-          },
-          loop: true,
+          loop: false,
           breakpoints: {
             320: {
               slidesPerView: 'auto',
@@ -327,6 +457,122 @@ html(lang="ru")
             },
             960: {
               slidesPerView: 'auto',
+              spaceBetween: 30
+            }
+          }
+        });
+        var mainChildren1 = new Swiper('.--main-children-1 .swiper-container', {
+          navigation: {
+            nextEl: '.--main-children-1 .swiper-button-next',
+            prevEl: '.--main-children-1 .swiper-button-prev',
+          },
+          pagination: {
+            el: '.--main-children-1 .swiper-pagination',
+            clickable: true
+          },
+          loop: false,
+          breakpoints: {
+            320: {
+              slidesPerView: 'auto',
+              spaceBetween: 30
+            },
+            640: {
+              slidesPerView: 'auto',
+              spaceBetween: 30
+            },
+            960: {
+              slidesPerView: 5,
+              spaceBetween: 30
+            },
+            1300: {
+              slidesPerView: 5,
+              spaceBetween: 30
+            }
+          }
+        });
+        var mainChildren2 = new Swiper('.--main-children-2 .swiper-container', {
+          navigation: {
+            nextEl: '.--main-children-2 .swiper-button-next',
+            prevEl: '.--main-children-2 .swiper-button-prev',
+          },
+          pagination: {
+            el: '.--main-children-2 .swiper-pagination',
+            clickable: true
+          },
+          loop: false,
+          breakpoints: {
+            320: {
+              slidesPerView: 'auto',
+              spaceBetween: 30
+            },
+            640: {
+              slidesPerView: 'auto',
+              spaceBetween: 30
+            },
+            960: {
+              slidesPerView: 5,
+              spaceBetween: 30
+            },
+            1300: {
+              slidesPerView: 5,
+              spaceBetween: 30
+            }
+          }
+        });
+        var mainChildren3 = new Swiper('.--main-children-3 .swiper-container', {
+          navigation: {
+            nextEl: '.--main-children-3 .swiper-button-next',
+            prevEl: '.--main-children-3 .swiper-button-prev',
+          },
+          pagination: {
+            el: '.--main-children-3 .swiper-pagination',
+            clickable: true
+          },
+          loop: false,
+          breakpoints: {
+            320: {
+              slidesPerView: 'auto',
+              spaceBetween: 30
+            },
+            640: {
+              slidesPerView: 'auto',
+              spaceBetween: 30
+            },
+            960: {
+              slidesPerView: 5,
+              spaceBetween: 30
+            },
+            1300: {
+              slidesPerView: 5,
+              spaceBetween: 30
+            }
+          }
+        });
+        var mainChildren4 = new Swiper('.--main-children-4 .swiper-container', {
+          navigation: {
+            nextEl: '.--main-children-4 .swiper-button-next',
+            prevEl: '.--main-children-4 .swiper-button-prev',
+          },
+          pagination: {
+            el: '.--main-children-4 .swiper-pagination',
+            clickable: true
+          },
+          loop: false,
+          breakpoints: {
+            320: {
+              slidesPerView: 'auto',
+              spaceBetween: 30
+            },
+            640: {
+              slidesPerView: 'auto',
+              spaceBetween: 30
+            },
+            960: {
+              slidesPerView: 5,
+              spaceBetween: 30
+            },
+            1300: {
+              slidesPerView: 5,
               spaceBetween: 30
             }
           }
