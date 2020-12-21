@@ -137,8 +137,13 @@
     }
     a {
       text-decoration: none;
+      opacity: 1;
+      transition: all 0.35s;
       &+a {
         margin-left: 15px;
+      }
+      &:hover {
+        opacity: 0.5;
       }
     }
     img {

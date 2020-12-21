@@ -12,7 +12,7 @@
         <meta name="format-detection" content="email=no">
         <meta content="notranslate" name="google">
         <link rel="stylesheet" href="./js/libs/fancybox/jquery.fancybox.css">
-        <link rel="stylesheet" href="./css/style.min.css?v2">
+        <link rel="stylesheet" href="./css/style.min.css?v7">
     </head>
     <body class="--bg-main">
         <div class="base">
@@ -82,13 +82,13 @@
                             <div class="swiper-container">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <div class="main-slider__block"><img src="./tmp/main-slider.png" alt=""></div>
+                                        <div class="main-slider__block"><img src="./tmp/main-slider-1.png" alt=""></div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="main-slider__block"><img src="./tmp/main-slider.png" alt=""></div>
+                                        <div class="main-slider__block"><img src="./tmp/main-slider-2.png" alt=""></div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="main-slider__block"><img src="./tmp/main-slider.png" alt=""></div>
+                                        <div class="main-slider__block"><img src="./tmp/main-slider-3.png" alt=""></div>
                                     </div>
                                 </div>
                             </div>
@@ -129,12 +129,12 @@
                     <div class="main-news">
                         <div class="main-news__head">
                             <div class="main-news__head-untitle">Вдохновленные и просвещенные</div>
-                            <h1>Последние новости</h1><a class="main-news__head-link" href="#!">все новости<i class="icon-arrow-right"></i></a>
+                            <h1>Последние новости</h1>
                         </div>
                         <div class="main-news__wrapper">
                             <div class="left">
                                 <div class="main-news__video">
-                                    <div class="main-news__video-thumb"><img src="./tmp/img-videos-1.png" alt><a class="main-news__video-play" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><i class="icon-play"></i></a></div>
+                                    <div class="main-news__video-thumb"><img src="./tmp/img-videos-1.png" alt><a class="main-news__video-play" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><i class="icon-play"></i></a></div><a class="main-news__link" href="#!"><span>все видео</span><i class="icon-arrow-right"></i></a>
                                 </div>
                             </div>
                             <div class="right">
@@ -144,12 +144,13 @@
                                         <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
                                     </div>
                                 </div>
-                                <div class="main-news__block">
+                                <div class="main-news__block --last">
                                     <div class="main-news__block-thumb"><a href="#!"><img src="./tmp/img-news-2.png" alt></a></div>
                                     <div class="main-news__block-content"><a class="main-news__block-title" href="#!">Как научить ребенка выражать свои эмоции и избавляться от злости</a>
                                         <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
                                     </div>
                                 </div>
+                                <div class="text-center text-sm-left"><a class="main-news__link" href="#!"><span>все новости</span><i class="icon-arrow-right"></i></a></div>
                             </div>
                         </div>
                     </div>
@@ -226,7 +227,7 @@
                                 <div class="swiper-button-prev"></div>
                             </div>
                             <div class="swiper-pagination"></div>
-                        </div><a class="main-journal__more" href="#!">все новости<i class="icon-arrow-right"></i></a>
+                        </div><a class="main-journal__more" href="#!">все журналы<i class="icon-arrow-right"></i></a>
                     </div>
                 </div>
                 <!-- Main gallery-->
@@ -633,6 +634,9 @@
                 loop: true,
                 slidesPerView: 1,
                 effect: 'fade',
+                autoplay: {
+                  delay: 3000,
+                }
               });
               var mainJournal = new Swiper('.main-journal .swiper-container', {
                 navigation: {
@@ -643,7 +647,7 @@
                   el: '.main-journal .swiper-pagination',
                   clickable: true
                 },
-                loop: false,
+                loop: true,
                 breakpoints: {
                   320: {
                     slidesPerView: 'auto',

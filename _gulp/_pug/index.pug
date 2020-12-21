@@ -24,13 +24,13 @@ html(lang="ru")
                 .swiper-wrapper
                   .swiper-slide
                     .main-slider__block
-                      img(src="./tmp/main-slider.png", alt="")
+                      img(src="./tmp/main-slider-1.png", alt="")
                   .swiper-slide
                     .main-slider__block
-                      img(src="./tmp/main-slider.png", alt="")
+                      img(src="./tmp/main-slider-2.png", alt="")
                   .swiper-slide
                     .main-slider__block
-                      img(src="./tmp/main-slider.png", alt="")
+                      img(src="./tmp/main-slider-3.png", alt="")
               .swiper-button-next
               .swiper-button-prev
             .swiper-pagination
@@ -71,9 +71,6 @@ html(lang="ru")
             .main-news__head
               .main-news__head-untitle Вдохновленные и просвещенные
               h1 Последние новости
-              a.main-news__head-link(href='#!')
-                | все новости
-                i.icon-arrow-right
             .main-news__wrapper
               .left
                 .main-news__video
@@ -81,6 +78,9 @@ html(lang="ru")
                     img(src='./tmp/img-videos-1.png' alt)
                     a.main-news__video-play(data-fancybox href='https://www.youtube.com/watch?v=_sI_Ps7JSEk')
                       i.icon-play
+                  a(href="#!").main-news__link
+                    span все видео
+                    i.icon-arrow-right
               .right
                 .main-news__block
                   .main-news__block-thumb
@@ -89,13 +89,17 @@ html(lang="ru")
                   .main-news__block-content
                     a.main-news__block-title(href='#!') Как научить ребенка выражать свои эмоции и избавляться от злости
                     p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
-                .main-news__block
+                .main-news__block.--last
                   .main-news__block-thumb
                     a(href='#!')
                       img(src='./tmp/img-news-2.png' alt)
                   .main-news__block-content
                     a.main-news__block-title(href='#!') Как научить ребенка выражать свои эмоции и избавляться от злости
                     p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                .text-center.text-sm-left
+                  a(href="#!").main-news__link
+                    span все новости
+                    i.icon-arrow-right
 
         // Main journal
         .main-journal
@@ -161,7 +165,7 @@ html(lang="ru")
               .swiper-pagination
 
             a.main-journal__more(href='#!')
-              | все новости
+              | все журналы
               i.icon-arrow-right
 
         // Main gallery
@@ -408,6 +412,9 @@ html(lang="ru")
           loop: true,
           slidesPerView: 1,
           effect: 'fade',
+          autoplay: {
+            delay: 3000,
+          }
         });
         var mainJournal = new Swiper('.main-journal .swiper-container', {
           navigation: {
@@ -418,7 +425,7 @@ html(lang="ru")
             el: '.main-journal .swiper-pagination',
             clickable: true
           },
-          loop: false,
+          loop: true,
           breakpoints: {
             320: {
               slidesPerView: 'auto',
