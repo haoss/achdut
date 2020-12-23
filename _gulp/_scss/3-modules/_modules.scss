@@ -1162,6 +1162,10 @@
       font-weight: 500;
       margin-bottom: 15px;
       line-height: 1.2;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
     }
     &-btn {
       position: absolute;
@@ -1462,6 +1466,9 @@
 
 .all-video {
   margin-bottom: 50px;
+  .main-children & {
+    margin-bottom: 0px;
+  }
   &__block {
     &-thumb {
       position: relative;
@@ -1472,6 +1479,10 @@
         border-radius: 25px;
         filter: drop-shadow(0px 4px 20px rgba($color-black,0));
         transition: all 0.35s;
+        .main-children & {
+          height: 332px;
+          object-fit: cover;
+        }
       }
     }
     &-play {
@@ -1495,13 +1506,27 @@
         color: $color-white;
       }
     }
+    .main-children & {
+      margin-bottom: 0px;
+    }
   }
   &__wrapper {
     position: relative;
     margin-bottom: 20px;
+    .main-children & {
+      margin-bottom: 65px;
+    }
   }
   .swiper {
+    &-wrapper {
+      .main-children & {
+        padding-top: 0px;
+      }
+    }
     &-container {
+      .main-children & {
+        margin-top: 10px;
+      }
       width: 100%;
       height: 100%;
     }
@@ -1522,6 +1547,9 @@
       color: $color-red;
       font-size: 0;
       transition: all 0.35s;
+      .main-children & {
+        margin-top: calc(-19px - 13px);
+      }
       &::after {
         font-size: 13px;
         font-family: $font-icomoon;
@@ -1534,6 +1562,9 @@
       right: 0;
       &::after {
         content: '\e900';
+      }
+      .main-children & {
+        right: 0;
       }
     }
     &-button-prev {
@@ -1569,6 +1600,9 @@
           box-shadow: 0px 4px 10px rgba(255, 148, 92, 0.5);
         }
       }
+      .main-children & {
+        bottom: -30px;
+      }
     }
   }
   @include media-breakpoint-up(sm) {
@@ -1592,8 +1626,14 @@
         width: 462px !important;
         opacity: 0.3;
         transition: opacity 0.35s;
+        .main-children & {
+          opacity: 0.3 !important;
+        }
         &-active {
           opacity: 1;
+          .main-children & {
+            opacity: 1 !important;
+          }
         }
       }
       &-button {
@@ -1629,6 +1669,13 @@
         box-shadow: 0px 4px 15px rgba($color-black, 0.1), 0 0 0 10px rgba($color-white,.5);
         font-size: 24px;
       }
+      &-thumb {
+        img {
+          .main-children & {
+            height: 252px;
+          }
+        }
+      }
     }
     &__wrapper {
       margin-bottom: 30px;
@@ -1643,6 +1690,9 @@
         width: 334px !important;
         &-next {
           opacity: 1;
+          .main-children & {
+            opacity: 1 !important;
+          }
         }
       }
       &-button {
@@ -1677,6 +1727,13 @@
           box-shadow: 0px 4px 15px rgba($color-blue, 0.1), 0 0 0 21px rgba($color-white,.2);
         }
       }
+      &-thumb {
+        img {
+          .main-children & {
+            height: 327px;
+          }
+        }
+      }
     }
     .swiper {
       &-slide {
@@ -1702,10 +1759,29 @@
         height: 108px;
         box-shadow: 0px 4px 15px rgba($color-black, 0.1), 0 0 0 16px rgba($color-white,.5);
       }
+      &-thumb {
+        img {
+          .main-children & {
+            height: 441px;
+          }
+        }
+      }
     }
     .swiper {
       &-slide {
         width: 616px !important;
+      }
+      &-button {
+        &-next {
+          .main-children & {
+            right: -25px;
+          }
+        }
+      }
+    }
+    &__wrapper {
+      .main-children & {
+        margin-bottom: 110px;
       }
     }
   }
@@ -1820,6 +1896,9 @@
       p {
         margin-bottom: 0px;
       }
+    }
+    .main-children & {
+      margin-bottom: 30px;
     }
   }
   &__wrapper {
@@ -2402,6 +2481,10 @@
       line-height: 26px;
       color: $color-orange;
       margin-bottom: 16px;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   @include media-breakpoint-up(sm) {
@@ -3506,7 +3589,7 @@
     background: $color-white;
     box-shadow: 0px 15px 15px rgba($color-black,.02);
     border-radius: 25px;
-    padding: 15px 18px 20px 15px;
+    padding: 20px 18px;
     text-align: center;
     font-weight: 500;
     font-size: 16px;
@@ -5388,7 +5471,7 @@
       color: $color-red;
       font-size: 0;
       transition: all 0.35s;
-      margin-top: calc(-19px - 0px);
+      margin-top: calc(-19px - 10px);
       &::after {
         font-size: 15px;
         font-family: $font-icomoon;
@@ -5478,13 +5561,13 @@
       &-inside {
         margin-right: 0px;
       }
-    }
-    .swiper {
-      &-slide {
-        opacity: 1;
-      }
-      &-button-next {
-        right: -25px
+      .swiper {
+        &-slide {
+          opacity: 1;
+        }
+        &-button-next {
+          right: -25px
+        }
       }
     }
   }
