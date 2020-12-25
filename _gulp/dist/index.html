@@ -12,7 +12,7 @@
         <meta name="format-detection" content="email=no">
         <meta content="notranslate" name="google">
         <link rel="stylesheet" href="./js/libs/fancybox/jquery.fancybox.css">
-        <link rel="stylesheet" href="./css/style.min.css?v12">
+        <link rel="stylesheet" href="./css/style.min.css?v14">
     </head>
     <body class="--bg-main">
         <div class="base">
@@ -243,6 +243,28 @@
                             <div class="main-gallery__wrapper-inside">
                                 <div class="swiper-container">
                                     <div class="swiper-wrapper">
+                                        <div class="swiper-slide --one">
+                                            <div class="main-gallery__block --half --top"><a href="./tmp/img-gallery-1.png" data-fancybox="images"><img src="./tmp/img-gallery-1.png" alt=""></a></div>
+                                            <div class="main-gallery__block --half --bottom"><a href="./tmp/img-gallery-2.png" data-fancybox="images"><img src="./tmp/img-gallery-2.png" alt=""></a></div>
+                                        </div>
+                                        <div class="swiper-slide --two">
+                                            <div class="main-gallery__block"><a href="./tmp/img-gallery-3.png" data-fancybox="images"><img src="./tmp/img-gallery-3.png" alt=""></a></div>
+                                        </div>
+                                        <div class="swiper-slide --three">
+                                            <div class="main-gallery__block --half --top"><a href="./tmp/img-gallery-4.png" data-fancybox="images"><img src="./tmp/img-gallery-4.png" alt=""></a></div>
+                                            <div class="main-gallery__block --half --bottom"><a href="./tmp/img-gallery-5.png" data-fancybox="images"><img src="./tmp/img-gallery-5.png" alt=""></a></div>
+                                        </div>
+                                        <div class="swiper-slide --one">
+                                            <div class="main-gallery__block --half --top"><a href="./tmp/img-gallery-1.png" data-fancybox="images"><img src="./tmp/img-gallery-1.png" alt=""></a></div>
+                                            <div class="main-gallery__block --half --bottom"><a href="./tmp/img-gallery-2.png" data-fancybox="images"><img src="./tmp/img-gallery-2.png" alt=""></a></div>
+                                        </div>
+                                        <div class="swiper-slide --two">
+                                            <div class="main-gallery__block"><a href="./tmp/img-gallery-3.png" data-fancybox="images"><img src="./tmp/img-gallery-3.png" alt=""></a></div>
+                                        </div>
+                                        <div class="swiper-slide --three">
+                                            <div class="main-gallery__block --half --top"><a href="./tmp/img-gallery-4.png" data-fancybox="images"><img src="./tmp/img-gallery-4.png" alt=""></a></div>
+                                            <div class="main-gallery__block --half --bottom"><a href="./tmp/img-gallery-5.png" data-fancybox="images"><img src="./tmp/img-gallery-5.png" alt=""></a></div>
+                                        </div>
                                         <div class="swiper-slide --one">
                                             <div class="main-gallery__block --half --top"><a href="./tmp/img-gallery-1.png" data-fancybox="images"><img src="./tmp/img-gallery-1.png" alt=""></a></div>
                                             <div class="main-gallery__block --half --bottom"><a href="./tmp/img-gallery-2.png" data-fancybox="images"><img src="./tmp/img-gallery-2.png" alt=""></a></div>
@@ -706,11 +728,12 @@
                   },
                   640: {
                     slidesPerView: 1,
-                    spaceBetween: 30
+                    spaceBetween: 15
                   },
                   960: {
                     slidesPerView: 'auto',
-                    spaceBetween: 30
+                    spaceBetween: 30,
+                    slidesPerGroup: 3
                   }
                 }
               });

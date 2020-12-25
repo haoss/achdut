@@ -574,7 +574,7 @@
         }
       }
       img {
-        max-height: 173px;
+        max-height: 172px;
       }
     }
     &__form {
@@ -2723,7 +2723,7 @@
   }
   &__thumb {
     margin: 0 auto 70px;
-    max-width: 342px;
+    max-width: 462px;
     &-content {
       background: #FFFFFF;
       box-shadow: 0px 4px 30px rgba($color-black, 0.05);
@@ -2834,7 +2834,6 @@
   @include media-breakpoint-up(sm) {
     &__thumb {
       margin-bottom: 50px;
-      max-width: 462px;
       &-thumb {
         margin-bottom: -305px;
         img {
