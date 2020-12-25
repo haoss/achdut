@@ -98,7 +98,7 @@
     background: $color-white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
     border-radius: 50px;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
     max-width: 290px;
     padding: 7px 0 13px 0;
   }
@@ -195,7 +195,7 @@
   &__rounds {
     height: 0;
     position: relative;
-    display: none;
+    // display: none;
     pointer-events: none;
     z-index: -1;
     div {
@@ -204,8 +204,8 @@
       &.first {
         background: linear-gradient(205.15deg, #FF4642 16.41%, #FF7F57 84.03%);
         box-shadow: 5px 15px 30px rgba(255, 91, 87, 0.3);
-        top: -637px;
-        left: -141px;
+        top: -1288px;
+        left: -182px;
         width: 191px;
         height: 191px;
       }
@@ -216,10 +216,19 @@
         right: -222px;
         width: 236px;
         height: 236px;
+        display: none;
       }
     }
   }
   @include media-breakpoint-up(sm) {
+    &__rounds {
+      div {
+        &.first {
+          top: -816px;
+          left: -142px;
+        }
+      }
+    }
     &__top {
       flex-direction: row;
       flex-wrap: wrap;
@@ -262,6 +271,14 @@
     }
   }
   @include media-breakpoint-up(lg) {
+    &__rounds {
+      div {
+        &.first {
+          top: -314px;
+          left: -170px;
+        }
+      }
+    }
     &__top {
       max-width: inherit;
       flex-wrap: nowrap;
@@ -333,6 +350,17 @@
     }
   }
   @include media-breakpoint-up(xl) {
+    &__rounds {
+      div {
+        &.first {
+          top: -637px;
+          left: -145px;
+        }
+        &.last {
+          display: block;
+        }
+      }
+    }
     &__bottom {
       p {
         padding-left: 0;
