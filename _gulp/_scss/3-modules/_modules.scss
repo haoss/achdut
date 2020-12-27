@@ -38,7 +38,7 @@
     }
     #{$this} {
       &-item {
-        font-size: 18px;
+        font-size: rem(18px);
         &:before {
           display: none;
         }
@@ -81,7 +81,7 @@
     &-tabs {
       #{$this} {
         &-item {
-          font-size: 14px;
+          font-size: rem(14px);
         }
       }
       &-shadow {
@@ -102,7 +102,7 @@
     &-tabs {
       #{$this} {
         &-item {
-          font-size: 18px;
+          font-size: rem(18px);
         }
       }
       &-shadow {
@@ -119,7 +119,7 @@
     &-tabs {
       #{$this} {
         &-item {
-          font-size: 20px;
+          font-size: rem(20px);
         }
       }
       &.--line {
@@ -163,7 +163,7 @@
       height: 70px;
       color: $color-white;
       text-align: center;
-      font-size: 31px;
+      font-size: rem(31px);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -193,7 +193,7 @@
       text-decoration: none;
       color: $color-white;
       border-radius: 50%;
-      font-size: 22px;
+      font-size: rem(22px);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -246,7 +246,7 @@
         right: 0;
         left: auto;
         transform: translateY(-50%);
-        font-size: 45px;
+        font-size: rem(45px);
       }
       &-about {
         max-width: 422px;
@@ -310,7 +310,7 @@
         width: 98px;
         height: 98px;
         box-shadow: 0px 4px 15px rgba($color-black, 0.1), 0 0 0 15px rgba($color-white,.5);
-        font-size: 26px;
+        font-size: rem(26px);
         &:hover {
           box-shadow: 0px 4px 15px rgba($color-blue, 0.1), 0 0 0 21px rgba($color-white,.2);
         }
@@ -331,7 +331,7 @@
     }
     &__top {
       padding: 80px 50px 55px 93px;
-      font-size: 15px;
+      font-size: rem(15px);
       h1, .h1 {
         margin-bottom: 30px;
       }
@@ -341,7 +341,7 @@
       &-icon {
         width: 168px;
         height: 168px;
-        font-size: 74px;
+        font-size: rem(74px);
         .--photos & {
           right: -115px;
         }
@@ -361,7 +361,7 @@
         width: 134px;
         height: 134px;
         box-shadow: 0px 4px 15px rgba($color-black, 0.1), 0 0 0 20px rgba($color-white,.5);
-        font-size: 41px;
+        font-size: rem(41px);
         &:hover {
           box-shadow: 0px 4px 15px rgba($color-blue, 0.1), 0 0 0 28px rgba($color-white,.2);
         }
@@ -377,13 +377,13 @@
       &.--top {
         .h1, h1 {
           margin-bottom: 95px;
-          font-size: 60px;
+          font-size: rem(60px);
         }
       }
     }
     &__top {
       padding: 80px 124px 80px 124px;
-      font-size: 17px;
+      font-size: rem(17px);
       &-about {
         max-width: 430px;
       }
@@ -397,7 +397,7 @@
         width: 178px;
         height: 178px;
         box-shadow: 0px 4px 15px rgba($color-black, 0.1), 0 0 0 26px rgba($color-white,.5);
-        font-size: 48px;
+        font-size: rem(48px);
         &:hover {
           box-shadow: 0px 4px 15px rgba($color-blue, 0.1), 0 0 0 31px rgba($color-white,.2);
         }
@@ -438,7 +438,7 @@
     padding: 60px 48px 48px 48px;
     background-size: cover;
     color: $color-white;
-    font-size: 14px;
+    font-size: rem(14px);
     box-shadow: 0px 10px 30px rgba(255, 150, 92, 0.5);
     .field-text__input {
       background-color: transparent;
@@ -480,7 +480,7 @@
   }
   &__untitle {
     font-weight: bold;
-    font-size: 12px;
+    font-size: rem(12px);
     line-height: 14px;
     letter-spacing: 0.05em;
     opacity: 0.7;
@@ -488,7 +488,7 @@
   }
   &__title {
     font-weight: bold;
-    font-size: 25px;
+    font-size: rem(25px);
     line-height: 30px;
     margin-bottom: 24px;
   }
@@ -499,7 +499,7 @@
     border-radius: 50px;
     color: $color-red;
     font-weight: bold;
-    font-size: 15px;
+    font-size: rem(15px);
     text-transform: uppercase;
     height: 50px;
     border: 4px solid $color-white;
@@ -516,7 +516,7 @@
       background: $color-red;
       line-height: 42px;
       text-align: center;
-      font-size: 15px;
+      font-size: rem(15px);
       transform: translateX(0);
       transition: all 0.35s;
     }
@@ -548,10 +548,10 @@
       }
     }
     &__untitle {
-      font-size: 14px;
+      font-size: rem(14px);
     }
     &__title {
-      font-size: 50px;
+      font-size: rem(50px);
       margin-bottom: 15px;
       line-height: 1;
     }
@@ -594,11 +594,11 @@
       }
     }
     &__untitle {
-      font-size: 12px;
+      font-size: rem(12px);
       margin-bottom: 10px;
     }
     &__title {
-      font-size: 40px;
+      font-size: rem(40px);
       margin-bottom: 0;
     }
     &__row-1 {
@@ -628,7 +628,7 @@
       }
     }
     .field-checkbox__label {
-      font-size: 12px;
+      font-size: rem(12px);
     }
   }
   @include media-breakpoint-up(xl) {
@@ -648,11 +648,11 @@
       }
     }
     &__untitle {
-      font-size: 14px;
+      font-size: rem(14px);
       margin-bottom: 12px;
     }
     &__title {
-      font-size: 50px;
+      font-size: rem(50px);
     }
     &__row-1 {
       &>div {
@@ -676,7 +676,7 @@
       }
     }
     .field-checkbox__label {
-      font-size: 14px;
+      font-size: rem(14px);
     }
   }
   @include media-breakpoint-up(xxl) {
@@ -694,7 +694,7 @@
       }
     }
     &__title {
-      font-size: 60px;
+      font-size: rem(60px);
     }
     &__row-1 {
       &>div {
@@ -714,7 +714,7 @@
       }
     }
     .field-checkbox__label {
-      font-size: 14px;
+      font-size: rem(14px);
     }
     .field-checkbox {
       max-width: inherit;
@@ -802,7 +802,7 @@
     }
     &-category {
       text-align: center;
-      font-size: 10px;
+      font-size: rem(10px);
       line-height: 1;
       margin-bottom: 0px;
       text-transform: uppercase;
@@ -812,7 +812,7 @@
     &-title {
       text-align: center;
       color: $color-orange;
-      font-size: 32px;
+      font-size: rem(32px);
       font-weight: 500;
       margin-bottom: 10px;
       line-height: 1.2;
@@ -828,7 +828,7 @@
       color: $color-white;
       text-transform: uppercase;
       font-weight: bold;
-      font-size: 15px;
+      font-size: rem(15px);
       text-decoration: none;
       text-align: center;
       bottom: 0;
@@ -882,7 +882,7 @@
   }
   @include media-breakpoint-up(lg) {
     &__block {
-      font-size: 12px;
+      font-size: rem(12px);
       &-thumb {
         width: 152px;
         height: 179px;
@@ -892,20 +892,20 @@
         padding-left: 30px;
       }
       &-title {
-        font-size: 26px;
+        font-size: rem(26px);
       }
     }
   }
   @include media-breakpoint-up(xl) {
     &__block {
-      font-size: 14px;
+      font-size: rem(14px);
       &-thumb {
         width: 216px;
         height: 255px;
         border-radius: 25px;
       }
       &-title {
-        font-size: 32px;
+        font-size: rem(32px);
       }
       &-content {
         p {
@@ -916,7 +916,7 @@
   }
   @include media-breakpoint-up(xxl) {
     &__block {
-      font-size: 14px;
+      font-size: rem(14px);
       margin-bottom: 70px;
       align-items: center;
       &-thumb {
@@ -925,7 +925,7 @@
         border-radius: 25px;
       }
       &-title {
-        font-size: 36px;
+        font-size: rem(36px);
       }
       &-content {
         padding-top: 0;
@@ -951,7 +951,7 @@
     &-title {
       text-decoration: none;
       font-weight: bold;
-      font-size: 18px;
+      font-size: rem(18px);
       line-height: 1.2;
       text-decoration: none;
       color: $primary-color;
@@ -964,7 +964,7 @@
       border-radius: 50px;
       color: $color-red;
       font-weight: 700;
-      font-size: 15px;
+      font-size: rem(15px);
       text-transform: uppercase;
       height: 50px;
       line-height: 42px;
@@ -985,7 +985,7 @@
         background: $color-red;
         line-height: 42px;
         text-align: center;
-        font-size: 15px;
+        font-size: rem(15px);
         transform: translateX(0);
         transition: all .35s;
       }
@@ -1021,7 +1021,7 @@
       }
       &-title {
         margin-bottom: 23px;
-        font-size: 22px;
+        font-size: rem(22px);
       }
     }
   }
@@ -1040,7 +1040,7 @@
       }
       &-title {
         margin-bottom: 18px;
-        font-size: 26px;
+        font-size: rem(26px);
       }
     }
   }
@@ -1059,7 +1059,7 @@
         }
       }
       &-title {
-        font-size: 32px;
+        font-size: rem(32px);
         &:hover {
           color: $color-orange;
         }
@@ -1091,7 +1091,7 @@
         }
       }
       &-title {
-        font-size: 36px;
+        font-size: rem(36px);
       }
       &-btn {
         display: inline-block;
@@ -1149,7 +1149,7 @@
       }
     }
     &-category {
-      font-size: 10px;
+      font-size: rem(10px);
       line-height: 1;
       margin-bottom: 6px;
       text-transform: uppercase;
@@ -1158,7 +1158,7 @@
     }
     &-title {
       color: $color-orange;
-      font-size: 26px;
+      font-size: rem(26px);
       font-weight: 500;
       margin-bottom: 15px;
       line-height: 1.2;
@@ -1178,7 +1178,7 @@
       color: $color-white;
       text-transform: uppercase;
       font-weight: bold;
-      font-size: 15px;
+      font-size: rem(15px);
       text-decoration: none;
       text-align: center;
       bottom: 0;
@@ -1227,7 +1227,7 @@
         }
       }
       &-title {
-        font-size: 36px;
+        font-size: rem(36px);
         margin-bottom: 5px;
       }
     }
@@ -1250,7 +1250,7 @@
         }
       }
       &-title {
-        font-size: 26px;
+        font-size: rem(26px);
       }
     }
   }
@@ -1258,7 +1258,7 @@
     &__block {
       align-items: flex-start;
       margin-bottom: 0px;
-      font-size: 14px;
+      font-size: rem(14px);
       &-thumb {
         width: 316px;
         height: 368px;
@@ -1275,7 +1275,7 @@
         }
       }
       &-title {
-        font-size: 36px;
+        font-size: rem(36px);
       }
     }
   }
@@ -1283,7 +1283,7 @@
     &__block {
       align-items: flex-start;
       margin-bottom: 0px;
-      font-size: 14px;
+      font-size: rem(14px);
       &-thumb {
         width: 348px;
         height: 405px;
@@ -1297,7 +1297,7 @@
         }
       }
       &-title {
-        font-size: 36px;
+        font-size: rem(36px);
       }
     }
   }
@@ -1307,7 +1307,7 @@
   $this: &;
   &__block {
     margin-bottom: 50px;
-    font-size: 14px;
+    font-size: rem(14px);
     &-thumb {
       margin: 0 auto 20px;
       position: relative;
@@ -1337,7 +1337,7 @@
       width: 160px;
       height: 40px;
       line-height: 40px;
-      font-size: 15px;
+      font-size: rem(15px);
       color: $color-white;
       text-align: center;
       font-weight: bold;
@@ -1363,7 +1363,7 @@
       text-decoration: none;
       color: $color-white;
       border-radius: 50%;
-      font-size: 20px;
+      font-size: rem(20px);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1396,7 +1396,7 @@
       &-play {
         width: 134px;
         height: 134px;
-        font-size: 46px;
+        font-size: rem(46px);
         box-shadow: 0px 4px 15px rgba($color-blue, 0.1), 0 0 0 20px rgba($color-white,.5);
       }
       &-btn {
@@ -1407,11 +1407,11 @@
   @include media-breakpoint-up(lg) {
     &__block {
       margin-bottom: 45px;
-      font-size: 12px;
+      font-size: rem(12px);
       &-play {
         width: 98px;
         height: 98px;
-        font-size: 34px;
+        font-size: rem(34px);
         box-shadow: 0px 4px 15px rgba($color-blue, 0.1), 0 0 0 14px rgba($color-white,.5);
       }
       &-btn {
@@ -1424,11 +1424,11 @@
     margin: 0 auto;
     &__block {
       margin-bottom: 75px;
-      font-size: 14px;
+      font-size: rem(14px);
       &-play {
         width: 108px;
         height: 108px;
-        font-size: 40px;
+        font-size: rem(40px);
         box-shadow: 0px 4px 15px rgba($color-blue, 0.1), 0 0 0 16px rgba($color-white,.5);
         &:hover {
           box-shadow: 0px 4px 15px rgba($color-blue, 0.1), 0 0 0 21px rgba($color-white,.2);
@@ -1445,11 +1445,11 @@
     max-width: 1272px;
     &__block {
       margin-bottom: 70px;
-      font-size: 17px;
+      font-size: rem(17px);
       &-play {
         width: 108px;
         height: 108px;
-        font-size: 40px;
+        font-size: rem(40px);
         box-shadow: 0px 4px 15px rgba($color-blue, 0.1), 0 0 0 16px rgba($color-white,.5);
         &:hover {
           box-shadow: 0px 4px 15px rgba($color-blue, 0.1), 0 0 0 21px rgba($color-white,.2);
@@ -1497,7 +1497,7 @@
       text-decoration: none;
       color: $color-white;
       border-radius: 50%;
-      font-size: 20px;
+      font-size: rem(20px);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1532,7 +1532,7 @@
     }
     &-slide {
       text-align: center;
-      font-size: 18px;
+      font-size: rem(18px);
       display: -webkit-flex;
       display: flex;
       justify-content: center;
@@ -1551,7 +1551,7 @@
         margin-top: calc(-19px - 13px);
       }
       &::after {
-        font-size: 13px;
+        font-size: rem(13px);
         font-family: $font-icomoon;
       }
       &:focus {
@@ -1644,7 +1644,7 @@
           height: 50px;
           width: 50px;
           &::after {
-            font-size: 16px;
+            font-size: rem(16px);
           }
         }
       }
@@ -1667,7 +1667,7 @@
         width: 66px;
         height: 66px;
         box-shadow: 0px 4px 15px rgba($color-black, 0.1), 0 0 0 10px rgba($color-white,.5);
-        font-size: 24px;
+        font-size: rem(24px);
       }
       &-thumb {
         img {
@@ -1710,11 +1710,11 @@
     &__head {
       margin-bottom: 40px;
       h1, .h1 {
-        font-size: 50px;
+        font-size: rem(50px);
         margin-right: 40px;
       }
       &-link {
-        font-size: 15px;
+        font-size: rem(15px);
       }
     }
     &__block {
@@ -1722,7 +1722,7 @@
         width: 80px;
         height: 80px;
         box-shadow: 0px 4px 15px rgba($color-black, 0.1), 0 0 0 12px rgba($color-white,.5);
-        font-size: 36px;
+        font-size: rem(36px);
         &:hover {
           box-shadow: 0px 4px 15px rgba($color-blue, 0.1), 0 0 0 21px rgba($color-white,.2);
         }
@@ -1749,7 +1749,7 @@
   @include media-breakpoint-up(xxl) {
     &__head {
       h1, .h1 {
-        font-size: 60px;
+        font-size: rem(60px);
         margin-right: 50px;
       }
     }
@@ -1792,7 +1792,7 @@
   &__head {
     margin-bottom: 23px;
     h1, .h1 {
-      font-size: 40px;
+      font-size: rem(40px);
       margin-bottom: 0px;
     }
     &-link {
@@ -1800,7 +1800,7 @@
       text-transform: uppercase;
       color: $primary-color;
       text-decoration: none;
-      font-size: 15px;
+      font-size: rem(15px);
       font-weight: bold;
       i {
         margin-left: 15px;
@@ -1816,14 +1816,14 @@
     }
     &-untitle {
       font-weight: bold;
-      font-size: 12px;
+      font-size: rem(12px);
       line-height: 14px;
       letter-spacing: 0.05em;
     }
     &.--journal {
       text-align: center;
       h1, .h1 {
-        font-size: 30px;
+        font-size: rem(30px);
         margin-right: 0;
       }
     }
@@ -1835,7 +1835,7 @@
     padding: 20px 18px;
     text-align: center;
     font-weight: 500;
-    font-size: 16px;
+    font-size: rem(16px);
     position: relative;
     transform: translateY(0);
     transition: all 0.35s;
@@ -1869,7 +1869,7 @@
       width: 160px;
       height: 40px;
       line-height: 40px;
-      font-size: 15px;
+      font-size: rem(15px);
       color: $color-white;
       text-align: center;
       font-weight: bold;
@@ -1932,7 +1932,7 @@
       transition: all 0.35s;
       margin-top: calc(-19px - 35px);
       &::after {
-        font-size: 13px;
+        font-size: rem(13px);
         font-family: $font-icomoon;
       }
       &:focus {
@@ -1987,20 +1987,20 @@
     &__head {
       margin-bottom: 40px;
       h1, .h1 {
-        font-size: 50px;
+        font-size: rem(50px);
         margin-bottom: 0px;
         display: inline-block;
         margin-right: 44px;
       }
       &-untitle {
-        font-size: 14px;
+        font-size: rem(14px);
       }
       &.--journal {
         .category__head-untitle {
-          font-size: 14px;
+          font-size: rem(14px);
         }
         h1, .h1 {
-          font-size: 40px;
+          font-size: rem(40px);
         }
       }
     }
@@ -2019,20 +2019,20 @@
     &__head {
       margin-bottom: 20px;
       h1, .h1 {
-        font-size: 40px;
+        font-size: rem(40px);
         margin-right: 25px;
       }
       &-link {
-        font-size: 13px;
+        font-size: rem(13px);
       }
       &.--journal {
         text-align: left;
         .category__head-untitle {
-          font-size: 12px;
+          font-size: rem(12px);
           margin-bottom: 7px;
         }
         h1, .h1 {
-          font-size: 40px;
+          font-size: rem(40px);
           margin-bottom: 15px;
         }
       }
@@ -2042,7 +2042,7 @@
     }
     &__block {
       padding: 15px 10px 20px 10px;
-      font-size: 12px;
+      font-size: rem(12px);
       &-thumb {
         height: 186px;
       }
@@ -2066,25 +2066,25 @@
     &__head {
       margin-bottom: 30px;
       h1, .h1 {
-        font-size: 50px;
+        font-size: rem(50px);
         margin-right: 40px;
       }
       &-link {
-        font-size: 15px;
+        font-size: rem(15px);
       }
       &.--journal {
         .category__head-untitle {
-          font-size: 14px;
+          font-size: rem(14px);
           margin-bottom: 5px;
         }
         h1, .h1 {
-          font-size: 40px;
+          font-size: rem(40px);
           margin-bottom: 15px;
         }
       }
     }
     &__block {
-      font-size: 16px;
+      font-size: rem(16px);
       transform: translateY(0);
       transition: all 0.35s;
       &-thumb {
@@ -2107,21 +2107,21 @@
     &__head {
       margin-bottom: 30px;
       h1, .h1 {
-        font-size: 50px;
+        font-size: rem(50px);
         margin-right: 40px;
       }
       &-link {
-        font-size: 15px;
+        font-size: rem(15px);
       }
       &.--journal {
         h1, .h1 {
-          font-size: 50px;
+          font-size: rem(50px);
           margin-bottom: 5px;
         }
       }
     }
     &__block {
-      font-size: 18px;
+      font-size: rem(18px);
       border-radius: 50px;
       padding: 25px 25px 35px 25px;
       &-thumb {
@@ -2136,7 +2136,7 @@
   &__head {
     margin-bottom: 15px;
     font-weight: bold;
-    font-size: 26px;
+    font-size: rem(26px);
     line-height: 30px;
     display: flex;
     align-items: center;
@@ -2173,7 +2173,7 @@
       border-radius: 50px;
       color: $color-red;
       font-weight: bold;
-      font-size: 15px;
+      font-size: rem(15px);
       text-transform: uppercase;
       height: 50px;
       border: 4px solid $color-white;
@@ -2193,7 +2193,7 @@
         background: $color-red;
         line-height: 42px;
         text-align: center;
-        font-size: 15px;
+        font-size: rem(15px);
         transform: translateX(0);
         transition: all 0.35s;
       }
@@ -2212,12 +2212,12 @@
     }
   }
   &__block {
-    font-size: 20px;
+    font-size: rem(20px);
     margin-bottom: 15px;
     b {
       display: block;
       text-transform: uppercase;
-      font-size: 12px;
+      font-size: rem(12px);
       color: $color-orange;
     }
     p {
@@ -2235,7 +2235,7 @@
   }
   @include media-breakpoint-up(sm) {
     &__head {
-      font-size: 30px;
+      font-size: rem(30px);
       line-height: 29px;
       &>div {
         margin-right: 29px;
@@ -2257,14 +2257,14 @@
       }
     }
     &__block {
-      font-size: 22px;
+      font-size: rem(22px);
       margin-bottom: 20px;
     }
   }
   @include media-breakpoint-up(lg) {
     margin-bottom: 0;
     &__head {
-      font-size: 25px;
+      font-size: rem(25px);
       line-height: 29px;
       &>div {
         margin-right: 27px;
@@ -2322,7 +2322,7 @@
       }
     }
     &__block {
-      font-size: 18px;
+      font-size: rem(18px);
       margin-bottom: 23px;
     }
   }
@@ -2330,13 +2330,13 @@
     max-width: 953px;
     margin: 0 auto;
     &__content {
-      font-size: 15px;
+      font-size: rem(15px);
       p {
         padding-left: 21px;
       }
     }
     &__head {
-      font-size: 30px;
+      font-size: rem(30px);
       line-height: 34px;
       &>div {
         margin-right: 27px;
@@ -2363,7 +2363,7 @@
       }
     }
     &__block {
-      font-size: 22px;
+      font-size: rem(22px);
       margin-bottom: 20px;
       p {
         padding-left: 0;
@@ -2412,9 +2412,9 @@
       margin-right: 15px !important;
     }
     i {
-      font-size: 20px !important;
+      font-size: rem(20px) !important;
       &.icon-social-vk {
-        font-size: 32px !important;
+        font-size: rem(32px) !important;
       }
     }
     img {
@@ -2470,14 +2470,14 @@
     &-untitle {
       margin-bottom: 10px;
       font-weight: bold;
-      font-size: 10px;
+      font-size: rem(10px);
       line-height: 11px;
       text-transform: uppercase;
       opacity: 0.7;
     }
     &-title {
       font-weight: 500;
-      font-size: 32px;
+      font-size: rem(32px);
       line-height: 26px;
       color: $color-orange;
       margin-bottom: 16px;
@@ -2510,7 +2510,7 @@
   }
   @include media-breakpoint-up(xl) {
     &__block {
-      font-size: 14px;
+      font-size: rem(14px);
       margin-bottom: 70px;
       &-thumb {
         height: 230px;
@@ -2560,7 +2560,7 @@
       }
       &-title {
         margin-bottom: 15px;
-        font-size: 36px;
+        font-size: rem(36px);
       }
     }
   }
@@ -2572,7 +2572,7 @@
     position: relative;
     margin-bottom: 30px;
     transition: all 0.35s;
-    font-size: 12px;
+    font-size: rem(12px);
     filter: drop-shadow(0px 4px 30px rgba($color-black,0));
     &-thumb {
       border-radius: 25px;
@@ -2694,7 +2694,7 @@
     max-width: 342px;
     margin: 0 auto 70px;
     h1, .h1 {
-      font-size: 30px;
+      font-size: rem(30px);
       color: $primary-color;
       margin-bottom: 20px;
     }
@@ -2708,7 +2708,7 @@
       background: $color-blue linear-gradient(266.54deg, #0092F8 11.29%, #417EF8 85.22%);
       box-shadow: 0px 6px 15px rgba(6, 144, 248, 0.5);
       border-radius: 50px;
-      font-size: 15px;
+      font-size: rem(15px);
       font-weight: bold;
       display: block;
       margin: 0 auto;
@@ -2734,11 +2734,11 @@
     &-category {
       opacity: 0.7;
       text-transform: uppercase;
-      font-size: 12px;
+      font-size: rem(12px);
       margin-bottom: 0px;
     }
     &-title {
-      font-size: 20px;
+      font-size: rem(20px);
       font-weight: bold;
     }
     &-thumb {
@@ -2768,11 +2768,11 @@
     &-category {
       opacity: 0.7;
       text-transform: uppercase;
-      font-size: 10px;
+      font-size: rem(10px);
       margin-bottom: 3px;
     }
     &-title {
-      font-size: 16px;
+      font-size: rem(16px);
       font-weight: bold;
     }
     &-thumb {
@@ -2795,7 +2795,7 @@
       text-transform: uppercase;
       background: $color-blue;
       color: $color-white;
-      font-size: 15px;
+      font-size: rem(15px);
       font-weight: bold;
       left: 50%;
       transform: translate(-50%,50%);
@@ -2844,15 +2844,15 @@
         padding-top: 305px;
       }
       &-category {
-        font-size: 14px;
+        font-size: rem(14px);
       }
       &-title {
-        font-size: 26px;
+        font-size: rem(26px);
       }
     }
     &__document {
       h1, .h1 {
-        font-size: 40px;
+        font-size: rem(40px);
       }
       &-btn {
         margin-left: 0;
@@ -2886,10 +2886,10 @@
         padding-top: 220px;
       }
       &-category {
-        font-size: 12px;
+        font-size: rem(12px);
       }
       &-title {
-        font-size: 20px;
+        font-size: rem(20px);
       }
     }
     &__document {
@@ -2897,7 +2897,7 @@
       max-width: inherit;
       margin-bottom: 0;
       h1, .h1 {
-        font-size: 30px;
+        font-size: rem(30px);
         margin-bottom: 15px;
       }
       p {
@@ -2921,7 +2921,7 @@
         margin-bottom: 0px;
       }
       &-title {
-        font-size: 12px;
+        font-size: rem(12px);
       }
       &-thumb {
         margin-bottom: -110px;
@@ -2950,17 +2950,17 @@
         padding-top: 305px;
       }
       &-category {
-        font-size: 14px;
+        font-size: rem(14px);
       }
       &-title {
-        font-size: 26px;
+        font-size: rem(26px);
       }
     }
     &__document {
       padding-top: 90px;
-      font-size: 17px;
+      font-size: rem(17px);
       h1, .h1 {
-        font-size: 40px;
+        font-size: rem(40px);
       }
     }
     &__block {
@@ -2970,11 +2970,11 @@
         padding: 135px 15px 22px 15px;
       }
       &-category {
-        font-size: 10px;
+        font-size: rem(10px);
         margin-bottom: 0px;
       }
       &-title {
-        font-size: 16px;
+        font-size: rem(16px);
       }
       &-thumb {
         margin-bottom: -135px;
@@ -3004,10 +3004,10 @@
         padding-top: 406px;
       }
       &-category {
-        font-size: 16px;
+        font-size: rem(16px);
       }
       &-title {
-        font-size: 30px;
+        font-size: rem(30px);
       }
     }
     &__document {
@@ -3015,7 +3015,7 @@
       max-width: 783px;
       margin-left: 0;
       h1, .h1 {
-        font-size: 50px;
+        font-size: rem(50px);
       }
     }
     &__block {
@@ -3025,10 +3025,10 @@
         padding: 197px 15px 22px 15px;
       }
       &-category {
-        font-size: 10px;
+        font-size: rem(10px);
       }
       &-title {
-        font-size: 18px;
+        font-size: rem(18px);
       }
       &-thumb {
         margin-bottom: -197px;
@@ -3051,7 +3051,7 @@
     display: flex;
     justify-content: center;
     font-weight: bold;
-    font-size: 16px;
+    font-size: rem(16px);
     color: $color-orange;
     text-align: center;
     margin-bottom: 48px;
@@ -3086,7 +3086,7 @@
     text-align: center;
     &-title {
       font-weight: bold;
-      font-size: 26px;
+      font-size: rem(26px);
       line-height: 1.4;
       margin-bottom: 30px;
     }
@@ -3147,7 +3147,7 @@
       border-radius: 50px;
       color: $color-red;
       font-weight: bold;
-      font-size: 15px;
+      font-size: rem(15px);
       text-transform: uppercase;
       height: 50px;
       border: 4px solid $color-white;
@@ -3166,7 +3166,7 @@
         background: $color-red;
         line-height: 42px;
         text-align: center;
-        font-size: 15px;
+        font-size: rem(15px);
         transform: translateX(0);
         transition: all 0.35s;
       }
@@ -3187,7 +3187,7 @@
       border-radius: 50px;
       color: $color-red;
       font-weight: bold;
-      font-size: 15px;
+      font-size: rem(15px);
       text-transform: uppercase;
       height: 50px;
       border: 4px solid $color-white;
@@ -3205,7 +3205,7 @@
         background: $color-red;
         line-height: 42px;
         text-align: center;
-        font-size: 15px;
+        font-size: rem(15px);
         transform: translateX(0);
         transition: all 0.35s;
       }
@@ -3227,14 +3227,14 @@
     strong {
       line-height: 0.7;
       font-weight: 700;
-      font-size: 150px;
+      font-size: rem(150px);
       display: inline-block;
       margin-left: 50px;
     }
     span {
       height: 35px;
       font-weight: 700;
-      font-size: 20px;
+      font-size: rem(20px);
       transform-origin: 50%;
       transform: rotate(-90deg);
       width: 121px;
@@ -3307,7 +3307,7 @@
       align-items: center;
       text-align: center;
       font-weight: bold;
-      font-size: 18px;
+      font-size: rem(18px);
       margin-bottom: 20px;
       &>div {
         width: 100%;
@@ -3326,7 +3326,7 @@
       border-radius: 50px;
       color: $color-red;
       font-weight: bold;
-      font-size: 15px;
+      font-size: rem(15px);
       text-transform: uppercase;
       height: 50px;
       border: 4px solid $color-white;
@@ -3344,7 +3344,7 @@
         background: $color-red;
         line-height: 42px;
         text-align: center;
-        font-size: 15px;
+        font-size: rem(15px);
         transform: translateX(0);
         transition: all 0.35s;
       }
@@ -3359,7 +3359,7 @@
     margin-bottom: 80px;
     &__top {
       justify-content: space-between;
-      font-size: 20px;
+      font-size: rem(20px);
       margin-bottom: 46px;
       &>div {
         height: 50px;
@@ -3367,7 +3367,7 @@
       }
       .last {
         display: block;
-        font-size: 12px;
+        font-size: rem(12px);
       }
       &.--result {
         .first {
@@ -3417,14 +3417,14 @@
   @include media-breakpoint-up(lg) {
     margin-bottom: 150px;
     &__top {
-      font-size: 16px;
+      font-size: rem(16px);
       margin-bottom: 50px;
       &>div {
         height: 40px;
         line-height: 40px;
       }
       .last {
-        font-size: 12px;
+        font-size: rem(12px);
       }
     }
     &__head {
@@ -3442,7 +3442,7 @@
         }
       }
       &-content {
-        font-size: 15px;
+        font-size: rem(15px);
         margin-bottom: 45px;
         p {
           padding-left: 0;
@@ -3500,20 +3500,20 @@
   @include media-breakpoint-up(xl) {
     margin-bottom: 150px;
     &__top {
-      font-size: 20px;
+      font-size: rem(20px);
       margin-bottom: 50px;
       &>div {
         height: 50px;
         line-height: 50px;
       }
       .last {
-        font-size: 12px;
+        font-size: rem(12px);
       }
     }
     &__head {
       &-title {
         margin-bottom: 70px;
-        font-size: 30px;
+        font-size: rem(30px);
       }
       &-img {
         margin-top: -40px;
@@ -3570,9 +3570,9 @@
       margin-right: 15px !important;
     }
     i {
-      font-size: 20px !important;
+      font-size: rem(20px) !important;
       &.icon-social-vk {
-        font-size: 32px !important;
+        font-size: rem(32px) !important;
       }
     }
     img {
@@ -3592,7 +3592,7 @@
     padding: 20px 18px;
     text-align: center;
     font-weight: 500;
-    font-size: 16px;
+    font-size: rem(16px);
     position: relative;
     transform: translateY(0);
     transition: all 0.35s;
@@ -3629,7 +3629,7 @@
       width: 160px;
       height: 40px;
       line-height: 40px;
-      font-size: 15px;
+      font-size: rem(15px);
       color: $color-white;
       text-align: center;
       font-weight: bold;
@@ -3672,7 +3672,7 @@
     max-width: inherit;
     &__block {
       padding: 15px 10px 20px 10px;
-      font-size: 12px;
+      font-size: rem(12px);
       max-width: inherit;
       min-width: 100%;
       &-thumb {
@@ -3683,7 +3683,7 @@
   }
   @include media-breakpoint-up(xl) {
     &__block {
-      font-size: 16px;
+      font-size: rem(16px);
       transform: translateY(0);
       transition: all 0.35s;
       margin-bottom: 70px;
@@ -3705,7 +3705,7 @@
   }
   @include media-breakpoint-up(xxl) {
     &__block {
-      font-size: 18px;
+      font-size: rem(18px);
       border-radius: 50px;
       padding: 25px 25px 35px 25px;
       &-thumb {
@@ -3749,7 +3749,7 @@
     }
     &-slide {
       text-align: center;
-      font-size: 18px;
+      font-size: rem(18px);
       display: -webkit-flex;
       display: flex;
       justify-content: center;
@@ -3766,7 +3766,7 @@
       font-size: 0;
       transition: all 0.35s;
       &::after {
-        font-size: 13px;
+        font-size: rem(13px);
         font-family: $font-icomoon;
       }
       &:focus {
@@ -3875,7 +3875,7 @@
     background: $color-white;
     box-shadow: 0px 4px 30px rgba($color-black, 0.05);
     border-radius: 25px;
-    font-size: 18px;
+    font-size: rem(18px);
     font-style: italic;
     font-weight: 300;
     padding: 46px 20px 38px 55px;
@@ -3888,7 +3888,7 @@
       opacity: 0.2;
       left: 31px;
       top: 20px;
-      font-size: 65px;
+      font-size: rem(65px);
       line-height: 0.8;
       font-style: normal;
     }
@@ -3897,7 +3897,7 @@
     }
     &-name {
       font-weight: bold;
-      font-size: 16px;
+      font-size: rem(16px);
       position: relative;
       font-style: normal;
       padding-left: 22px;
@@ -3918,7 +3918,7 @@
       background: linear-gradient(180deg, #FFB950 0%, #FF9550 100%);
       box-shadow: 5px 15px 30px rgba(255, 173, 96, 0.5);
       text-align: center;
-      font-size: 38px;
+      font-size: rem(38px);
       position: absolute;
       right: 0;
       top: 0;
@@ -4009,7 +4009,7 @@
       width: calc(100% - 38px);
       padding: 40px 112px 36px 56px;
       border-radius: 50px;
-      font-size: 22px;
+      font-size: rem(22px);
       p {
         padding-left: 0;
       }
@@ -4017,7 +4017,7 @@
         width: 120px;
         height: 120px;
         line-height: 120px;
-        font-size: 55px;
+        font-size: rem(55px);
         i {
           vertical-align: -9px;
         }
@@ -4043,7 +4043,7 @@
   &__head {
     &-category {
       font-weight: bold;
-      font-size: 12px;
+      font-size: rem(12px);
       line-height: 14px;
       letter-spacing: 0.05em;
       margin-bottom: 5px;
@@ -4065,7 +4065,7 @@
       border-radius: 50px;
       color: $color-red;
       font-weight: bold;
-      font-size: 15px;
+      font-size: rem(15px);
       text-transform: uppercase;
       height: 50px;
       line-height: 43px;
@@ -4087,7 +4087,7 @@
         background: $color-red;
         line-height: 42px;
         text-align: center;
-        font-size: 15px;
+        font-size: rem(15px);
         transform: translateX(0);
         transition: all 0.35s;
       }
@@ -4098,7 +4098,7 @@
       }
     }
     &-link {
-      font-size: 15px;
+      font-size: rem(15px);
       text-decoration: none;
       text-transform: uppercase;
       color: $primary-color;
@@ -4118,11 +4118,11 @@
     margin-bottom: 100px;
     &__head {
       &-category {
-        font-size: 14px;
+        font-size: rem(14px);
       }
     }
     &__content {
-      font-size: 15px;
+      font-size: rem(15px);
       &-btn {
         margin: 0;
       }
@@ -4151,11 +4151,11 @@
     }
     &__head {
       &-category {
-        font-size: 12px;
+        font-size: rem(12px);
       }
     }
     &__content {
-      font-size: 14px;
+      font-size: rem(14px);
     }
     &__btns {
       margin-bottom: 0;
@@ -4164,7 +4164,7 @@
   @include media-breakpoint-up(xl) {
     margin-bottom: 110px;
     &__content {
-      font-size: 15px;
+      font-size: rem(15px);
     }
     &__wrapper {
       .right {
@@ -4174,7 +4174,7 @@
     }
     &__head {
       &-category {
-        font-size: 14px;
+        font-size: rem(14px);
       }
     }
     &__btns {
@@ -4184,7 +4184,7 @@
   @include media-breakpoint-up(xxl) {
     margin-bottom: 75px;
     &__content {
-      font-size: 17px;
+      font-size: rem(17px);
     }
     &__wrapper {
       .right {
@@ -4194,7 +4194,7 @@
     }
     &__head {
       &-category {
-        font-size: 14px;
+        font-size: rem(14px);
       }
     }
     &__btns {
@@ -4209,7 +4209,7 @@
     text-align: center;
     margin-bottom: 30px;
     h1, .h1 {
-      font-size: 40px;
+      font-size: rem(40px);
       margin-bottom: 5px;
     }
     &-link {
@@ -4217,7 +4217,7 @@
       text-transform: uppercase;
       color: $primary-color;
       text-decoration: none;
-      font-size: 15px;
+      font-size: rem(15px);
       font-weight: bold;
       i {
         margin-left: 15px;
@@ -4233,7 +4233,7 @@
     }
     &-untitle {
       font-weight: bold;
-      font-size: 12px;
+      font-size: rem(12px);
       line-height: 14px;
       letter-spacing: 0.05em;
       margin-bottom: 5px;
@@ -4244,7 +4244,7 @@
     text-transform: uppercase;
     color: $primary-color;
     text-decoration: none;
-    font-size: 15px;
+    font-size: rem(15px);
     font-weight: bold;
     i {
       margin-left: 13px;
@@ -4284,7 +4284,7 @@
       text-decoration: none;
       color: $color-white;
       border-radius: 50%;
-      font-size: 20px;
+      font-size: rem(20px);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -4308,7 +4308,7 @@
     &-title {
       text-decoration: none;
       font-weight: bold;
-      font-size: 16px;
+      font-size: rem(16px);
       line-height: 1.2;
       text-decoration: none;
       color: $primary-color;
@@ -4331,11 +4331,11 @@
     margin-bottom: 164px;
     &__head {
       &-untitle {
-        font-size: 14px;
+        font-size: rem(14px);
         margin-bottom: 3px;
       }
       h1, .h1 {
-        font-size: 50px;
+        font-size: rem(50px);
       }
     }
     &__video {
@@ -4345,7 +4345,7 @@
         width: 92px;
         height: 92px;
         box-shadow: 0 4px 15px rgba(0,0,0,.1), 0 0 0 14px rgba(255,255,255,.5);
-        font-size: 34px;
+        font-size: rem(34px);
       }
       &-thumb {
       }
@@ -4359,7 +4359,7 @@
         margin-bottom: 0;
       }
       &-title {
-        font-size: 24px;
+        font-size: rem(24px);
       }
     }
   }
@@ -4369,14 +4369,14 @@
       text-align: left;
       margin-bottom: 25px;
       &-untitle {
-        font-size: 12px;
+        font-size: rem(12px);
         margin-bottom: 3px;
       }
       h1, .h1 {
-        font-size: 40px;
+        font-size: rem(40px);
       }
       &-link {
-        font-size: 13px;
+        font-size: rem(13px);
       }
     }
     &__wrapper {
@@ -4395,7 +4395,7 @@
         width: 68px;
         height: 68px;
         box-shadow: 0 4px 15px rgba(0,0,0,.1), 0 0 0 10px rgba(255,255,255,.5);
-        font-size: 21px;
+        font-size: rem(21px);
       }
       &-thumb {
         img {
@@ -4405,7 +4405,7 @@
       }
     }
     &__link {
-      font-size: 13px;
+      font-size: rem(13px);
     }
     &__block {
       margin-bottom: 25px;
@@ -4421,7 +4421,7 @@
         }
       }
       &-title {
-        font-size: 16px;
+        font-size: rem(16px);
       }
       &.--last {
         display: flex;
@@ -4433,14 +4433,14 @@
     &__head {
       margin-bottom: 35px;
       &-untitle {
-        font-size: 14px;
+        font-size: rem(14px);
         margin-bottom: 3px;
       }
       h1, .h1 {
-        font-size: 50px;
+        font-size: rem(50px);
       }
       &-link {
-        font-size: 15px;
+        font-size: rem(15px);
       }
     }
     &__wrapper {
@@ -4449,7 +4449,7 @@
       }
     }
     &__link {
-      font-size: 15px;
+      font-size: rem(15px);
     }
     &__video {
       max-width: inherit;
@@ -4457,7 +4457,7 @@
         width: 92px;
         height: 92px;
         box-shadow: 0 4px 15px rgba(0,0,0,.1), 0 0 0 14px rgba(255,255,255,.5);
-        font-size: 34px;
+        font-size: rem(34px);
         &:hover {
           box-shadow: 0px 4px 15px rgba($color-blue, 0.1), 0 0 0 21px rgba($color-white,.2);
         }
@@ -4472,7 +4472,7 @@
     }
     &__block {
       margin-bottom: 26px;
-      font-size: 14px;
+      font-size: rem(14px);
       &:last-child {
         margin-bottom: 0;
       }
@@ -4483,7 +4483,7 @@
         }
       }
       &-title {
-        font-size: 24px;
+        font-size: rem(24px);
         margin-bottom: 15px;
       }
       &-content {
@@ -4502,14 +4502,14 @@
     &__head {
       margin-bottom: 40px;
       &-untitle {
-        font-size: 14px;
+        font-size: rem(14px);
         margin-bottom: 3px;
       }
       h1, .h1 {
-        font-size: 60px;
+        font-size: rem(60px);
       }
       &-link {
-        font-size: 15px;
+        font-size: rem(15px);
       }
     }
     &__wrapper {
@@ -4522,7 +4522,7 @@
         width: 108px;
         height: 108px;
         box-shadow: 0 4px 15px rgba(0,0,0,.1), 0 0 0 16px rgba(255,255,255,.5);
-        font-size: 38px;
+        font-size: rem(38px);
         &:hover {
           box-shadow: 0px 4px 15px rgba($color-blue, 0.1), 0 0 0 21px rgba($color-white,.2);
         }
@@ -4537,7 +4537,7 @@
     }
     &__block {
       margin-bottom: 40px;
-      font-size: 14px;
+      font-size: rem(14px);
       &:last-child {
         margin-bottom: 0;
       }
@@ -4548,7 +4548,7 @@
         }
       }
       &-title {
-        font-size: 24px;
+        font-size: rem(24px);
         margin-bottom: 15px;
       }
     }
@@ -4575,7 +4575,7 @@
   }
   &__head {
     &-untitle {
-      font-size: 12px;
+      font-size: rem(12px);
       color: #FFFFFF;
       opacity: 0.7;
       margin-bottom: 9px;
@@ -4590,7 +4590,7 @@
     text-transform: uppercase;
     color: $color-white;
     text-decoration: none;
-    font-size: 15px;
+    font-size: rem(15px);
     font-weight: bold;
     i {
       margin-left: 15px;
@@ -4640,7 +4640,7 @@
       transition: all 0.35s;
       margin-top: calc(-19px - 0px);
       &::after {
-        font-size: 15px;
+        font-size: rem(15px);
         font-family: $font-icomoon;
       }
       &:focus {
@@ -4713,12 +4713,12 @@
     &-category {
       opacity: 0.7;
       text-transform: uppercase;
-      font-size: 10px;
+      font-size: rem(10px);
       margin-bottom: 0px;
       font-weight: bold;
     }
     &-title {
-      font-size: 16px;
+      font-size: rem(16px);
       font-weight: bold;
     }
     &-thumb {
@@ -4741,7 +4741,7 @@
       text-transform: uppercase;
       background: $color-red;
       color: $color-white;
-      font-size: 15px;
+      font-size: rem(15px);
       font-weight: bold;
       left: 50%;
       transform: translate(-50%,50%);
@@ -4801,11 +4801,11 @@
     }
     &__head {
       &-untitle {
-        font-size: 14px;
+        font-size: rem(14px);
         margin-bottom: 0px;
       }
       h1, .h1 {
-        font-size: 50px;
+        font-size: rem(50px);
         margin-bottom: 30px;
       }
     }
@@ -4826,7 +4826,7 @@
           width: 61px;
           &::after {
             content: '\e902';
-            font-size: 36px;
+            font-size: rem(36px);
           }
         }
         &-prev {
@@ -4848,10 +4848,10 @@
     }
     &__head {
       &-untitle {
-        font-size: 12px;
+        font-size: rem(12px);
       }
       h1, .h1 {
-        font-size: 40px;
+        font-size: rem(40px);
         margin-bottom: 30px;
       }
     }
@@ -4872,7 +4872,7 @@
         margin-bottom: 0px;
       }
       &-title {
-        font-size: 12px;
+        font-size: rem(12px);
       }
       &-thumb {
         margin-bottom: -110px;
@@ -4895,7 +4895,7 @@
           height: 25px;
           width: 43px;
           &::after {
-            font-size: 25px;
+            font-size: rem(25px);
           }
         }
         &-prev {
@@ -4903,7 +4903,7 @@
           width: 25px;
           right: 50px;
           &::after {
-            font-size: 11px;
+            font-size: rem(11px);
           }
         }
       }
@@ -4918,11 +4918,11 @@
         padding: 135px 15px 22px 15px;
       }
       &-category {
-        font-size: 10px;
+        font-size: rem(10px);
         margin-bottom: 0px;
       }
       &-title {
-        font-size: 16px;
+        font-size: rem(16px);
       }
       &-thumb {
         margin-bottom: -135px;
@@ -4934,10 +4934,10 @@
     }
     &__head {
       &-untitle {
-        font-size: 14px;
+        font-size: rem(14px);
       }
       h1, .h1 {
-        font-size: 50px;
+        font-size: rem(50px);
         margin-bottom: 30px;
       }
     }
@@ -4956,7 +4956,7 @@
           height: 36px;
           width: 61px;
           &::after {
-            font-size: 36px;
+            font-size: rem(36px);
           }
         }
         &-prev {
@@ -4964,7 +4964,7 @@
           width: 36px;
           right: 71px;
           &::after {
-            font-size: 15px;
+            font-size: rem(15px);
           }
         }
       }
@@ -4983,10 +4983,10 @@
         padding: 197px 15px 22px 15px;
       }
       &-category {
-        font-size: 10px;
+        font-size: rem(10px);
       }
       &-title {
-        font-size: 18px;
+        font-size: rem(18px);
       }
       &-thumb {
         margin-bottom: -197px;
@@ -4997,10 +4997,10 @@
     }
     &__head {
       &-untitle {
-        font-size: 14px;
+        font-size: rem(14px);
       }
       h1, .h1 {
-        font-size: 60px;
+        font-size: rem(60px);
         margin-bottom: 30px;
       }
     }
@@ -5017,7 +5017,7 @@
           height: 36px;
           width: 61px;
           &::after {
-            font-size: 36px;
+            font-size: rem(36px);
           }
         }
         &-prev {
@@ -5025,7 +5025,7 @@
           width: 36px;
           right: 71px;
           &::after {
-            font-size: 15px;
+            font-size: rem(15px);
           }
         }
       }
@@ -5056,7 +5056,7 @@
     z-index: 5;
     &-untitle {
       font-weight: bold;
-      font-size: 12px;
+      font-size: rem(12px);
       line-height: 14px;
       letter-spacing: 0.05em;
       margin-bottom: 6px;
@@ -5066,7 +5066,7 @@
     }
     &-link {
       font-weight: bold;
-      font-size: 15px;
+      font-size: rem(15px);
       line-height: 17px;
       text-transform: uppercase;
       text-decoration: none;
@@ -5272,14 +5272,14 @@
       max-width: 221px;
       margin-bottom: -125px;
       .h1, h1 {
-        font-size: 36px;
+        font-size: rem(36px);
         margin-bottom: 20px;
       }
       &-untitle {
-        font-size: 12px;
+        font-size: rem(12px);
       }
       &-link {
-        font-size: 13px;
+        font-size: rem(13px);
       }
     }
     &__round {
@@ -5328,14 +5328,14 @@
       max-width: 290px;
       margin-bottom: -165px;
       .h1, h1 {
-        font-size: 50px;
+        font-size: rem(50px);
         margin-bottom: 20px;
       }
       &-untitle {
-        font-size: 14px;
+        font-size: rem(14px);
       }
       &-link {
-        font-size: 15px;
+        font-size: rem(15px);
       }
     }
     &__round {
@@ -5387,14 +5387,14 @@
       max-width: 400px;
       margin-bottom: -133px;
       .h1, h1 {
-        font-size: 60px;
+        font-size: rem(60px);
         margin-bottom: 20px;
       }
       &-untitle {
-        font-size: 14px;
+        font-size: rem(14px);
       }
       &-link {
-        font-size: 15px;
+        font-size: rem(15px);
       }
     }
     &__round {
@@ -5423,7 +5423,7 @@
     margin-bottom: 25px;
     &-untitle {
       font-weight: bold;
-      font-size: 12px;
+      font-size: rem(12px);
       line-height: 14px;
       letter-spacing: 0.05em;
       margin-bottom: 6px;
@@ -5473,7 +5473,7 @@
       transition: all 0.35s;
       margin-top: calc(-19px - 10px);
       &::after {
-        font-size: 15px;
+        font-size: rem(15px);
         font-family: $font-icomoon;
       }
       &:focus {
@@ -5525,11 +5525,11 @@
     &__head {
       margin-bottom: 35px;
       &-untitle {
-        font-size: 14px;
+        font-size: rem(14px);
       }
       .h1, h1 {
         margin-bottom: 0px;
-        font-size: 50px;
+        font-size: rem(50px);
       }
     }
     &__wrapper {
@@ -5550,11 +5550,11 @@
     &__head {
       margin-bottom: 20px;
       &-untitle {
-        font-size: 12px;
+        font-size: rem(12px);
       }
       .h1, h1 {
         margin-bottom: 0px;
-        font-size: 40px;
+        font-size: rem(40px);
       }
     }
     &__wrapper {
@@ -5576,11 +5576,11 @@
     &__head {
       margin-bottom: 35px;
       &-untitle {
-        font-size: 14px;
+        font-size: rem(14px);
       }
       .h1, h1 {
         margin-bottom: 0px;
-        font-size: 50px;
+        font-size: rem(50px);
       }
     }
   }
@@ -5589,11 +5589,11 @@
     &__head {
       margin-bottom: 35px;
       &-untitle {
-        font-size: 14px;
+        font-size: rem(14px);
       }
       .h1, h1 {
         margin-bottom: 0px;
-        font-size: 60px;
+        font-size: rem(60px);
       }
     }
   }

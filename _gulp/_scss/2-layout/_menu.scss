@@ -40,7 +40,7 @@
   }
   &__navigation {
     display: block;
-    font-size: 18px;
+    font-size: rem(18px);
     padding: 15px 0;
     ul {
       li {
@@ -84,14 +84,14 @@
       line-height: 47px;
       border-radius: 35px;
       border: 2px solid $color-orange;
-      font-size: 15px;
+      font-size: rem(15px);
       text-transform: uppercase;
       text-decoration: none;
       color: $color-orange;
       font-weight: bold;
       i {
         font-weight: 400;
-        font-size: 16px;
+        font-size: rem(16px);
         margin-left: 10px;
         vertical-align: -1px;
       }
@@ -112,7 +112,7 @@
 }
 .social {
   text-align: center;
-  font-size: 12px;
+  font-size: rem(12px);
   p {
     margin: 0;
     padding: 0;
@@ -126,12 +126,12 @@
     justify-content: center;
     align-items: center;
     i {
-      font-size: 29px;
+      font-size: rem(29px);
       &.icon-social-fb {
         color: #3761CE;
       }
       &.icon-social-vk {
-        font-size: 41px;
+        font-size: rem(41px);
         color: #1E88E5;
       }
     }

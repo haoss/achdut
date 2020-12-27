@@ -54,7 +54,7 @@
           margin-left: calc(100% - 262px);
           &>a, &>span {
             width: 36px;
-            font-size: 15px;
+            font-size: rem(15px);
             &::before {
               content: '\e901';
             }
@@ -65,7 +65,7 @@
           order: 3;
           &>a, &>span {
             width: 61px;
-            font-size: 37px;
+            font-size: rem(37px);
             &::before {
               content: '\e902';
             }

@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 12px;
+    font-size: rem(12px);
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -65,14 +65,14 @@
   }
   &__address {
     padding: 0 45px;
-    font-size: 15px;
+    font-size: rem(15px);
     margin-bottom: 52px;
     &-title {
       white-space: nowrap;
       font-weight: bold;
       color: $color-red;
       margin-bottom: 19px;
-      font-size: 16px;
+      font-size: rem(16px);
       line-height: 1;
     }
     p {
@@ -82,10 +82,10 @@
     &-time {
       display: flex;
       align-items: center;
-      font-size: 13px;
+      font-size: rem(13px);
       line-height: 1.4;
       strong {
-        font-size: 34px;
+        font-size: rem(34px);
         line-height: 1;
       }
       &>*:first-child {
@@ -108,7 +108,7 @@
     padding-left: 16px;
     padding-right: 55px;
     position: relative;
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: bold;
     &::before, &::after {
       content: '';
@@ -136,7 +136,7 @@
   }
   &__nav {
     display: none;
-    font-size: 20px;
+    font-size: rem(20px);
     ul {
       padding-left: 0;
       margin: 0;
@@ -159,7 +159,7 @@
     }
   }
   &__info {
-    font-size: 12px;
+    font-size: rem(12px);
     display: flex;
     flex-wrap: wrap;
     &>div {
@@ -177,7 +177,7 @@
       font-weight: 400;
       line-height: 1;
       color: $primary-color;
-      font-size: 14px;
+      font-size: rem(14px);
       text-transform: none;
       margin-top: 7px;
       a {
@@ -254,9 +254,9 @@
         margin-right: 15px !important;
       }
       i {
-        font-size: 20px !important;
+        font-size: rem(20px) !important;
         &.icon-social-vk {
-          font-size: 32px !important;
+          font-size: rem(32px) !important;
         }
       }
       img {
@@ -274,7 +274,7 @@
     &__rounds {
       div {
         &.first {
-          top: -314px;
+          top: -3rem(14px);
           left: -170px;
         }
       }
@@ -288,7 +288,7 @@
       flex-direction: row;
       justify-content: space-between;
       padding-bottom: 10px;
-      font-size: 14px;
+      font-size: rem(14px);
       .first {
         padding-left: 25px;
       }
@@ -315,7 +315,7 @@
     }
     &__nav {
       display: block;
-      font-size: 14px;
+      font-size: rem(14px);
       ul {
         padding: 0;
         li {
@@ -327,7 +327,7 @@
       }
     }
     &__title {
-      font-size: 12px;
+      font-size: rem(12px);
       padding: 0;
       margin-bottom: 9px;
       &::before, &::after {
@@ -445,7 +445,7 @@
   width: 100%;
   p {
     font-weight: bold;
-    font-size: 12px;
+    font-size: rem(12px);
     line-height: 26px;
     margin-bottom: 22px;
   }
