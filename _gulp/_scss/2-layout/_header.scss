@@ -183,6 +183,11 @@
               border-color: $color-white;
             }
           }
+          &.active {
+            &>a, &>span {
+              border-color: $color-white;
+            }
+          }
         }
       }
     }
