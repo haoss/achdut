@@ -65,6 +65,11 @@ $(document).on('ready', function(){
     }, 'xml');
   });
 
+  $('[data-fancybox]').fancybox({
+    protect: true,
+    backFocus: false
+  });
+
   mobileNav();
   footerNav();
   phoneMask();
