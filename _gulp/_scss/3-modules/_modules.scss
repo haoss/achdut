@@ -2105,7 +2105,7 @@
   }
   @include media-breakpoint-up(xxl) {
     &__head {
-      margin-bottom: 30px;
+      margin-bottom: 70px;
       h1, .h1 {
         font-size: rem(50px);
         margin-right: 40px;
@@ -2742,17 +2742,19 @@
       font-weight: bold;
     }
     &-thumb {
-      margin-bottom: -200px;
+      margin-bottom: -190px;
       position: relative;
       img {
-        width: 100%;
-        height: 310px;
+        width: 200px;
+        height: 280px;
         object-fit: contain;
+        margin: 0 auto;
+        display: block;
       }
     }
   }
   &__block {
-    margin: 0 auto 20px;
+    margin: 0 auto 45px;
     max-width: 221px;
     position: relative;
     transform: translateY(0);
@@ -2776,12 +2778,14 @@
       font-weight: bold;
     }
     &-thumb {
-      margin-bottom: -135px;
+      margin-bottom: -125px;
       position: relative;
       img {
-        width: 100%;
-        height: 257px;
+        width: 150px;
+        height: 210px;
+        margin: 0 auto;
         object-fit: contain;
+        display: block;
       }
     }
     &-btn {
@@ -2835,9 +2839,10 @@
     &__thumb {
       margin-bottom: 50px;
       &-thumb {
-        margin-bottom: -305px;
+        margin-bottom: -295px;
         img {
-          height: 490px;
+          height: 448px;
+          width: 316px;
         }
       }
       &-content {
@@ -2865,7 +2870,7 @@
     }
     &__wrapper {
       flex-direction: row;
-      margin-top: -40px;
+      margin-top: -20px;
       margin-bottom: 70px;
       &-left {
         flex-shrink: 0;
@@ -2877,9 +2882,10 @@
       margin-bottom: 0px;
       max-width: inherit;
       &-thumb {
-        margin-bottom: -220px;
+        margin-bottom: -210px;
         img {
-          height: 344px;
+          height: 325px;
+          width: 235px;
         }
       }
       &-content {
@@ -2924,10 +2930,11 @@
         font-size: rem(12px);
       }
       &-thumb {
-        margin-bottom: -110px;
+        margin-bottom: -100px;
         position: relative;
         img {
-          height: 190px;
+          height: 154px;
+          width: 110px;
         }
       }
     }
@@ -2941,9 +2948,10 @@
     }
     &__thumb {
       &-thumb {
-        margin-bottom: -304px;
+        margin-bottom: -284px;
         img {
-          height: 482px;
+          height: 450px;
+          width: 316px;
         }
       }
       &-content {
@@ -2977,17 +2985,18 @@
         font-size: rem(16px);
       }
       &-thumb {
-        margin-bottom: -135px;
+        margin-bottom: -125px;
         position: relative;
         img {
-          height: 250px;
+          height: 210px;
+          width: 150px;
         }
       }
     }
   }
   @include media-breakpoint-up(xxl) {
     &__wrapper {
-      margin-top: -70px;
+      margin-top: -40px;
       &-left {
         width: 616px;
         margin-right: 40px;
@@ -2995,9 +3004,10 @@
     }
     &__thumb {
       &-thumb {
-        margin-bottom: -406px;
+        margin-bottom: -386px;
         img {
-          height: 642px;
+          height: 600px;
+          width: 422px;
         }
       }
       &-content {
@@ -3011,7 +3021,7 @@
       }
     }
     &__document {
-      padding-top: 140px;
+      padding-top: 100px;
       max-width: 783px;
       margin-left: 0;
       h1, .h1 {
@@ -3019,7 +3029,7 @@
       }
     }
     &__block {
-      margin: 0 auto 20px;
+      margin: 0 auto 70px;
       &-content {
         border-radius: 50px;
         padding: 197px 15px 22px 15px;
@@ -3031,9 +3041,10 @@
         font-size: rem(18px);
       }
       &-thumb {
-        margin-bottom: -197px;
+        margin-bottom: -177px;
         img {
-          height: 335px;
+          height: 280px;
+          width: 200px;
         }
       }
     }
@@ -4696,7 +4707,7 @@
     }
   }
   &__block {
-    margin: 0 auto 30px;
+    margin: 20px auto 30px;
     max-width: inherit;
     width: 100%;
     position: relative;
@@ -4722,12 +4733,14 @@
       font-weight: bold;
     }
     &-thumb {
-      margin-bottom: -135px;
+      margin-bottom: -125px;
       position: relative;
       img {
-        width: 100%;
-        height: 257px;
+        width: 150px;
+        height: 210px;
+        margin: 0px auto;
         object-fit: contain;
+        display: block;
       }
     }
     &-btn {
@@ -4806,7 +4819,7 @@
       }
       h1, .h1 {
         font-size: rem(50px);
-        margin-bottom: 30px;
+        margin-bottom: 50px;
       }
     }
     .swiper {
@@ -4817,7 +4830,7 @@
       }
       &-button {
         &-next, &-prev {
-          top: -25px;
+          top: -43px;
           transform: translateY(0);
           height: 36px;
           right: 30px;
@@ -4852,7 +4865,6 @@
       }
       h1, .h1 {
         font-size: rem(40px);
-        margin-bottom: 30px;
       }
     }
     &__round {
@@ -4860,7 +4872,7 @@
       margin-left: 338px;
     }
     &__block {
-      margin: 0 auto 40px;
+      margin-bottom: 40px;
       max-width: 100%;
       width: 100%;
       &-content {
@@ -4875,10 +4887,11 @@
         font-size: rem(12px);
       }
       &-thumb {
-        margin-bottom: -110px;
+        margin-bottom: -100px;
         position: relative;
         img {
-          height: 190px;
+          height: 154px;
+          width: 110px;
         }
       }
     }
@@ -4888,7 +4901,7 @@
       }
       &-button {
         &-next, &-prev {
-          top: -12px;
+          top: -32px;
           right: 0;
         }
         &-next {
@@ -4912,7 +4925,7 @@
   @include media-breakpoint-up(xl) {
     margin-bottom: 190px;
     &__block {
-      margin: 0 auto 50px;
+      margin-bottom: 50px;
       &-content {
         border-radius: 25px;
         padding: 135px 15px 22px 15px;
@@ -4925,10 +4938,11 @@
         font-size: rem(16px);
       }
       &-thumb {
-        margin-bottom: -135px;
+        margin-bottom: -125px;
         position: relative;
         img {
-          height: 250px;
+          height: 210px;
+          width: 150px;
         }
       }
     }
@@ -4938,7 +4952,7 @@
       }
       h1, .h1 {
         font-size: rem(50px);
-        margin-bottom: 30px;
+        margin-bottom: 70px;
       }
     }
     &__round {
@@ -4950,7 +4964,7 @@
     .swiper {
       &-button {
         &-next, &-prev {
-          top: -12px;
+          top: -62px;
         }
         &-next {
           height: 36px;
@@ -4989,9 +5003,10 @@
         font-size: rem(18px);
       }
       &-thumb {
-        margin-bottom: -197px;
+        margin-bottom: -177px;
         img {
-          height: 335px;
+          height: 280px;
+          width: 200px;
         }
       }
     }
@@ -5001,7 +5016,6 @@
       }
       h1, .h1 {
         font-size: rem(60px);
-        margin-bottom: 30px;
       }
     }
     &__round {
@@ -5010,9 +5024,6 @@
     }
     .swiper {
       &-button {
-        &-next, &-prev {
-          top: -12px;
-        }
         &-next {
           height: 36px;
           width: 61px;
