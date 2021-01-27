@@ -3147,6 +3147,26 @@
     }
   }
   &__answer {
+    &-textarea {
+      max-width: 616px;
+      margin: 0 auto 25px;
+    }
+    &-label {
+      display: block;
+      width: 100%;
+      margin: 0;
+      cursor: pointer;
+      input {
+        display: none;
+        &:checked {
+          &~.quiz__answer-btn {
+            background: $color-red;
+            color: $color-white;
+            border-color: $color-red;
+          }
+        }
+      }
+    }
     &-block {
       max-width: 342px;
       margin: 0 auto;
@@ -3185,6 +3205,9 @@
         .icon-arrow-right {
           transform: translateX(4px);
         }
+      }
+      label & {
+        padding: 9px 5px 8px 5px;
       }
     }
   }

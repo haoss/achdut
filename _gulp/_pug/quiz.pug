@@ -43,21 +43,25 @@ html(lang="ru")
               .quiz__answer
                 .quiz__answer-block
                   div
-                    button(type="button").quiz__answer-btn 
-                      span Тора
-                      i.icon-arrow-right
+                    label(for="radio11").quiz__answer-label 
+                      input(type="radio" name="radio1")#radio11
+                      .quiz__answer-btn
+                        span Тора
                   div
-                    button(type="button").quiz__answer-btn
-                      span Собрание Устного Закона
-                      i.icon-arrow-right
+                    label(for="radio12").quiz__answer-label
+                      input(type="radio" name="radio1")#radio12
+                      .quiz__answer-btn
+                        span Собрание Устного Закона
                   div
-                    button(type="button").quiz__answer-btn
-                      span Тания
-                      i.icon-arrow-right
+                    label(for="radio13").quiz__answer-label
+                      input(type="radio" name="radio1")#radio13
+                      .quiz__answer-btn
+                        span Тания
                   div
-                    button(type="button").quiz__answer-btn
-                      span Танах
-                      i.icon-arrow-right
+                    label(for="radio14").quiz__answer-label
+                      input(type="radio" name="radio1")#radio14
+                      .quiz__answer-btn
+                        span Танах
 
           // Quiz
           .quiz
@@ -72,21 +76,25 @@ html(lang="ru")
               .quiz__answer
                 .quiz__answer-block
                   div
-                    button(type="button").quiz__answer-btn
-                      span Цицит
-                      i.icon-arrow-right
+                    label(for="radio21").quiz__answer-label
+                      input(type="checkbox" name="checkbox21")#radio21
+                      .quiz__answer-btn
+                        span Цицит
                   div
-                    button(type="button").quiz__answer-btn
-                      span Лулав
-                      i.icon-arrow-right
+                    label(for="radio22").quiz__answer-label
+                      input(type="checkbox" name="checkbox22")#radio22
+                      .quiz__answer-btn
+                        span Лулав
                   div
-                    button(type="button").quiz__answer-btn
-                      span Тфилин
-                      i.icon-arrow-right
+                    label(for="radio23").quiz__answer-label
+                      input(type="checkbox" name="checkbox23")#radio23
+                      .quiz__answer-btn
+                        span Тфилин
                   div
-                    button(type="button").quiz__answer-btn
-                      span Агада
-                      i.icon-arrow-right
+                    label(for="radio24").quiz__answer-label
+                      input(type="checkbox" name="checkbox24")#radio24
+                      .quiz__answer-btn
+                        span Агада
 
           // Quiz
           .quiz
@@ -128,23 +136,21 @@ html(lang="ru")
                 div
                   img 
               .quiz__answer
-                .quiz__answer-block
-                  div
-                    button(type="button").quiz__answer-btn
-                      span Балаклава
-                      i.icon-arrow-right
-                  div
-                    button(type="button").quiz__answer-btn
-                      span Башлык
-                      i.icon-arrow-right
-                  div
-                    button(type="button").quiz__answer-btn
-                      span Штраймл
-                      i.icon-arrow-right
-                  div
-                    button(type="button").quiz__answer-btn
-                      span Кипа
-                      i.icon-arrow-right
+                .quiz__answer-textarea
+                  +field-text({
+                    title: '',
+                    hasJs: false,
+                    isTextarea: true,
+                    hasError: false,
+                    helpText: '',
+                    mods: '',
+                    val: '',
+                    attrs: {
+                      name: 'message',
+                      placeholder: 'Ваш вариант ответа',
+                      rows: 5
+                    }
+                  })
 
           // Quiz
           .quiz
