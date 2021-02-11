@@ -4520,12 +4520,6 @@
         font-size: rem(24px);
         margin-bottom: 15px;
       }
-      &-content {
-        p {
-          display: block;
-          padding-left: 0;
-        }
-      }
       &.--last {
         margin-bottom: 29px;
       }
@@ -4584,6 +4578,12 @@
       &-title {
         font-size: rem(24px);
         margin-bottom: 15px;
+      }
+      &-content {
+        p {
+          display: block;
+          padding-left: 0;
+        }
       }
     }
   }
